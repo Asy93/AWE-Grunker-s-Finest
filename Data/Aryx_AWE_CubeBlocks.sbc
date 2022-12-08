@@ -1149,16 +1149,14 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXOculusLaserBase</SubtypeId>
 		</Id>
-		<!--DisplayName>Oculus Orb-PD Laser</DisplayName-->
-		<DisplayName>Jack-O Laser</DisplayName>		
+		<DisplayName>Oculus Orb-PD Laser</DisplayName>	
 		<Description>The Oculus is a ball-axis point defence laser designed to shoot down incoming missiles and lightly armoured targets. In non-PD roles, it serves as an anti-shield laser. [1.5KM RANGE - Energy Weapon]</Description>
 		<Icon>Textures\GUI\Icons\AWEOculusPD.dds</Icon>			
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="1" y="1" z="1"/>
 		<ModelOffset x="0" y="0" z="0"/>
-		<!--Model>Models\AWE_Oculus\ARYXOculusLaserBase.mwm</Model-->
-		<Model>Models\AWE_Memes\ARYXOculusLaserBase_Halloween.mwm</Model>		
+		<!Model>Models\AWE_Oculus\ARYXOculusLaserBase.mwm</Model>		
 		<Components>
 			<Component Subtype="SteelPlate" Count="100" />
 			<Component Subtype="Construction" Count="50" />
