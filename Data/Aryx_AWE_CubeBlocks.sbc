@@ -1156,7 +1156,7 @@
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="1" y="1" z="1"/>
 		<ModelOffset x="0" y="0" z="0"/>
-		<!Model>Models\AWE_Oculus\ARYXOculusLaserBase.mwm</Model>		
+		<Model>Models\AWE_Oculus\ARYXOculusLaserBase.mwm</Model>		
 		<Components>
 			<Component Subtype="SteelPlate" Count="100" />
 			<Component Subtype="Construction" Count="50" />
