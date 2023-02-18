@@ -31,7 +31,7 @@ namespace Scripts
             AmmoMagazine = "Energy",
             AmmoRound = "Centurion Ion Beam",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0.1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 3f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(100 * AWEGlobalDamageScalar), //6000 per pulse
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
@@ -1119,7 +1119,7 @@ namespace Scripts
             Ewar = new EwarDef
             {
                 Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
-                Type = Emp, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
+                Type = Offense, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Effect, // Effect , Field
                 Strength = 5000000f,
                 Radius = 3f, // Meters
