@@ -1607,12 +1607,12 @@ namespace Scripts
             },
             Ewar = new EwarDef
             {
-                Enable = false, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
+                Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
                 Type = Emp, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Effect, // Effect , Field
                 Strength = 100000000f,
                 Radius = 25, // Meters
-                Duration = 600, // In Ticks
+                Duration = 300, // In Ticks
                 StackDuration = false, // Combined Durations
                 Depletable = false,
                 MaxStacks = 2, // Max Debuffs at once
