@@ -1308,7 +1308,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 300f,
-                DesiredSpeed = 300, // voxel phasing if you go above 5100
+                DesiredSpeed = 250, // voxel phasing if you go above 5100
                 MaxTrajectory = 10000,
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -1611,11 +1611,11 @@ namespace Scripts
                 Type = Emp, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Effect, // Effect , Field
                 Strength = 100000000f,
-                Radius = 25, // Meters
+                Radius = 15, // Meters
                 Duration = 300, // In Ticks
                 StackDuration = false, // Combined Durations
                 Depletable = false,
-                MaxStacks = 2, // Max Debuffs at once
+                MaxStacks = 1, // Max Debuffs at once
                 NoHitParticle = false,
                 /*
                 EnergySink : Targets & Shutdowns Power Supplies, such as Batteries & Reactor
