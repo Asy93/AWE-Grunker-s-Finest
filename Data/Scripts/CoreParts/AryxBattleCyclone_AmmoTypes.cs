@@ -436,7 +436,7 @@ namespace Scripts
                 {
                     Armor = -1f,
                     Light = -1f,
-                    Heavy = 2,
+                    Heavy = 2.5f,
                     NonArmor = -1f,
                 },
                 Shields = new ShieldDef
