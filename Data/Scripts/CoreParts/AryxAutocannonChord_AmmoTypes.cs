@@ -90,8 +90,8 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
-                    Light = 1.25f,
+                    Armor = 2f,
+                    Light = -1f,
                     Heavy = -1f,
                     NonArmor = 2f,
                 },
@@ -235,7 +235,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1000,
+                DesiredSpeed = 1500,
                 MaxTrajectory = 5000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.

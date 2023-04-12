@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxNucleonLaserAmmo", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.025f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = (float)(200 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
+            BaseDamage = (float)(3600 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 0f, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0f, // Recoil.
@@ -84,7 +84,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 150f, // Distance at which damage begins falling off.
-                    MinMultipler = 0.01f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
+                    MinMultipler = 0.5f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
                 },
                 Grids = new GridSizeDef
                 {

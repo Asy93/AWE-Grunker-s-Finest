@@ -117,7 +117,7 @@ namespace Scripts {
                 {
                     RateOfFire = 600, // Set this to 3600 for beam weapons.
                     BarrelsPerShot = 1, // How many muzzles will fire a projectile per fire event.
-                    TrajectilesPerBarrel = 10, // Number of projectiles per muzzle per fire event.
+                    TrajectilesPerBarrel = 5, // Number of projectiles per muzzle per fire event.
                     SkipBarrels = 0, // Number of muzzles to skip after each fire event.
                     ReloadTime = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     MagsToLoad = 1, // Number of physical magazines to consume on reload.
