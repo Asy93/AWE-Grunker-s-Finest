@@ -3062,7 +3062,7 @@
 			<SubtypeId>ARYXLongbowLauncher</SubtypeId>
 		</Id>
 		<DisplayName>ML-70 Longbow Missile Launcher</DisplayName>
-		<Description>The Longbow fires medium-weight missiles capable of performing all-around ship-to-ship combat, working in anti-fighter or anti-warship roles. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [1.5KM-10KM RANGE - Accepts Sabre Missiles.]</Description>
+		<Description>The Longbow fires medium-weight missiles capable of performing all-around ship-to-ship combat. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [Sabre and Disrupt-sabre 550m/s, Armoured-sabre 350m/s, 1.5KM-10KM RANGE - Accepts Sabre Missiles.]</Description>
 		<Icon>Textures\GUI\Icons\AWELongbowLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -3114,7 +3114,7 @@
 			<SubtypeId>ARYXLongbowLauncher_SG</SubtypeId>
 		</Id>
 		<DisplayName>ML-70 Longbow Missile Launcher</DisplayName>
-		<Description>Fires medium-weight missiles capable of performing all-around ship-to-ship combat. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [1.5KM-10KM RANGE - Accepts Sabre Missiles.]</Description>
+		<Description>The Longbow fires medium-weight missiles capable of performing all-around ship-to-ship combat. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [Sabre and Disrupt-sabre 550m/s, Armoured-sabre 350m/s, 1.5KM-10KM RANGE - Accepts Sabre Missiles.]</Description>
 		<Icon>Textures\GUI\Icons\AWELongbowLauncher.dds</Icon>
 		<CubeSize>Small</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
