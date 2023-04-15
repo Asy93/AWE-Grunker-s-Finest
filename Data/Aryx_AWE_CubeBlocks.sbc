@@ -9,7 +9,7 @@
       </Id>
       <DisplayName>M240 Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>
-      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from medium/short-range. [900m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from medium/short-range. [1200m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="3" />
@@ -59,7 +59,7 @@
       </Id>
       <DisplayName>M240 Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>	  
-      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from medium/short-range. [900m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from medium/short-range. [1200m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="15" y="10" z="15" />
@@ -109,7 +109,7 @@
       </Id>
       <DisplayName>M480 Hurricane Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHurricaneCannon.dds</Icon>	  
-      <Description>The Hurricane is a turreted, double barrel artillery piece capable of dealing massive ballistic damage to targets from medium/short-range. [900m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Hurricane is a turreted, double barrel artillery piece capable of dealing massive ballistic damage to targets from medium/short-range. [1200m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="3" z="5"/>
@@ -164,7 +164,7 @@
       </Id>
       <DisplayName>M600 Typhoon Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxTyphoonCannon.dds</Icon>	  
-      <Description>The Typhoon is a gargantuan armoured triple barrel artillery piece capable of dealing monstrous ballistic damage to targets from medium/short-range. [900m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Typhoon is a gargantuan armoured triple barrel artillery piece capable of dealing monstrous ballistic damage to targets from medium/short-range. [1200m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="7" y="4" z="7"/>
@@ -219,7 +219,7 @@
       </Id>
       <DisplayName>M480 Tsunami Strike Cannon</DisplayName> 
       <Icon>Textures\GUI\Icons\AryxTsunamiCannon.dds</Icon>	  
-      <Description>The Tsunami is a casemate single-barrel barrel artillery piece capable of dealing massive ballistic damage to targets from medium/short-range. [900m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Tsunami is a casemate single-barrel barrel artillery piece capable of dealing massive ballistic damage to targets from medium/short-range. [1200m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="7"/>
@@ -274,7 +274,7 @@
       </Id>
       <DisplayName>M600 Tempest Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>	  
-      <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from medium/short-range. [900m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from medium/short-range. [1200m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="9"/>
@@ -328,7 +328,7 @@
       </Id>
       <DisplayName>M600 Tempest Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>	  
-      <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from medium/short-range. [900m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from medium/short-range. [1200m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="5" z="45"/>
@@ -382,7 +382,7 @@
       </Id>
       <DisplayName>M240 Windfall Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Windfall.dds</Icon>	  
-      <Description>The Windfall is a heavy artillery piece for strike craft. This fearsome weapon allows for fighters to deal massive damage to larger vessels.  [900m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Windfall is a heavy artillery piece for strike craft. This fearsome weapon allows for fighters to deal massive damage to larger vessels.  [1200m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
 	  <CubeSize>Small</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="3" y="2" z="12"/>
@@ -434,7 +434,7 @@
       </Id>
       <DisplayName>M120 Storm Light Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Storm.dds</Icon>	  
-      <Description>The Storm is a compact 120mm assault cannon designed for tanks, turrets and spacefighters, able to deal precise high damage in spite of its slow muzzle velocity. [800m/s muzzle velocity, 4km range - Accepts 120mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Storm is a compact 120mm assault cannon designed for tanks, turrets and spacefighters, able to deal precise high damage in spite of its size. [1200m/s muzzle velocity, 4km range - Accepts 120mm Heavy Shells (Kinetic).]</Description>
 	  <CubeSize>Small</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="1" z="7"/>
@@ -485,7 +485,7 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>	  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [1200m/s velocity, 3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP - Energy HE).]</Description>
+      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured and well shielded enemy grids. [1200m/s velocity, 3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP and HE).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="3" />
@@ -541,7 +541,7 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [1200m/s velocity, 3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP - Energy HE).]</Description>
+      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured and well shielded enemy grids. [1200m/s velocity, 3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP and HE).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="15" y="10" z="15" />
@@ -597,7 +597,7 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Slanted Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SlantedBurstCannon.dds</Icon>	  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. This variant is slanted for 2x1 slopes. [3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP / Energy HE).]</Description>
+      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured and well shielded enemy grids. This variant is slanted for 2x1 slopes. [3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP and HE).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="3" />
@@ -708,7 +708,7 @@
       </Id>
       <DisplayName>R1-S Interceptor Rocket Pod</DisplayName>
       <Icon>Textures\GUI\Icons\AWEInterceptor.dds</Icon>	  
-      <Description>The Interceptor is a guided point defence weapon that takes down incoming missiles and drones via counterbattery rocket action. [600m/s velocity, 3KM RANGE - Accepts Interceptor Rockets (Kinetic).]</Description>
+      <Description>The Interceptor is a guided point defence weapon that takes down incoming missiles and drones via counterbattery rocket action. [600m/s velocity, 3KM RANGE - Accepts Flechette Rockets (Does not target grids).]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="1" y="2" z="1"/>
@@ -815,7 +815,7 @@
 			<SubtypeId>ARYXLargeIonCannon</SubtypeId>
 		</Id>
 		<DisplayName>CT500 Centurion Ion Cannon</DisplayName>
-		<Description>The Centurion is a tactical beam weapon that fires an ion pulse which can disable enemy ship systems. It also deals a nasty amount of damage. Building from focus beam technology, it must be held on the target for the duration of its firing period in order to deal damage. The EMP lasts 10 seconds and the Jump disruption lasts 30 seconds. [Hitscan, 5KM TRAVEL - ENERGY WEAPON (Disables systems and jump drives! EMP EFFECT DOES NOT STACK).]</Description>	
+		<Description>The Centurion is a tactical beam weapon that fires an ion pulse which can disable enemy weapon and jump systems. It also deals a nasty amount of damage. Building from focus beam technology, it must be held on the target for the duration of its firing period in order to deal damage. The EMP lasts 5 seconds and the Jump disruption lasts 30 seconds. [Hitscan, 5KM RANGE - ENERGY WEAPON (Disables weapons and jump drives! EMP EFFECT DOES NOT STACK).]</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_IonCannon.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -923,7 +923,7 @@
       </Id>
       <DisplayName>M8G-LS4 Longsword Missile Battery</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMissileBattery.dds</Icon>	  
-      <Description>The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [Sabre, disrupt sabre, and lancer 550m/s, armoured-sabre 350m/s, 10KM MAX RANGE - Accepts Sabre Missiles.]</Description>
+      <Description>The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [Sabre and Disrupt-sabre 550m/s, Armoured-sabre 350m/s, 10KM MAX RANGE - Accepts Sabre Missiles.]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="5" y="5" z="5"/>
@@ -1033,7 +1033,7 @@
       </Id>
       <DisplayName>NC7-5F Trident Plasma Beam Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_PlasmaBeamCannon.dds</Icon>	  
-      <Description>The Trident is a heavy energy weapon that fires a dual stream of scorching plasma at targets, dealing huge shield damage and melting armour with ease. [4KM RANGE - HEAVY ENERGY WEAPON.]</Description>
+      <Description>The Trident is a heavy energy weapon that fires a dual stream of scorching plasma at targets, dealing huge shield damage and melting ships with ease. [1800m/s, 2KM TRACKING, 4KM RANGE - HEAVY ENERGY WEAPON.]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="5" y="5" z="5"/>
@@ -1087,7 +1087,7 @@
       </Id>
       <DisplayName>XM-500 Medusa Phase Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Medusa.dds</Icon>	  
-      <Description>The Medusa is a powerful energy weapon that fires phasic energy bolts at a good rate of fire. These pass through shields to an extent and deal explosive impact damage. [900m/s, 3.5KM RANGE - HEAVY ENERGY WEAPON.]</Description>
+      <Description>The Medusa is a powerful energy weapon that fires phasic energy bolts at a good rate of fire. Shields take critical explosive damage and are halfway bypassed on impact. [900m/s, 3.5KM RANGE - HEAVY ENERGY WEAPON.]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="5" y="4" z="5"/>
@@ -1194,7 +1194,7 @@
 			<SubtypeId>ARYXArgusLaser</SubtypeId>
 		</Id>
 		<DisplayName>Argus Orb PD Laser</DisplayName>
-		<Description>The Argus is a ball-axis point defence laser designed to shoot down incoming missiles and suits. Much smaller and shorter ranged than its big sister, the Oculus, but can also target suits. [Hitscan, 500M RANGE - Energy Weapon.]</Description>
+		<Description>The Argus is a ball-axis point defence laser designed to shoot down incoming missiles and suits. Much smaller and shorter ranged than its big sister, the Oculus, but can also target biologicals. [Hitscan, 500M RANGE - Energy Weapon.]</Description>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_Argus.dds</Icon>			
 		<CubeSize>Small</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -1296,7 +1296,7 @@
         <SubtypeId>ARYXJuryCannon</SubtypeId>
       </Id>
       <DisplayName>M120 Whirlwind Light Cannon</DisplayName>
-	  <Description>The Whirlwind is a compact cannon turret capable of dealing powerful blast damage to targets from medium range. Excels against light armour and smaller vessels. [900m/s muzzle velocity, 3.5km range - Accepts 120mm Heavy Shells (Kinetic).]</Description>
+	  <Description>The Whirlwind is a compact cannon turret capable of dealing powerful blast damage to targets from medium/short-range. Excels against shields and smaller vessels. [1200m/s muzzle velocity, 3.5km range - Accepts 120mm Heavy Shells (Kinetic).]</Description>
 	  <Icon>Textures\GUI\Icons\AryxJurycannon.dds</Icon>  
 	  <CubeSize>Large</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
@@ -1456,7 +1456,7 @@
       </Id>
       <DisplayName>MG25 Rampart Chaingun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCodexPDC.dds</Icon>	  
-      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles and strike craft. Extremely high rate of fire. [650m/s, 1.2KM RANGE - Accepts 25mm Prowler ammo (Kinetic).]</Description>
+      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles, suits, and strike craft. [650m/s, 1.2KM RANGE - Accepts 25mm Prowler/Codex ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1505,7 +1505,7 @@
       </Id>
       <DisplayName>MG25 Rampart Chaingun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Avalanche.dds</Icon>	  
-      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles and strike craft. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm Prowler ammo (Kinetic).]</Description>
+      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles, suits, and strike craft. This version is embedded into a slanted armour plate. [650m/s, 1.2KM RANGE - Accepts 25mm Prowler/Codex ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1556,7 +1556,7 @@
       </Id>
       <DisplayName>MG25 Rampart Chaingun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Avalanche_Inv.dds</Icon>	  
-      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles and strike craft. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm Prowler ammo (Kinetic).]</Description>
+      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles, suits, and strike craft. This version is embedded into a slanted armour plate. [650m/s, 1.2KM RANGE - Accepts 25mm Prowler/Codex ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1607,7 +1607,7 @@
       </Id>
       <DisplayName>MG25 Rampart Chaingun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCodexPDC.dds</Icon>	  
-      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles and strike craft. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm Prowler ammo (Kinetic).]</Description>
+      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles, suits, and strike craft. [650m/s, 1.2KM RANGE - Accepts 25mm Prowler/Codex ammo (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="3" />
@@ -1656,7 +1656,7 @@
       </Id>
       <DisplayName>Aurora Combat Laser</DisplayName>
       <Icon>Textures\GUI\Icons\AryxLaserGatling.dds</Icon>		  
-      <Description>Auroras are compact rotary laser weapons able to dish out excellent damage to strike craft and shields with its high fire rates. Excellent tracking allows it to easily nail infantry targets. [1200M RANGE - ENERGY WEAPON]</Description>
+      <Description>Auroras are compact rotary laser weapons able to dish out excellent damage to strike craft and shields with its high fire rates. Excellent tracking allows it to easily nail infantry targets. [Hitscan, 2KM RANGE - ENERGY WEAPON]</Description>
 	  <CubeSize>Large</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="2" z="1"/>
@@ -1714,7 +1714,7 @@
       </Id>
       <DisplayName>LS5-MG100 Warrior Heavy Gatling</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Warrior.dds</Icon>	  
-      <Description>The Warrior is a large armoured casemate gatling turret designed for broadside combat and base defence, firing 100mm shells of varying payload at a respectable rate of fire. Whilst low in traversal, deals devastating damage in its firing period. [ 1.5K RANGE - ACCEPTS 100MM WARRIOR (Kinetic)]</Description>
+      <Description>The Warrior is a large armoured casemate gatling turret designed for broadside combat and base defence, firing 100mm shells of varying payload at a respectable rate of fire. Whilst low in traversal, deals devastating damage in its firing period. [900m/s, 1.5K RANGE - ACCEPTS 100MM WARRIOR (Kinetic)]</Description>
 	  <CubeSize>Large</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="4" y="3" z="6"/>
@@ -2179,7 +2179,7 @@
       </Id>
       <DisplayName>MG25-S Prowler Chaingun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Chaingun.dds</Icon>
-      <Description>Prowlers are light chainguns designed for usage on small drones and interceptor craft with the intention of ship-to-ship combat between small ships. [ 1.2KM RANGE - Accepts 25mm Prowler ammo (Kinetic).]</Description>
+      <Description>Prowlers are light chainguns designed for usage on small drones and interceptor craft with the intention of ship-to-ship combat between small ships. [650m/s, 1.2KM RANGE - Accepts 25mm Prowler/Codex ammo (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="1" z="4"/>
