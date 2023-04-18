@@ -708,7 +708,7 @@
       </Id>
       <DisplayName>R1-S Interceptor Rocket Pod</DisplayName>
       <Icon>Textures\GUI\Icons\AWEInterceptor.dds</Icon>	  
-      <Description>The Interceptor is a guided point defence weapon that takes down incoming missiles and drones via counterbattery rocket action. [600m/s velocity, 3KM RANGE - Accepts Flechette Rockets (Does not target grids).]</Description>
+      <Description>The Interceptor is a guided point defence weapon that takes down incoming missiles and drones via counterbattery rocket action. [600m/s velocity, 5KM RANGE - Accepts Flechette Rockets (Does not target grids).]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="1" y="2" z="1"/>
@@ -4590,9 +4590,8 @@ Size: 5x9x61
       </Id>
       <DisplayName>Small Hangar Bay</DisplayName>
       <Icon>Textures\GUI\Icons\AryxSmallHangar.dds</Icon>
-      <Description><!--A compact hangar bay capable of launching Aryx-brand drones. These drones orbit targets and pelt it with cannon fire. These drones can be given orders via the hangar's ActionFriend/ActionEnemy options. WARNING: BUGGY IN MP DUE TO WEAPONCORE [10KM RANGE - ACCEPTS SIDEKICK (Rapid kinetic), FALCON (Cannon kinetic) OR STORMWING DRONES (Burst energy).]-->
-...Currently broken due to complicated engineering logic failures. Stay tuned for fixes...
-</Description>
+      <Description>DO NOT USE. Currently broken due to complicated engineering logic failures. Stay tuned for fixes.</Description>
+      <!--A compact hangar bay capable of launching Aryx-brand drones. These drones orbit targets and pelt it with cannon fire. These drones can be given orders via the hangar's ActionFriend/ActionEnemy options. WARNING: BUGGY IN MP DUE TO WEAPONCORE [10KM RANGE - ACCEPTS SIDEKICK (Rapid kinetic), FALCON (Cannon kinetic) OR STORMWING DRONES (Burst energy).]-->
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="1" z="3" />
