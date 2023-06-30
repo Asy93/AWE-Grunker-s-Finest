@@ -32,10 +32,10 @@ namespace Scripts
             AmmoRound = "AryxAutocannonAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(450 * AWEGlobalDamageScalar),
-            Mass = 1f, // in kilograms
+            BaseDamage = (float)(200 * AWEGlobalDamageScalar),
+            Mass = 2f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 150f,
+            BackKickForce = 4000,
             DecayPerShot = 0f,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
@@ -47,8 +47,8 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // 0 = disabled
-                CountBlocks = false, // counts gridBlocks and not just entities hit
+                MaxObjectsHit = 1, // 0 = disabled
+                CountBlocks = true, // counts gridBlocks and not just entities hit
             },
             Fragment = new FragmentDef
             {
@@ -86,20 +86,20 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = 5f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 2f,
-                    Light = -1f,
+                    Armor = -1f,
+                    Light = 1.25f,
                     Heavy = -1f,
-                    NonArmor = 2f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
                     Modifier = 2f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -235,7 +235,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1500,
+                DesiredSpeed = 1000,
                 MaxTrajectory = 5000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -274,7 +274,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -290,7 +290,7 @@ namespace Scripts
                     {
                         Name = "MaterialHit_Metal_GatlingGun",
                         ApplyToShield = false,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -307,7 +307,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

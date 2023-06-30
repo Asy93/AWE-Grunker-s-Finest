@@ -35,7 +35,7 @@ namespace Scripts
             BaseDamage = (float)(200 * AWEGlobalDamageScalar),
             Mass = 5, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 25f,
+            BackKickForce = 2500f,
             DecayPerShot = 0,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
@@ -53,7 +53,7 @@ namespace Scripts
             Fragment = new FragmentDef
             {
                 AmmoRound = "AryxHeavyFlakShrapWC",
-                Fragments = 40,
+                Fragments = 16,
                 Degrees = 360,
                 Reverse = false,
                 
@@ -99,7 +99,7 @@ namespace Scripts
                 {
                     Modifier = 2f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -148,9 +148,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 2f, // Meters
+                    Radius = 1f, // Meters
                     Damage = 0,
-                    Depth = 2f, //idk lmao
+                    Depth = 1f, //idk lmao
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -274,7 +274,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -290,7 +290,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -307,7 +307,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -456,7 +456,7 @@ namespace Scripts
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 4, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                HealthHitModifier = 2, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 130,
                 Characters = 35,
                 FallOff = new FallOffDef
@@ -467,11 +467,11 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = 5f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
+                    Armor = 0.5f,
                     Light = -1f,
                     Heavy = -1f,
                     NonArmor = -1f,
@@ -480,7 +480,7 @@ namespace Scripts
                 {
                     Modifier = 2f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -616,8 +616,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 300,
-                MaxTrajectory = 50f,
+                DesiredSpeed = 100,
+                MaxTrajectory = 25f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -654,7 +654,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -670,7 +670,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -687,7 +687,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

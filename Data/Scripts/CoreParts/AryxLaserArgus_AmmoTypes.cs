@@ -54,7 +54,7 @@ namespace Scripts
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 3f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                HealthHitModifier = 8f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 1,
                 Characters = 33f,
                 FallOff = new FallOffDef
@@ -78,7 +78,7 @@ namespace Scripts
                 {
                     Modifier = 5, //Light laser type.
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -141,7 +141,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -157,7 +157,7 @@ namespace Scripts
                     {
                         Name = "MaterialHit_Metal_GatlingGun",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -174,7 +174,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

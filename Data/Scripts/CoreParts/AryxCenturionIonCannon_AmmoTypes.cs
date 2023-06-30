@@ -31,8 +31,8 @@ namespace Scripts
             AmmoMagazine = "Energy",
             AmmoRound = "Centurion Ion Beam",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 3f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(100 * AWEGlobalDamageScalar), //6000 per pulse
+            EnergyCost = 0.1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            BaseDamage = (float)(60 * AWEGlobalDamageScalar), //6000 per pulse
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -112,7 +112,7 @@ namespace Scripts
                 {
                     Modifier = 10f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
@@ -226,7 +226,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -242,7 +242,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -259,7 +259,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -411,7 +411,7 @@ namespace Scripts
                 {
                     Modifier = 10f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
@@ -525,7 +525,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "AryxAWE_IonCannonWindup", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -541,7 +541,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -558,7 +558,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -731,7 +731,7 @@ namespace Scripts
                 {
                     Modifier = 10,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
@@ -773,7 +773,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3.5f, // Meters
-                    Damage = (float)(6000 * AWEGlobalDamageScalar),
+                    Damage = (float)(3000 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Curve, //.NoFalloff applies the same damage to all blocks in radius
@@ -845,7 +845,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -861,7 +861,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -878,7 +878,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1119,7 +1119,7 @@ namespace Scripts
             Ewar = new EwarDef
             {
                 Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
-                Type = Offense, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
+                Type = Emp, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Effect, // Effect , Field
                 Strength = 5000000f,
                 Radius = 3f, // Meters
@@ -1225,7 +1225,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1240,7 +1240,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1256,7 +1256,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1601,7 +1601,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1616,7 +1616,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1632,7 +1632,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

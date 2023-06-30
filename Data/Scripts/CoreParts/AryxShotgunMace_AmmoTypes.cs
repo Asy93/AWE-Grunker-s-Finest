@@ -100,9 +100,9 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 2.5f, // Multiplier for damage against shields.
+                    Modifier = 5f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -278,7 +278,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -293,7 +293,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 20f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -309,7 +309,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 10, green: 8f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Medusa Phase Bolt", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.11851852f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = (float)(5000 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
+            BaseDamage = (float)(2500 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 0, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0, // Recoil.
@@ -277,7 +277,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "AryxAWE_PhaseBolt", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -292,7 +292,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 10f, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -308,7 +308,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

@@ -40,7 +40,6 @@ namespace Scripts {
                     Grids,
                     Characters,
                     Meteors,
-                    Projectiles,
                 },
                 SubSystems = new[] {
                     Thrust, Utility, Offense, Power, Production, Any,

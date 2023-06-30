@@ -48,8 +48,8 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // Limits the number of entities (grids, players, projectiles) the projectile can penetrate; 0 = unlimited.
-                CountBlocks = false, // Counts individual blocks, not just entities hit.
+                MaxObjectsHit = 1, // Limits the number of entities (grids, players, projectiles) the projectile can penetrate; 0 = unlimited.
+                CountBlocks = true, // Counts individual blocks, not just entities hit.
             },
             Fragment = new FragmentDef
             {
@@ -101,7 +101,7 @@ namespace Scripts
                 {
                     Modifier = 4f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -149,7 +149,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = (float)(4750 * AWEGlobalDamageScalar),
+                    Damage = (float)(1500 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -277,7 +277,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -292,7 +292,7 @@ namespace Scripts
                     {
                         Name = "ArcWepSmallMissileExplShip",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 10f, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

@@ -33,7 +33,7 @@ namespace Scripts
             AmmoRound = "850mm Ferrous",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
             EnergyCost = 10f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(10000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(7000 * AWEGlobalDamageScalar),
             Mass = 9, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 1500000f,
@@ -107,7 +107,7 @@ namespace Scripts
                 {
                     Modifier = 25,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
@@ -274,7 +274,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 0),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -290,7 +290,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 0f, green: 0f, blue: 0f, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -397,7 +397,7 @@ namespace Scripts
             AmmoRound = "AryxHeavyCoilgunPiercingAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(135000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(75000 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 500f,
@@ -470,7 +470,7 @@ namespace Scripts
                 {
                     Modifier = 1f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
@@ -637,7 +637,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 0),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -653,7 +653,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 0f, green: 0f, blue: 0f, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

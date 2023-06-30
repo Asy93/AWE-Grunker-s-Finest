@@ -31,7 +31,7 @@ namespace Scripts
             AmmoMagazine = "Energy",
             AmmoRound = "400nm Pulse Laser",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0.25f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(90 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
@@ -93,13 +93,13 @@ namespace Scripts
                     Armor = 0.5f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 3f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
                     Modifier = 10f, //Medium laser type.
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -256,7 +256,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -272,7 +272,7 @@ namespace Scripts
                     {
                         Name = "AWEGravastarLaserHit",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -289,7 +289,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

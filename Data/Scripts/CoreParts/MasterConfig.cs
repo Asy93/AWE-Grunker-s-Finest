@@ -86,7 +86,13 @@ namespace Scripts
             AryxArgusLaser,
             AryxShrikeBombLauncher,
             AryxRocketArtilleryTurret,
-            AryxStormCannon
+            AryxStormCannon,
+            AryxSingleUseSabreHardpoint,
+            AryxSpartanRifleSG,
+            AryxNovaBlasterSG,
+            AryxNucleonShotgunSG,
+            AryxSingleUseNyxHardpoint,
+            AryxGravPulseLaserSG
             );
 
 

@@ -84,7 +84,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 5000f, // Distance at which damage begins falling off.
-                    MinMultipler = 1f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
+                    MinMultipler = 0.45f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -102,7 +102,7 @@ namespace Scripts
                 {
                     Modifier = 3f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -257,7 +257,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -272,7 +272,7 @@ namespace Scripts
                     {
                         Name = "BlockDestroyedExplosion_Large",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 243, green: 190, blue: 51, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -288,7 +288,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 10, green: 8f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -439,7 +439,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 5000f, // Distance at which damage begins falling off.
-                    MinMultipler = 1f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
+                    MinMultipler = 0.45f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -457,7 +457,7 @@ namespace Scripts
                 {
                     Modifier = 1f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -635,7 +635,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -650,7 +650,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 243, green: 190, blue: 51, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -666,7 +666,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 10, green: 8f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

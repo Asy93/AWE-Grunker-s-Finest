@@ -121,7 +121,9 @@
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXLargeIonCannon" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXGladiatorMissileLauncher" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSiegeMortarCannon" />	
-	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXRocketArtillery" />		
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXRocketArtillery" />	
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXCatalystCannon" />
+	
 
 
     <Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYX_Fixed_Chord_auto" />			
@@ -138,6 +140,10 @@
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSmallBombBay" />		
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXArgusLaser" />		
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYXStormCannon" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYX_SabreMissileHardpoint" />		
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/AryxNucleonShotgun_SG" />		
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYX_NyxMissileHardpoint" />	
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXGravPulseLaserSG" />		
 
 		<!--COMPONENTS-->			
 	<Entry Class="Components" BlueprintSubtypeId="AWE_ElectromagnetBP" />

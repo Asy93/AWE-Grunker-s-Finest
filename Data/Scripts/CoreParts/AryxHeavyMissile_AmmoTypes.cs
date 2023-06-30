@@ -108,7 +108,7 @@ namespace Scripts
                 {
                     Modifier = 5f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -284,7 +284,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -300,7 +300,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 2.5f, green: 2f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -316,7 +316,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -479,7 +479,7 @@ namespace Scripts
                 {
                     Modifier = 1f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -570,7 +570,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "AryxStrikerMissileTrail", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 2),
                         Extras = new ParticleOptionDef
@@ -711,7 +711,7 @@ namespace Scripts
                 {
                     Modifier = 5f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -802,7 +802,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "AryxStrikerDISROMissileTrail", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 2),
                         Extras = new ParticleOptionDef
@@ -944,7 +944,7 @@ namespace Scripts
                 {
                     Modifier = 1f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -1018,7 +1018,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "AryxStrikerDRAINMissileTrail", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 2),
                         Extras = new ParticleOptionDef
@@ -1131,7 +1131,7 @@ namespace Scripts
                 {
                     Modifier = -1f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -1329,7 +1329,7 @@ namespace Scripts
                 {
                     Modifier = 5f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -1505,7 +1505,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1521,7 +1521,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 2.5f, green: 2f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1537,7 +1537,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1725,7 +1725,7 @@ namespace Scripts
                 {
                     Modifier = 1f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -1901,7 +1901,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "AryxStrikerMissileTrail", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1917,7 +1917,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 2.5f, green: 2f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1933,7 +1933,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -2106,7 +2106,7 @@ namespace Scripts
                 {
                     Modifier = 5,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
@@ -2273,7 +2273,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 0),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -2289,7 +2289,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 0f, green: 0f, blue: 0f, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

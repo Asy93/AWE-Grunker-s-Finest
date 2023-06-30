@@ -94,7 +94,7 @@ namespace Scripts
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
-                    Light = -1f,
+                    Light = 0.95f,
                     Heavy = 0.5f,
                     NonArmor = 1f,
                 },
@@ -102,7 +102,7 @@ namespace Scripts
                 {
                     Modifier = 15f,
                     Type = Default, // Default, Heal
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -161,7 +161,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 50, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,
@@ -277,7 +277,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -292,7 +292,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -308,7 +308,7 @@ namespace Scripts
                     {
                         Name = "MaterialHit_Metal_GatlingGun",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

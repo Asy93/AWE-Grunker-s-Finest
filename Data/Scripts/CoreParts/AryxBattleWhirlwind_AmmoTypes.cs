@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "120mm Heavy Shell", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = (float)(1000 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
+            BaseDamage = (float)(750 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 60, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 45000, // Recoil.
@@ -48,8 +48,8 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // Limits the number of entities (grids, players, projectiles) the projectile can penetrate; 0 = unlimited.
-                CountBlocks = false, // Counts individual blocks, not just entities hit.
+                MaxObjectsHit = 1, // Limits the number of entities (grids, players, projectiles) the projectile can penetrate; 0 = unlimited.
+                CountBlocks = true, // Counts individual blocks, not just entities hit.
             },
             Fragment = new FragmentDef
             {
@@ -101,7 +101,7 @@ namespace Scripts
                 {
                     Modifier = 4f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -149,7 +149,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = (float)(4750 * AWEGlobalDamageScalar),
+                    Damage = (float)(1500 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -236,7 +236,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1200, // voxel phasing if you go above 5100
+                DesiredSpeed = 900, // voxel phasing if you go above 5100
                 MaxTrajectory = 3500f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 1f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -277,7 +277,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -292,7 +292,7 @@ namespace Scripts
                     {
                         Name = "ArcWepSmallMissileExplShip",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 10f, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -308,7 +308,7 @@ namespace Scripts
                     {
                         Name = "MaterialHit_Metal_GatlingGun",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

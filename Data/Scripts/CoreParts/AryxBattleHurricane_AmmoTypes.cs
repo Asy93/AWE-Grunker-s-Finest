@@ -98,7 +98,7 @@ namespace Scripts
                 {
                     Modifier = 2f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -147,7 +147,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 4f, // Meters
-                    Damage = (float)(13500 * AWEGlobalDamageScalar),
+                    Damage = (float)(7000 * AWEGlobalDamageScalar),
                     Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -234,7 +234,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1200,
+                DesiredSpeed = 900,
                 MaxTrajectory = 4000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -272,7 +272,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -288,7 +288,7 @@ namespace Scripts
                     {
                         Name = "ArcWepSmallMissileExplShip",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 10f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -305,7 +305,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

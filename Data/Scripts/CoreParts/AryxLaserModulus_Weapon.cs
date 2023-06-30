@@ -174,10 +174,6 @@ namespace Scripts
                 },
             },
             Ammos = new[] {
-                AryxModulusLaser_RedLaser,
-                AryxModulusLaser_YellowLaser,
-                AryxModulusLaser_GreenLaser,
-                AryxModulusLaser_BlueLaser,
                 AryxModulusLaser_VioletLaser,
             },
             //Animations = AdvancedAnimation,

@@ -53,7 +53,7 @@ namespace Scripts {
                 MinimumDiameter = 0, // Minimum radius of threat to engage.
                 MaximumDiameter = 0, // Maximum radius of threat to engage; 0 = unlimited.
                 MaxTargetDistance = 0, // Maximum distance at which targets will be automatically shot at; 0 = unlimited.
-                MinTargetDistance = 1500, // Minimum distance at which targets will be automatically shot at.
+                MinTargetDistance = 1000, // Minimum distance at which targets will be automatically shot at.
                 TopTargets = 0, // Maximum number of targets to randomize between; 0 = unlimited.
                 TopBlocks = 0, // Maximum number of blocks to randomize between; 0 = unlimited.
                 StopTrackingSpeed = 0, // Do not track threats traveling faster than this speed; 0 = unlimited.
@@ -193,6 +193,8 @@ namespace Scripts {
                 AryxGladiatorAmmo_Standard_Stage2,
                 AryxGladiatorAmmo_Impulse_Stage1,
                 AryxGladiatorAmmo_Impulse_Stage2,
+                AryxGladiatorAmmo_Phasic_Stage1,
+                AryxGladiatorAmmo_Phasic_Stage2,
 
             },
             //Animations = AryxFenrirAnims,

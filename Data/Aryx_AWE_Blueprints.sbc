@@ -199,7 +199,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>70mmBurstBP</SubtypeId>
       </Id>
-      <DisplayName>70mm AP/HE Punisher Cartridge</DisplayName>
+      <DisplayName>70mm HE Punisher Cartridge</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEJudgeAmmo.dds</Icon>
       <Prerequisites>
         <Item Amount="24" TypeId="Ingot" SubtypeId="Iron" />

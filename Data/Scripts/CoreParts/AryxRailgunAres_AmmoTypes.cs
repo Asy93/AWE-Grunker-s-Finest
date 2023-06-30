@@ -31,8 +31,8 @@ namespace Scripts
             AmmoMagazine = "GaussAmmoMagDef",
             AmmoRound = "AryxGaussAmmoWC",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0.6f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 1000000,
+            EnergyCost = 0.4f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            BaseDamage = 112500,
             Mass = 200, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 100000f,
@@ -91,21 +91,21 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = 10000f,
-                    Small = 10000f,
+                    Large = -1,
+                    Small = -1,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 10000f,
-                    Light = 10000f,
-                    Heavy = 10000f,
-                    NonArmor = 10000f,
+                    Armor = -1,
+                    Light = -1,
+                    Heavy = -1,
+                    NonArmor = -1,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 0.1f,
+                    Modifier = 0.001f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
@@ -132,7 +132,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 1.2f, // Meters
-                    Damage = 10000f,
+                    Damage = 1000f,
                     Depth = 3f, // Meters
                     MaxAbsorb = 0f,
                     Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
@@ -272,7 +272,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 0),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -288,7 +288,7 @@ namespace Scripts
                     {
                         Name = "AWEGaussImpact",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 0f, green: 0f, blue: 0f, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

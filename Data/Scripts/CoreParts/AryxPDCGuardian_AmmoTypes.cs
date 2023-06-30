@@ -32,10 +32,10 @@ namespace Scripts
             AmmoRound = "40mm ATLAS",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(200 * AWEGlobalDamageScalar),
-            Mass = 1, // in kilograms
+            BaseDamage = (float)(80 * AWEGlobalDamageScalar),
+            Mass = 1.5f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 25f,
+            BackKickForce = 800,
             DecayPerShot = 0,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
@@ -76,7 +76,7 @@ namespace Scripts
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 12, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                HealthHitModifier = 4, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 1,
                 Characters = 90f,
                 FallOff = new FallOffDef
@@ -100,7 +100,7 @@ namespace Scripts
                 {
                     Modifier = -1f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -275,7 +275,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -291,7 +291,7 @@ namespace Scripts
                     {
                         Name = "AWE_LowCalHit",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -308,7 +308,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -483,7 +483,7 @@ namespace Scripts
                 {
                     Modifier = -1f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -658,7 +658,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -674,7 +674,7 @@ namespace Scripts
                     {
                         Name = "AWE_LowCalHit",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -691,7 +691,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

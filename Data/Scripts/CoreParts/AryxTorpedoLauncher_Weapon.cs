@@ -46,7 +46,7 @@ namespace Scripts {
                 MinimumDiameter = 0, // Minimum radius of threat to engage.
                 MaximumDiameter = 0, // Maximum radius of threat to engage; 0 = unlimited.
                 MaxTargetDistance = 10000, // Maximum distance at which targets will be automatically shot at; 0 = unlimited.
-                MinTargetDistance = 1500, // Minimum distance at which targets will be automatically shot at.
+                MinTargetDistance = 1000, // Minimum distance at which targets will be automatically shot at.
                 TopTargets = 4, // Maximum number of targets to randomize between; 0 = unlimited.
                 TopBlocks = 4, // Maximum number of blocks to randomize between; 0 = unlimited.
                 StopTrackingSpeed = 0, // Do not track threats traveling faster than this speed; 0 = unlimited.
@@ -122,10 +122,10 @@ namespace Scripts {
                     ReloadTime = 600, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     MagsToLoad = 1, // Number of physical magazines to consume on reload.
                     DelayUntilFire = 0, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 500, // Heat generated per shot.
+                    HeatPerShot = 0, // Heat generated per shot.
                     MaxHeat = 1000, // Max heat before weapon enters cooldown (70% of max heat).
                     Cooldown = .5f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
-                    HeatSinkRate = 30, // Amount of heat lost per second.
+                    HeatSinkRate = 0, // Amount of heat lost per second.
                     DegradeRof = false, // Progressively lower rate of fire when over 80% heat threshold (80% of max heat).
                     ShotsInBurst = 0, // Use this if you don't want the weapon to fire an entire physical magazine before stopping to reload. Should not be more than your magazine capacity.
                     DelayAfterBurst = 0, // How long to spend "reloading" after each burst. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -231,7 +231,7 @@ namespace Scripts {
                 MinimumDiameter = 0, // Minimum radius of threat to engage.
                 MaximumDiameter = 0, // Maximum radius of threat to engage; 0 = unlimited.
                 MaxTargetDistance = 10000, // Maximum distance at which targets will be automatically shot at; 0 = unlimited.
-                MinTargetDistance = 1500, // Minimum distance at which targets will be automatically shot at.
+                MinTargetDistance = 0, // Minimum distance at which targets will be automatically shot at.
                 TopTargets = 4, // Maximum number of targets to randomize between; 0 = unlimited.
                 TopBlocks = 4, // Maximum number of blocks to randomize between; 0 = unlimited.
                 StopTrackingSpeed = 0, // Do not track threats traveling faster than this speed; 0 = unlimited.
@@ -307,10 +307,10 @@ namespace Scripts {
                     ReloadTime = 600, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     MagsToLoad = 1, // Number of physical magazines to consume on reload.
                     DelayUntilFire = 30, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 500, // Heat generated per shot.
+                    HeatPerShot = 0, // Heat generated per shot.
                     MaxHeat = 1000, // Max heat before weapon enters cooldown (70% of max heat).
                     Cooldown = .5f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
-                    HeatSinkRate = 30, // Amount of heat lost per second.
+                    HeatSinkRate = 0, // Amount of heat lost per second.
                     DegradeRof = false, // Progressively lower rate of fire when over 80% heat threshold (80% of max heat).
                     ShotsInBurst = 0, // Use this if you don't want the weapon to fire an entire physical magazine before stopping to reload. Should not be more than your magazine capacity.
                     DelayAfterBurst = 0, // How long to spend "reloading" after each burst. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).

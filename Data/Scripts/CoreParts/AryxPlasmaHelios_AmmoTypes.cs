@@ -107,7 +107,7 @@ namespace Scripts
                 {
                     Modifier = 10f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
@@ -159,7 +159,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 22, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,
@@ -236,7 +236,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 4000,
+                DesiredSpeed = 2000,
                 MaxTrajectory = 10000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -274,7 +274,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "AryxAWEReaperFlares", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -290,7 +290,7 @@ namespace Scripts
                     {
                         Name = "ArcWepSmallMissileExplShip",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 10f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -307,7 +307,7 @@ namespace Scripts
                     {
                         Name = "MaterialHit_Metal_GatlingGun",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

@@ -77,7 +77,7 @@ namespace Scripts
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 0.15f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                HealthHitModifier = 0.5f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 1,
                 Characters = 50,
                 FallOff = new FallOffDef
@@ -101,7 +101,7 @@ namespace Scripts
                 {
                     Modifier = 10f,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -276,7 +276,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -292,7 +292,7 @@ namespace Scripts
                     {
                         Name = "AWE_LowCalHit",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 10, green: 2f, blue: 2f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -309,7 +309,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -325,16 +325,16 @@ namespace Scripts
                 },
                 Lines = new LineDef
                 {
-                    ColorVariance = Random(start: 0.75f, end: 2f), // multiply the color by random values within range.
-                    WidthVariance = Random(start: 0f, end: 1.025f), // adds random value to default width (negatives shrinks width)
+                    ColorVariance = Random(start: 0f, end: 1.5f), // multiply the color by random values within range.
+                    WidthVariance = Random(start: 0f, end: 0.05f), // adds random value to default width (negatives shrinks width)
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
                         Length = 5f,
                         Width = 0.0005f,
                         Color = Color(red: 50, green: 10f, blue: 9f, alpha: 1),
-                        VisualFadeStart = 30, // Number of ticks the weapon has been firing before projectiles begin to fade their color
-                        VisualFadeEnd = 30, // How many ticks after fade began before it will be invisible.
+                        VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
+                        VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
                             "AryxPulseLaserEffect",
                         },

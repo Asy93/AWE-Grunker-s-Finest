@@ -95,14 +95,14 @@ namespace Scripts
                 {
                     Armor = -1f,
                     Light = -1f,
-                    Heavy = 3f,
-                    NonArmor = 2f,
+                    Heavy = -1f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
                     Modifier = 10f,
                     Type = Default, // Default, Heal
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -238,7 +238,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 2200, // voxel phasing if you go above 5100
+                DesiredSpeed = 1400, // voxel phasing if you go above 5100
                 MaxTrajectory = 3000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -277,7 +277,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -292,7 +292,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 10f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -308,7 +308,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -329,7 +329,7 @@ namespace Scripts
                     {
                         Enable = true,
                         Length = 25f,
-                        Width = 0.0125f,
+                        Width = 0.125f,
                         Color = Color(red: 3, green: 12, blue: 23, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.

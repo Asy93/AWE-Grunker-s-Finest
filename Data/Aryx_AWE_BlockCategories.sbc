@@ -86,6 +86,12 @@
 		<string>ConveyorSorter/ARYXSmallBombBay</string>	
 		<string>ConveyorSorter/ARYXRocketArtillery</string>		
 		<string>SmallMissileLauncher/ARYXStormCannon</string>	
+		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>	
+		<string>ConveyorSorter/ARYX_SpartanCannonSG</string>	
+		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>			
+		<string>ConveyorSorter/AryxNucleonShotgun_SG</string>
+		<string>ConveyorSorter/ARYX_NyxMissileHardpoint</string>
+		<string>ConveyorSorter/ARYXGravPulseLaserSG</string>		
 		
       </ItemIds>
     </Category> 
@@ -171,7 +177,12 @@
 		<string>ConveyorSorter/ARYXSmallBombBay</string>			
 		<string>ConveyorSorter/ARYXRocketArtillery</string>
 		<string>SmallMissileLauncher/ARYXStormCannon</string>			
-	
+		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>		
+		<string>ConveyorSorter/ARYX_SpartanCannonSG</string>	
+		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>		
+		<string>ConveyorSorter/AryxNucleonShotgun_SG</string>
+		<string>ConveyorSorter/ARYX_NyxMissileHardpoint</string>	
+		<string>ConveyorSorter/ARYXGravPulseLaserSG</string>				
 	  </ItemIds>
     </Category>
 	
@@ -258,7 +269,12 @@
 		<string>ConveyorSorter/ARYXSmallBombBay</string>	
 		<string>ConveyorSorter/ARYXRocketArtillery</string>	
 		<string>SmallMissileLauncher/ARYXStormCannon</string>			
-		
+		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>		
+		<string>ConveyorSorter/ARYX_SpartanCannonSG</string>	
+		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>		
+		<string>ConveyorSorter/AryxNucleonShotgun_SG</string>
+		<string>ConveyorSorter/ARYX_NyxMissileHardpoint</string>	
+		<string>ConveyorSorter/ARYXGravPulseLaserSG</string>				
 	</ItemIds>
     </Category> 
 
@@ -336,7 +352,7 @@
 		<string>LargeMissileTurret/ARYXPhaseRepeaterCannon</string>	
 		<string>ConveyorSorter/ARYXSiegeMortarCannon</string>	
 		<string>ConveyorSorter/ARYXRocketArtillery</string>			
-		
+	
 		
 		
 	  </ItemIds>
@@ -364,7 +380,12 @@
 		<string>ConveyorSorter/ARYXArgusLaser</string>	
 		<string>ConveyorSorter/ARYXSmallBombBay</string>
 		<string>SmallMissileLauncher/ARYXStormCannon</string>			
-		
+		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>		
+		<string>ConveyorSorter/ARYX_SpartanCannonSG</string>	
+		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>	
+		<string>ConveyorSorter/AryxNucleonShotgun_SG</string>	
+		<string>ConveyorSorter/ARYX_NyxMissileHardpoint</string>			
+		<string>ConveyorSorter/ARYXGravPulseLaserSG</string>		
       </ItemIds>
     </Category>  	
 	

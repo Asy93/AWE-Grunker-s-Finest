@@ -105,7 +105,7 @@ namespace Scripts
                 {
                     Modifier = 0.001f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -238,7 +238,7 @@ namespace Scripts
                 Guidance = Smart, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed
                 TargetLossDegree = 0f,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                MaxLifeTime = 450, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 120, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 200,
                 DesiredSpeed = 200, // voxel phasing if you go above 5100
                 MaxTrajectory = 10000,
@@ -281,7 +281,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -297,7 +297,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 2.5f, green: 2f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -313,7 +313,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -481,7 +481,7 @@ namespace Scripts
                 {
                     Modifier = 0.000001f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -539,7 +539,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 60, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 0.35f,
@@ -595,7 +595,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "AryxLargeMissileTrail", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 5, green: 5, blue: 20, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 1.25f),
                         Extras = new ParticleOptionDef
@@ -611,7 +611,7 @@ namespace Scripts
                     {
                         Name = "AryxAWETorpedoBlast",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 10f, green: 10f, blue: 25f, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -627,7 +627,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -797,7 +797,7 @@ namespace Scripts
                 {
                     Modifier = 50f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -930,7 +930,7 @@ namespace Scripts
                 Guidance = Smart, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed
                 TargetLossDegree = 0f,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                MaxLifeTime = 450, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 120, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 200,
                 DesiredSpeed = 200, // voxel phasing if you go above 5100
                 MaxTrajectory = 10000,
@@ -973,7 +973,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -989,7 +989,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 2.5f, green: 2f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1005,7 +1005,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1173,7 +1173,7 @@ namespace Scripts
                 {
                     Modifier = 50f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -1231,7 +1231,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 60, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 0.35f,
@@ -1340,7 +1340,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "AryxLargeEnergyMissileTrail", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 10, green: 25, blue: 15, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 1.25f),
                         Extras = new ParticleOptionDef
@@ -1356,7 +1356,7 @@ namespace Scripts
                     {
                         Name = "AryxAWEEMPTorpedoBlast",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 2f, green: 25f, blue: 25f, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1373,7 +1373,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1537,7 +1537,7 @@ namespace Scripts
                 {
                     Modifier = 0.01f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -1611,11 +1611,11 @@ namespace Scripts
                 Type = Emp, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Effect, // Effect , Field
                 Strength = 100000000f,
-                Radius = 15, // Meters
-                Duration = 300, // In Ticks
+                Radius = 25, // Meters
+                Duration = 600, // In Ticks
                 StackDuration = false, // Combined Durations
                 Depletable = false,
-                MaxStacks = 1, // Max Debuffs at once
+                MaxStacks = 2, // Max Debuffs at once
                 NoHitParticle = false,
                 /*
                 EnergySink : Targets & Shutdowns Power Supplies, such as Batteries & Reactor
@@ -1714,7 +1714,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 10, green: 25, blue: 15, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 1),
                         Extras = new ParticleOptionDef
@@ -1730,7 +1730,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 2f, green: 25f, blue: 25f, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -1910,7 +1910,7 @@ namespace Scripts
                 {
                     Modifier = 0.001f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -2043,7 +2043,7 @@ namespace Scripts
                 Guidance = Smart, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed
                 TargetLossDegree = 0f,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                MaxLifeTime = 450, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 120, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 200,
                 DesiredSpeed = 200, // voxel phasing if you go above 5100
                 MaxTrajectory = 10000,
@@ -2086,7 +2086,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -2102,7 +2102,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 2.5f, green: 2f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -2118,7 +2118,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -2305,7 +2305,7 @@ namespace Scripts
                 {
                     Modifier = 0.000001f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -2363,7 +2363,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = true, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 60, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 0.4f,
@@ -2374,7 +2374,7 @@ namespace Scripts
             },
             Ewar = new EwarDef
             {
-                Enable = false, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
+                Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
                 Type = Emp, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Field, // Effect , Field
                 Strength = 30000000,
@@ -2472,7 +2472,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "AryxAntimatterTorpedoTrail", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 5, green: 5, blue: 20, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 1.25f),
                         Extras = new ParticleOptionDef
@@ -2488,7 +2488,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 10f, green: 10f, blue: 25f, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -2504,7 +2504,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -2650,7 +2650,7 @@ namespace Scripts
                 {
                     Modifier = -1,
                     Type = Default,
-                    BypassModifier = -1f,
+                    BypassModifier = -2f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -2720,7 +2720,7 @@ namespace Scripts
             },
             Ewar = new EwarDef
             {
-                Enable = false, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
+                Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
                 Type = EnergySink, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Effect, // Effect , Field
                 Strength = 100000f,
@@ -2824,7 +2824,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
                         Offset = Vector(x: 0, y: -1, z: 0),
                         Extras = new ParticleOptionDef
@@ -2840,7 +2840,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 10f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
@@ -2857,7 +2857,7 @@ namespace Scripts
                     {
                         Name = "",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
