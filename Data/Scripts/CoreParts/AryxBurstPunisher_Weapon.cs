@@ -197,7 +197,6 @@ namespace Scripts {
             },
             Ammos = new[] {
                 AryxHEBurstAmmoWC,
-                AryxFlakShrapWC
             },
             //Animations = Weapon75_Animation,
             //Upgrades = UpgradeModules,
