@@ -1454,6 +1454,7 @@
 			<Component Subtype="Computer" Count="120" />
 			<Component Subtype="Construction" Count="75" />
 			<Component Subtype="SteelPlate" Count="75" />
+        <Component Subtype="MilitaryPlateAWE" Count="100" />			
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
 		<MountPoints>

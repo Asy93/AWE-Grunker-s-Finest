@@ -95,12 +95,12 @@ namespace Scripts
                 {
                     Armor = -1f,
                     Light = -1f,
-                    Heavy = -1f,
-                    NonArmor = -1f,
+                    Heavy = 3f,
+                    NonArmor = 2f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 10f,
+                    Modifier = 8f,
                     Type = Default, // Default, Heal
                     BypassModifier = -2f,
                 },
@@ -238,7 +238,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1400, // voxel phasing if you go above 5100
+                DesiredSpeed = 2200, // voxel phasing if you go above 5100
                 MaxTrajectory = 3000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.

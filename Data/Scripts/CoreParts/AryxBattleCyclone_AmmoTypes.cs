@@ -32,8 +32,8 @@ namespace Scripts
             AmmoRound = "240mm Heavy Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(1250 * AWEGlobalDamageScalar),
-            Mass = 120, // in kilograms
+            BaseDamage = (float)(2500 * AWEGlobalDamageScalar),
+            Mass = 120f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 90000,
             DecayPerShot = 0,
@@ -92,7 +92,7 @@ namespace Scripts
                     Armor = -1f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = -1f,
+                    NonArmor = 1.5f,
                 },
                 Shields = new ShieldDef
                 {
@@ -147,7 +147,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = (float)(1000 * AWEGlobalDamageScalar),
+                    Damage = (float)(3000 * AWEGlobalDamageScalar),
                     Depth = 1.5f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -234,7 +234,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 900,
+                DesiredSpeed = 1200,
                 MaxTrajectory = 4000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 1f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -436,7 +436,7 @@ namespace Scripts
                 {
                     Armor = -1f,
                     Light = -1f,
-                    Heavy = 2,
+                    Heavy = 2f,
                     NonArmor = -1f,
                 },
                 Shields = new ShieldDef
