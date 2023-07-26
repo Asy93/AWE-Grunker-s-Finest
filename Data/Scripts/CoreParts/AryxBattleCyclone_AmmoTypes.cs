@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "240mm Heavy Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(2500 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(3000 * AWEGlobalDamageScalar),
             Mass = 120f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 90000,
@@ -89,7 +89,7 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
+                    Armor = 1f,
                     Light = -1f,
                     Heavy = -1f,
                     NonArmor = 1.5f,

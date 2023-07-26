@@ -89,7 +89,7 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.5f,
+                    Armor = 1f,
                     Light = -1f,
                     Heavy = -1f,
                     NonArmor = 1.5f,
@@ -146,8 +146,8 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 4f, // Meters
-                    Damage = (float)(7000 * AWEGlobalDamageScalar),
+                    Radius = 6f, // Meters
+                    Damage = (float)(6000 * AWEGlobalDamageScalar),
                     Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
