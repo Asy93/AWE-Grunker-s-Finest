@@ -132,10 +132,10 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 1.2f, // Meters
-                    Damage = 1000f,
-                    Depth = 3f, // Meters
+                    Damage = 30000f,
+                    Depth = 8f, // Meters
                     MaxAbsorb = 0f,
-                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = InvCurve, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
