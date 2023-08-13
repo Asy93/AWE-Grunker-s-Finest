@@ -53,7 +53,7 @@ namespace Scripts
             Fragment = new FragmentDef
             {
                 AmmoRound = "AryxKineticFrags",
-                Fragments = 25,
+                Fragments = 5,
                 Degrees = 360,
                 Reverse = true,
             },
@@ -115,13 +115,13 @@ namespace Scripts
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "LargeBlockGyro",
-                            Modifier = 10,
+                            SubTypeId = "Test1",
+                            Modifier = -1f,
                         },
                         new CustomBlocksDef
                         {
-                            SubTypeId = "SmallBlockGyro",
-                            Modifier = 10,
+                            SubTypeId = "Test2",
+                            Modifier = -1f,
                         },
                     },
                 },
@@ -147,7 +147,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = (float)(3000 * AWEGlobalDamageScalar),
+                    Damage = (float)(26000 * AWEGlobalDamageScalar),
                     Depth = 1.5f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -234,7 +234,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1200,
+                DesiredSpeed = 1300,
                 MaxTrajectory = 4000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 1f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
