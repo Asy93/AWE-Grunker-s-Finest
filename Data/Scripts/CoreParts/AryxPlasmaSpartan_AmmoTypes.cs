@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Spartan Energy Bolt", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1.02855967f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(500 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(1337 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0,
@@ -89,18 +89,18 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = 2f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
-                    Light = -1f,
-                    Heavy = 1f,
-                    NonArmor = 1f,
+                    Light = 0.7f,
+                    Heavy = -1f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 8f,
+                    Modifier = 3f,
                     Type = Default, // Default, Heal
                     BypassModifier = -2f,
                 },
