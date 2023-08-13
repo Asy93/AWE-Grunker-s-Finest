@@ -57,7 +57,7 @@ namespace Scripts {
             {
                 PartName = "Pulsar Shock Cannon", // name of weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons)
                 DeviateShotAngle = 0f,
-                AimingTolerance = 1f, // 0 - 180 firing angle
+                AimingTolerance = 0.2f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
@@ -117,9 +117,9 @@ namespace Scripts {
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 150, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 99, //heat generated per shot
+                    HeatPerShot = 50, //heat generated per shot
                     MaxHeat = 300, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .25f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 30, //amount of heat lost per second
