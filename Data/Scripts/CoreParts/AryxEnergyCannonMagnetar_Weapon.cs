@@ -60,7 +60,7 @@ namespace Scripts {
             {
                 PartName = "Magnetar Shock Cannon", // name of weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons)
                 DeviateShotAngle = 0f,
-                AimingTolerance = 1f, // 0 - 180 firing angle
+                AimingTolerance = 0.2f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
