@@ -88,8 +88,8 @@ namespace Scripts
                 Characters = -1f,
                 FallOff = new FallOffDef
                 {
-                    Distance = 8000f, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.45f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 3000f, // Distance at which max damage begins falling off.
+                    MinMultipler = 0.8f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -148,9 +148,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 2.5f, // Meters
-                    Damage = (float)(12500 * AWEGlobalDamageScalar),
-                    Depth = 1f,
+                    Radius = 3f, // Meters
+                    Damage = (float)(3500 * AWEGlobalDamageScalar),
+                    Depth = 3f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
