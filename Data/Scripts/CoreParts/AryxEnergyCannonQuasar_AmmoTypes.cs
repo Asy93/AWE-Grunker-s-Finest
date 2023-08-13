@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Quasar Energy Bolt", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.41991602f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(10000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(4000 * AWEGlobalDamageScalar),
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -84,7 +84,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 5000f, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.45f, // value from 0.0001f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    MinMultipler = 1f, // value from 0.0001f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -100,7 +100,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 15f,
+                    Modifier = 10f,
                     Type = Default, // Default, Heal
                     BypassModifier = -2f,
                 },
@@ -150,9 +150,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 3f, // Meters
-                    Damage = (float)(50000 * AWEGlobalDamageScalar),
-                    Depth = 1f,
+                    Radius = 4f, // Meters
+                    Damage = (float)(4000 * AWEGlobalDamageScalar),
+                    Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
