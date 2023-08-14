@@ -86,14 +86,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.75f,
+                    Armor = 4f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 1f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 8f,
+                    Modifier = 1.5f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -143,11 +143,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 25f, // Meters
-                    Damage = (float)(50000 * AWEGlobalDamageScalar),
-                    Depth = 1f,
+                    Radius = 8f, // Meters
+                    Damage = (float)(200000 * AWEGlobalDamageScalar),
+                    Depth = 5f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = InvCurve, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -231,7 +231,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 1500, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 400,
+                DesiredSpeed = 700,
                 MaxTrajectory = 10000,
                 GravityMultiplier = 2.5f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
