@@ -496,7 +496,7 @@
         <Component Subtype="Motor" Count="80" />
         <Component Subtype="Computer" Count="100" />
         <Component Subtype="MetalGrid" Count="100" />		
-        <Component Subtype="MilitaryPlateAWE" Count="500" />
+        <Component Subtype="MilitaryPlateAWE" Count="250" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -559,7 +559,7 @@
         <Component Subtype="Motor" Count="80" />
         <Component Subtype="Computer" Count="100" />
         <Component Subtype="MetalGrid" Count="100" />		
-        <Component Subtype="MilitaryPlateAWE" Count="500" />
+        <Component Subtype="MilitaryPlateAWE" Count="250" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -621,8 +621,8 @@
         <Component Subtype="SmallTube" Count="100" />	
         <Component Subtype="Motor" Count="90" />
         <Component Subtype="Computer" Count="100" />
-        <Component Subtype="MetalGrid" Count="120" />		
-        <Component Subtype="MilitaryPlateAWE" Count="550" />
+        <Component Subtype="MetalGrid" Count="100" />		
+        <Component Subtype="MilitaryPlateAWE" Count="250" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
