@@ -1128,8 +1128,8 @@
 		</Id>
 		<DisplayName>M-1000 Avalanche Siege Mortar</DisplayName>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_SiegeMortar.dds</Icon>
-		<Description>Muzzle Velocity: 400m/s
-	  	Effective Range: 5km
+		<Description>Muzzle Velocity: 700m/s
+	  	Effective Range: 10km, with 5km assist
 	  	Turreted: Yes, limited-angle gimbal
 	  	Specialty Role: Kinetic siege artillery
 	  	Ammo: 1000mm Mortar shells
