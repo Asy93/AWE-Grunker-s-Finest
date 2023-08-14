@@ -105,7 +105,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 25,
+                    Modifier = 20,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -149,7 +149,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 5f, // Meters
-                    Damage = (float)(35000 * AWEGlobalDamageScalar),
+                    Damage = (float)(40000 * AWEGlobalDamageScalar),
                     Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Curve, //.NoFalloff applies the same damage to all blocks in radius
@@ -461,7 +461,7 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
+                    Armor = 100f,
                     Light = -1,
                     Heavy = -1f,
                     NonArmor = 999999999f,
