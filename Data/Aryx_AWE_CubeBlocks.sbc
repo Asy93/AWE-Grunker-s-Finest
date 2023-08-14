@@ -9,10 +9,11 @@
       </Id>
       <DisplayName>M240 Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>
-      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]
-	  Effects: Fires low velocity shells that explode on impact and deal heavy fragmentation damage.
-	  Size: 3x2x3
-	  Role: Assault
+      <Description>Muzzle Velocity: 1300m/s
+	  Effective Range: 4km
+	  Turreted: Yes
+	  Specialty Role: Balanced Kinetic, Crushing internal components
+	  Ammo: 240mm Heavy Shell
 	  </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -63,10 +64,11 @@
       </Id>
       <DisplayName>M240 Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>	  
-      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]
-	  Effects: Fires low velocity shells that explode on impact and deal heavy fragmentation damage.
-	  Size: 15x10x15 (lol)
-	  Role: Assault
+      <Description>Muzzle Velocity: 1300m/s
+	  Effective Range: 4km
+	  Turreted: Yes
+	  Specialty Role: Balanced Kinetic, Crushing internal components
+	  Ammo: 240mm Heavy Shell
 	  </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -117,10 +119,11 @@
       </Id>
       <DisplayName>M480 Hurricane Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHurricaneCannon.dds</Icon>	  
-      <Description>The Hurricane is a turreted, double barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]
-	  Effects: Fires two low velocity shells that explode on impact and deal heavy fragmentation damage.
-	  Size: 5x3x5
-	  Role: Assault
+      <Description>Muzzle Velocity: 1300m/s
+	  Effective Range: 4km
+	  Turreted: Yes, double-barreled
+	  Specialty Role: Balanced Kinetic, Crushing internal components
+	  Ammo: 480mm Heavy Shell
 	  </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -176,10 +179,11 @@
       </Id>
       <DisplayName>M600 Typhoon Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxTyphoonCannon.dds</Icon>	  
-      <Description>The Typhoon is a gargantuan armoured triple barrel artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]
-	  Effects: Fires three low velocity shells that explode on impact and deal massive explosive and fragmentation damage.
-	  Size: 7x4x7
-	  Role: Assault
+      <Description>Muzzle Velocity: 1300m/s
+	  Effective Range: 4km
+	  Turreted: Yes, triple-barreled
+	  Specialty Role: Balanced Kinetic, Crushing internal components
+	  Ammo: 600mm Heavy Shell
 	  </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -236,12 +240,11 @@
       </Id>
       <DisplayName>M600 Tempest Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>	  
-      <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]
-	  Effects: Fires low velocity shells that explode on impact and deal heavy fragmentation damage.
-	  Size: 1x1x9
-	  Role: Assault
-	  Hardpoint: Static Weapon
-	  Type: Strike Cannon
+      <Description>Muzzle Velocity: 1300m/s
+	  Effective Range: 4km
+	  Turreted: No
+	  Specialty Role: Precision Balanced Kinetic, Crushing internal components
+	  Ammo: 600mm Heavy Shell
 	  </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -297,12 +300,11 @@
       </Id>
       <DisplayName>M600 Tempest Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>	  
-      <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]
-	  Effects: Fires low velocity shells that explode on impact and deal heavy fragmentation damage.
-	  Size: 5x5x45
-	  Role: Assault
-	  Hardpoint: Static Weapon
-	  Type: Strike Cannon
+      <Description>Muzzle Velocity: 1300m/s
+	  Effective Range: 4km
+	  Turreted: No
+	  Specialty Role: Precision Balanced Kinetic, Crushing internal components
+	  Ammo: 600mm Heavy Shell
 	  </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -358,12 +360,11 @@
       </Id>
       <DisplayName>M240 Windfall Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Windfall.dds</Icon>	  
-      <Description>The Windfall is a heavy artillery piece for strike craft. This fearsome weapon allows for fighters to deal massive damage to larger vessels.  [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]
-	  Effects: Fires low velocity shells that explode on impact and deal heavy fragmentation damage.
-	  Size: 3x2x12
-	  Role: Assault
-	  Hardpoint: Static Weapon
-	  Type: Strike Cannon
+      <Description>Muzzle Velocity: 1300m/s
+	  Effective Range: 4km
+	  Turreted: No
+	  Specialty Role: Balanced Kinetic
+	  Ammo: 240mm Heavy Shell
 	  </Description>
 	  <CubeSize>Small</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
@@ -417,12 +418,11 @@
       </Id>
       <DisplayName>M120 Storm Light Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Storm.dds</Icon>	  
-      <Description>The Storm is a compact 120mm assault cannon designed for tanks, turrets and spacefighters, able to deal accurate high damage in spite of its slow muzzle velocity. [800m/s muzzle velocity, 4km range - Accepts 120mm Heavy Shells (Kinetic).]
-	  Effects: Fires low velocity shells that explode on impact and deal heavy fragmentation damage.
-	  Size: 1x1x7
-	  Role: Assault
-	  Hardpoint: Static Weapon
-	  Type: Strike Cannon
+      <Description>Muzzle Velocity: 1300m/s
+	  Effective Range: 4km
+	  Turreted: No
+	  Specialty Role: Balanced Kinetic
+	  Ammo: 120mm Heavy Shell
 	  </Description>
 	  <CubeSize>Small</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
@@ -475,12 +475,11 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>	  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP - Energy HE)]
-	  Effects: Fires low velocity shells that explode on impact and deal heavy fragmentation damage.
-	  Size: 3x2x3
-	  Role: Assault
-	  Hardpoint: Full-traverse Turret
-	  Type: Flak
+      <Description>Muzzle Velocity: 1200m/s
+	  Effective Range: 3km
+	  Turreted: Yes, 8-round burst
+	  Specialty Role: Destroying shields, Lightly armored targets
+	  Ammo: 70mm HE cartridge
 	  </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -496,7 +495,7 @@
         <Component Subtype="Motor" Count="80" />
         <Component Subtype="Computer" Count="100" />
         <Component Subtype="MetalGrid" Count="100" />		
-        <Component Subtype="MilitaryPlateAWE" Count="500" />
+        <Component Subtype="MilitaryPlateAWE" Count="250" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -538,12 +537,11 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP - Energy HE).]
-	  Effects: Fires a salvo of medium-velocity kinetic projectiles that either pierce armour or explode on impact.
-	  Size: 15x10x15
-	  Role: Assault
-	  Hardpoint: Full-traverse Turret
-	  Type: Flak
+      <Description>Muzzle Velocity: 1200m/s
+	  Effective Range: 3km
+	  Turreted: Yes, 8-round burst
+	  Specialty Role: Destroying shields, Lightly armored targets
+	  Ammo: 70mm HE cartridge
 	  </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -559,7 +557,7 @@
         <Component Subtype="Motor" Count="80" />
         <Component Subtype="Computer" Count="100" />
         <Component Subtype="MetalGrid" Count="100" />		
-        <Component Subtype="MilitaryPlateAWE" Count="500" />
+        <Component Subtype="MilitaryPlateAWE" Count="250" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -601,12 +599,12 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Slanted Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SlantedBurstCannon.dds</Icon>	  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. This variant is slanted for 2x1 slopes. [3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP / Energy HE).]
-	  Effects: Fires a salvo of medium-velocity kinetic projectiles that either pierce armour or explode on impact.
-	  Size: 3x3x3
-	  Role: Assault
-	  Hardpoint: Full-traverse Turret
-	  Type: Flak
+      <Description>Muzzle Velocity: 1200m/s
+	  Effective Range: 3km
+	  Turreted: Yes, 8-round burst
+	  Specialty Role: Destroying shields, Lightly armored targets
+	  This version is slanted to fit well into 2x1 slopes
+	  Ammo: 70mm HE cartridge
 	  </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -621,8 +619,8 @@
         <Component Subtype="SmallTube" Count="100" />	
         <Component Subtype="Motor" Count="90" />
         <Component Subtype="Computer" Count="100" />
-        <Component Subtype="MetalGrid" Count="120" />		
-        <Component Subtype="MilitaryPlateAWE" Count="550" />
+        <Component Subtype="MetalGrid" Count="100" />		
+        <Component Subtype="MilitaryPlateAWE" Count="250" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -964,12 +962,11 @@
       </Id>
       <DisplayName>VL6 Modulus Variable-Laser</DisplayName>
       <Icon>Textures\GUI\Icons\AWEModulusLaser.dds</Icon>	  
-      <Description>The Modulus is a laser weapon that can change its damage rating based on the wavelength it emits. Shorter wavelengths give higher damage, but shorter range. [ 2.5KM RANGE - Ammo drops falloff in 500m increments from max WL - Energy Weapon]
-	  Effects: Fires heavy lasers at medium range to cleave weapons and shields from enemies.
-	  Size: 3x3x3
-	  Role: Assault
-	  Hardpoint: Full-traverse Turret
-	  Type: Laser Turret
+      <Description>Muzzle Velocity: Lightspeed
+	  Effective Range: 2km, damage falling off gradually over distance
+	  Turreted: Yes
+	  Specialty Role: Lowering shields, Disarming opponents
+	  Ammo: Energy
 	  </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1131,12 +1128,11 @@
 		</Id>
 		<DisplayName>M-1000 Avalanche Siege Mortar</DisplayName>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_SiegeMortar.dds</Icon>
-		<Description>The Avalanche is a tremendously powerful gimballed siege mortar cannon that fires heavy ballistic projectiles with high explosive warheads. Whilst slow on the muzzle velocity and traversal, the mere presence of such a devastating weapon is enough to ensure psychological victory. [5KM RANGE - Accepts Fat Man Mortar Shells (Kinetic)]
-		Effects: If you thought the Tempest does a shitload of damage per shot, this thing does ten shitloads.
-		Size: 5x3x8
-		Role: Assault
-		Hardpoint: Limited-angle
-		Type: Mortar Cannon	
+		<Description>Muzzle Velocity: 400m/s
+	  	Effective Range: 5km
+	  	Turreted: Yes, limited-angle gimbal
+	  	Specialty Role: Kinetic siege artillery
+	  	Ammo: 1000mm Mortar shells
 		</Description>	
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -1193,7 +1189,12 @@
       </Id>
       <DisplayName>AC54 Chord Autocannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FixedChord.dds</Icon>
-      <Description>The Chord is a medium-weight autocannon firing ballistic slugs at targets. This is a fixed-mount version for strike craft. [4KM RANGE - Accepts 54mm AC (Kinetic).]</Description>
+      <Description>Muzzle Velocity: 1500m/s
+	  Effective Range: 4km
+	  Turreted: No
+	  Specialty Role: Balanced Kinetic repeater
+	  Ammo: 54mm Autocannon
+	</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="2" y="1" z="6"/>
@@ -1293,7 +1294,12 @@
 			<SubtypeId>ARYX_ChordAutocannon</SubtypeId>
 		</Id>
 		<DisplayName>AC54 Chord</DisplayName>
-        <Description>The Chord is a medium-weight autocannon firing ballistic slugs at targets. Whilst not the best against heavy armour, these autocannons are extremely strong in numbers, and excel against smaller craft at long range. [4KM RANGE - Accepts 54mm AC (Kinetic).]</Description>
+        <Description>Muzzle Velocity: 1500m/s
+	  Effective Range: 4km
+	  Turreted: Yes
+	  Specialty Role: Balanced Kinetic repeater
+	  Ammo: 54mm Autocannon
+	</Description>
 		<Icon>Textures\GUI\Icons\AryxChordCannon.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -1366,7 +1372,12 @@
 			<SubtypeId>ARYX_ChordAutocannon_SG</SubtypeId>
 		</Id>
 		<DisplayName>AC54 Chord</DisplayName>
-        <Description>The Chord is a medium-weight autocannon firing ballistic slugs at targets. Whilst not the best against heavy armour, these autocannons are extremely strong in numbers, and excel against smaller craft at long range. [4KM RANGE - Accepts 54mm AC (Kinetic).]</Description>
+        <Description>Muzzle Velocity: 1500m/s
+	  Effective Range: 4km
+	  Turreted: Yes
+	  Specialty Role: Balanced Kinetic repeater
+	  Ammo: 54mm Autocannon
+	</Description>
 		<Icon>Textures\GUI\Icons\AryxChordCannon.dds</Icon>
 		<CubeSize>Small</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -1439,7 +1450,12 @@
 			<SubtypeId>ARYX_EchoAutocannon</SubtypeId>
 		</Id>
 		<DisplayName>AC85 Echo Autocannon</DisplayName>
-        <Description>The Echo is a heavy precision autocannon firing caseless 85mm rounds at high velocity and long range. Fiercely capable as an all-rounder weapon, packing both AP and HE round options. [6KM RANGE - Accepts 85mm AC (Kinetic).]</Description>
+        <Description>Muzzle Velocity: 1800m/s
+	  Effective Range: 6km
+	  Turreted: Yes
+	  Specialty Role: Balanced Kinetic repeater
+	  Ammo: 85mm Autocannon
+	</Description>
 		<Icon>Textures\GUI\Icons\AryxEchoCannon.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -1553,7 +1569,12 @@
 			<SubtypeId>ARYXPlasmaPulser</SubtypeId>
 		</Id>	
 		<DisplayName>M5D-4E Helios Plasma Rifle</DisplayName>
-		<Description>The Helios fires disruptive bolts of highly energised, white hot plasma. Extremely effective against shields, struggles against armour. Warranty void if used as a thruster and/or cooking appliance. [10KM TRAVEL - Energy Weapon.]</Description>
+		<Description>Muzzle Velocity: 4000m/s
+	  Effective Range: 10km
+	  Turreted: No
+	  Specialty Role: Plasma siege artillery
+	  Ammo: Energy
+		</Description>
 		<Icon>Textures\GUI\Icons\AryxPlasmaGun.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -1664,7 +1685,12 @@
 		</Id>
 		<DisplayName>ZS-1200-S Ares Heavy Railgun</DisplayName>
 		<Icon>Textures\GUI\Icons\AryxGaussCannon.dds</Icon>
-		<Description>Ares Railguns are advanced precision ballistic weapons that fire 1200mm Ferrous Slugs, each penetrating a straight line of their impact site. These devastating weapons are bulky and heavy, but pack a huge punch, and can potentially disable a ship in one shot. [50KM TRAVEL - Accepts 1200 Ferrous. (Kinetic)]</Description>	
+		<Description>Muzzle Velocity: 5000m/s
+	  Effective Range: 10km
+	  Turreted: No
+	  Specialty Role: Long range sniping
+	  Ammo: 1200mm Ferrous Slug
+		</Description>	
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="3" y="2" z="9"/>
@@ -1720,7 +1746,12 @@
       </Id>
       <DisplayName>ZS-1200 Ariana Grande Heavy Railgun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_GaussTurret.dds</Icon>
-      <Description>A heavy and extremely powerful rail cannon mounted onto a rotary frame, capable of dispatching targets from long range with devastating firepower. [10KM RANGE - ACCEPTS 1200MM FERROUS. (Kinetic)]</Description>
+      <Description>Muzzle Velocity: 5000m/s
+	  Effective Range: 10km
+	  Turreted: Yes, slow rotating
+	  Specialty Role: Long range sniping
+	  Ammo: 1200mm Ferrous Slug
+	</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="9" y="6" z="29"/>
@@ -1946,7 +1977,7 @@
       </Id>
       <DisplayName>Doppler Radar</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_LargeRadar.dds</Icon> 	  
-      <Description>Dopplers are non-offensive systems designed for recon and scouting of enemy grids via scrollwheel-scanning. [30KM RANGE]</Description>
+      <Description>Dopplers are non-offensive systems designed for recon. Scroll through targets with your mouse-wheel to target and get intel. [30KM RANGE]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1"/>
@@ -1993,7 +2024,7 @@
       </Id>
       <DisplayName>Maxwell Radar</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SmallRadar.dds</Icon>	  
-      <Description>Dopplers are non-offensive systems designed for recon and scouting of enemy grids via scrollwheel-scanning. [30KM RANGE]</Description>
+      <Description>Dopplers are non-offensive systems designed for recon. Scroll through targets with your mouse-wheel to target and get intel. [30KM RANGE]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="2" y="4" z="2"/>
@@ -2043,7 +2074,12 @@
       </Id>
       <DisplayName>T600A3 Magnetar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMagnetarCannon.dds</Icon>
-      <Description>The Magnetar is a gigantic triple barrel shock cannon designed to punch through shields and just about everything behind them.  [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
+      <Description>Muzzle Velocity: 1800m/s
+	  Effective Range: 5km
+	  Turreted: Yes, triple-barreled
+	  Specialty Role: Lowering shields, Moderate damage to internal components
+	  Ammo: Energy
+	</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="7" y="4" z="7"/>
@@ -2101,7 +2137,12 @@
       </Id>
       <DisplayName>Aurora Combat Laser</DisplayName>
       <Icon>Textures\GUI\Icons\AryxLaserGatling.dds</Icon>		  
-      <Description>Auroras are compact rotary laser weapons able to dish out excellent damage to strike craft and shields with its high fire rates. Excellent tracking allows it to easily nail infantry targets. [1200M RANGE - ENERGY WEAPON]</Description>
+      <Description>Muzzle Velocity: Lightspeed
+	  Effective Range: 2km
+	  Turreted: Yes
+	  Specialty Role: Anti-Infantry, Balanced laser repeater
+	  Ammo: Energy
+	</Description>
 	  <CubeSize>Large</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="2" z="1"/>
@@ -2160,7 +2201,12 @@
       </Id>
       <DisplayName>T400A2 Quasar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxQuasarCannon.dds</Icon>
-      <Description>The Quasar is a sister weapon to the Hurricane, designed to deal damage to shields in order for the heavy hitters to rip hulls to shreds.  [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
+      <Description>Muzzle Velocity: 1800m/s
+	  Effective Range: 5km
+	  Turreted: Yes, double-barreled
+	  Specialty Role: Lowering shields, Moderate damage to internal components
+	  Ammo: Energy
+	</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="4" z="5"/>
@@ -2218,7 +2264,12 @@
       </Id>
       <DisplayName>T200A1 Pulsar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxPulsarCannon.dds</Icon>
-      <Description>The Pulsar is a light energy cannon that fires explosive globules of plasma at long range. Best against shields and light armour. [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
+      <Description>Muzzle Velocity: 1800m/s
+	  Effective Range: 5km
+	  Turreted: Yes
+	  Specialty Role: Lowering shields, Moderate damage to internal components
+	  Ammo: Energy
+	</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="3"/>
@@ -2272,7 +2323,12 @@
       </Id>
       <DisplayName>AL35 Spartan Plasma Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SpartanCannon.dds</Icon>	  
-      <Description>The Spartan is a midweight energy weapon that lobs energised plasma bolts at targets, dealing heavy damaged to shields at a high rate of fire. [2KM RANGE - Energy Weapon]</Description>
+      <Description>Muzzle Velocity: 2200m/s
+	  Effective Range: 3km
+	  Turreted: Yes
+	  Specialty Role: Cracking heavy armor, Sniping internal components
+	  Ammo: Energy
+	</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="3" />
@@ -2329,7 +2385,12 @@
       </Id>
       <DisplayName>AL35-R Spartan Plasma Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_MiniSpartan.dds</Icon>	  
-      <Description>The Spartan is a midweight energy weapon that lobs energised plasma bolts at targets. This version is a lighter variant designed for fitting to fighters. Powerful and reliable plasma autocannon for shield busting. [2KM RANGE - Energy Weapon]</Description>
+      <Description>Muzzle Velocity: 2200m/s
+	  Effective Range: 3km
+	  Turreted: No
+	  Specialty Role: Cracking heavy armor, Sniping internal components
+	  Ammo: Energy
+	</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="2" z="8"/>
