@@ -11,15 +11,15 @@ namespace enenra.ArmorBalance
     [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate)]
     public class ArmorBalance : MySessionComponentBase
     {
-        public const float lightArmorLargeDamageMod = .50f;
-        public const float lightArmorLargeDeformationMod = 0.50f;
-        public const float lightArmorSmallDamageMod = 0.50f;
-        public const float lightArmorSmallDeformationMod = 0.50f;
+        public const float lightArmorLargeDamageMod = .75f;
+        public const float lightArmorLargeDeformationMod = 0.75f;
+        public const float lightArmorSmallDamageMod = 0.75f;
+        public const float lightArmorSmallDeformationMod = 0.75f;
 
-        public const float heavyArmorLargeDamageMod = 0.666f;
-        public const float heavyArmorLargeDeformationMod = 0.666f;
-        public const float heavyArmorSmallDamageMod = 0.666f;
-        public const float heavyArmorSmallDeformationMod = 0.666f;
+        public const float heavyArmorLargeDamageMod = .9f;
+        public const float heavyArmorLargeDeformationMod = .9f;
+        public const float heavyArmorSmallDamageMod = .9f;
+        public const float heavyArmorSmallDeformationMod = .9f;
 
         private bool isInit = false;
 
