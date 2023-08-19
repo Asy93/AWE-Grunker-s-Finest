@@ -59,8 +59,8 @@ namespace Scripts {
             HardPoint = new HardPointDef
             {
                 PartName = "Magnetar Shock Cannon", // name of weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons)
-                DeviateShotAngle = 0f,
-                AimingTolerance = 0.2f, // 0 - 180 firing angle
+                DeviateShotAngle = 0.05f,
+                AimingTolerance = 0.1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
@@ -121,7 +121,7 @@ namespace Scripts {
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
                     ReloadTime = 840, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    DelayUntilFire = 15, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 99, //heat generated per shot
                     MaxHeat = 300, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .25f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
