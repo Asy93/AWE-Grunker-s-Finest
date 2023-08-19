@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "380nm Laser - MODVIO",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 4f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(1300 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(975 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -80,8 +80,8 @@ namespace Scripts
                 Characters = 7f,
                 FallOff = new FallOffDef
                 {
-                    Distance = 500, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.3f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 250, // Distance at which max damage begins falling off.
+                    MinMultipler = 0.1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -97,7 +97,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 6f, //Heavy laser type.
+                    Modifier = 8f, //Heavy laser type.
                     Type = Default,
                     BypassModifier = -2f,
                 },
