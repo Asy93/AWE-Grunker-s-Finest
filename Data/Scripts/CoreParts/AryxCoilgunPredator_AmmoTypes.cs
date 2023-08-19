@@ -101,29 +101,59 @@ namespace Scripts
                     Armor = -1f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 5f,
+                    NonArmor = 10f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 25,
+                    Modifier = 50,
                     Type = Default,
                     BypassModifier = -2f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
                 {
-                    IgnoreAllOthers = false,
-                    Types = new[]
+                    SkipOthers = Inclusive, // Controls how projectile interacts with other blocks in relation to those defined here, NoSkip, Exclusive, Inclusive.
+                    Types = new[] // List of blocks to apply custom damage multipliers to.
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "Test1",
-                            Modifier = -1f,
+                            SubTypeId = "LargeBlockCockpit",
+                            Modifier = 0.001f,
                         },
                         new CustomBlocksDef
                         {
-                            SubTypeId = "Test2",
-                            Modifier = -1f,
+                            SubTypeId = "LargeBlockCockpitSeat",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "SmallBlockCockpit",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "DBSmallBlockFighterCockpit",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "CockpitOpen",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "RoverCockpit",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "OpenCockpitSmall",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "OpenCockpitLarge",
+                            Modifier = 0.001f,
                         },
                     },
                 },
@@ -148,7 +178,7 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 5f, // Meters
+                    Radius = 3f, // Meters
                     Damage = (float)(35000 * AWEGlobalDamageScalar),
                     Depth = 2f,
                     MaxAbsorb = 0f,
@@ -397,7 +427,7 @@ namespace Scripts
             AmmoRound = "AryxHeavyCoilgunPiercingAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(75000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(30000 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 500f,
@@ -464,11 +494,11 @@ namespace Scripts
                     Armor = -1f,
                     Light = -1,
                     Heavy = -1f,
-                    NonArmor = 999999999f,
+                    NonArmor = 120f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1f,
+                    Modifier = 2f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
