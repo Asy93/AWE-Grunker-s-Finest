@@ -36,8 +36,8 @@ namespace Scripts
             AmmoRound = "1000mm Avalanche Mortar Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(2000 * AWEGlobalDamageScalar),
-            Mass = 4000, // in kilograms
+            BaseDamage = (float)(3500 * AWEGlobalDamageScalar),
+            Mass = 400000, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 2250000,
             DecayPerShot = 0,
@@ -57,8 +57,8 @@ namespace Scripts
             Fragment = new FragmentDef // Formerly known as Shrapnel. Spawns specified ammo fragments on projectile death (via hit or detonation).
             {
                 AmmoRound = "AryxKineticFrags", // AmmoRound field of the ammo to spawn.
-                Fragments = 25, // Number of projectiles to spawn.
-                Degrees = 1, // Cone in which to randomize direction of spawned projectiles.
+                Fragments = 75, // Number of projectiles to spawn.
+                Degrees = 60, // Cone in which to randomize direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
                 DropVelocity = true, // fragments will not inherit velocity from parent.
                 Offset = -1f, // Offsets the fragment spawn by this amount, in meters (positive forward, negative for backwards).
@@ -86,14 +86,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.75f,
+                    Armor = 2f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 1f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 8f,
+                    Modifier = 6f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -143,11 +143,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 25f, // Meters
-                    Damage = (float)(50000 * AWEGlobalDamageScalar),
-                    Depth = 1f,
+                    Radius = 15f, // Meters
+                    Damage = (float)(16000 * AWEGlobalDamageScalar),
+                    Depth = 3.5f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = InvCurve, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -231,7 +231,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 1500, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 400,
+                DesiredSpeed = 800,
                 MaxTrajectory = 10000,
                 GravityMultiplier = 2.5f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
