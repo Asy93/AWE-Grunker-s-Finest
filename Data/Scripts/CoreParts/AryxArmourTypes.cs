@@ -54,8 +54,8 @@ namespace Scripts {
                 "HXL_Hip",
                 "HXL_Passage"
             },
-            EnergeticResistance = 1f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
-            KineticResistance = 1f, //Resistance to Kinetic damage. Leave these as 1 for no effect
+            EnergeticResistance = .75f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
+            KineticResistance = .75f, //Resistance to Kinetic damage. Leave these as 1 for no effect
             Kind = Heavy, //Heavy, Light, NonArmor - which ammo damage multipliers to apply
         };
         ArmorDefinition GrunkerArmourFixPt2 => new ArmorDefinition
@@ -85,8 +85,8 @@ namespace Scripts {
                 "XL_Hip",
                 "XL_Passage"
             },
-            EnergeticResistance = 1f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
-            KineticResistance = 1f, //Resistance to Kinetic damage. Leave these as 1 for no effect
+            EnergeticResistance = .75f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
+            KineticResistance = .75f, //Resistance to Kinetic damage. Leave these as 1 for no effect
             Kind = Light, //Heavy, Light, NonArmor - which ammo damage multipliers to apply
         };
         ArmorDefinition GrunkerArmourFixPt3 => new ArmorDefinition
@@ -153,8 +153,8 @@ namespace Scripts {
                 "MA_HB_Programmable"
 
             },
-            EnergeticResistance = 1f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
-            KineticResistance = 1f, //Resistance to Kinetic damage. Leave these as 1 for no effect
+            EnergeticResistance = .33f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
+            KineticResistance = .33f, //Resistance to Kinetic damage. Leave these as 1 for no effect
             Kind = NonArmor, //Heavy, Light, NonArmor - which ammo damage multipliers to apply
         };        
     }
