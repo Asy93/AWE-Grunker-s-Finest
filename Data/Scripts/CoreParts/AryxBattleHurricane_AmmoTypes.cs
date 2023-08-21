@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "480mm Heavy Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(6000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(2000 * AWEGlobalDamageScalar),
             Mass = 240f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 100000,
@@ -53,7 +53,7 @@ namespace Scripts
             Fragment = new FragmentDef
             {
                 AmmoRound = "AryxKineticFrags",
-                Fragments = 40,
+                Fragments = 18,
                 Degrees = 360,
                 Reverse = true,
             },
@@ -96,7 +96,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 2f,
+                    Modifier = 1.5f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -146,8 +146,8 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 6f, // Meters
-                    Damage = (float)(6000 * AWEGlobalDamageScalar),
+                    Radius = 5.5f, // Meters
+                    Damage = (float)(19000 * AWEGlobalDamageScalar),
                     Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -163,7 +163,7 @@ namespace Scripts
                     ParticleScale = 1.5f,
                     CustomParticle = "AWE_Cyclone_Explosion", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "ArcWepShipARYX_HeavyCannonHit", // SubtypeID from your Audio SBC, not a filename
-                    Shape = Round, // Round or Diamond
+                    Shape = Diamond, // Round or Diamond
                 }, 
             },
             Ewar = new EwarDef
@@ -234,7 +234,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1200,
+                DesiredSpeed = 1300,
                 MaxTrajectory = 4000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.

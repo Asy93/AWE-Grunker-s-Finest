@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxGaussAmmoWC",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.4f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 112500,
+            BaseDamage = 40000,
             Mass = 200, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 100000f,
@@ -96,7 +96,7 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1,
+                    Armor = 16,
                     Light = -1,
                     Heavy = -1,
                     NonArmor = -1,
@@ -110,18 +110,48 @@ namespace Scripts
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
                 {
-                    IgnoreAllOthers = false,
-                    Types = new[]
+                    SkipOthers = Inclusive, // Controls how projectile interacts with other blocks in relation to those defined here, NoSkip, Exclusive, Inclusive.
+                    Types = new[] // List of blocks to apply custom damage multipliers to.
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "Test1",
-                            Modifier = -1f,
+                            SubTypeId = "LargeBlockCockpit",
+                            Modifier = 0.001f,
                         },
                         new CustomBlocksDef
                         {
-                            SubTypeId = "Test2",
-                            Modifier = -1f,
+                            SubTypeId = "LargeBlockCockpitSeat",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "SmallBlockCockpit",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "DBSmallBlockFighterCockpit",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "CockpitOpen",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "RoverCockpit",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "OpenCockpitSmall",
+                            Modifier = 0.001f,
+                        },
+                        new CustomBlocksDef
+                        {
+                            SubTypeId = "OpenCockpitLarge",
+                            Modifier = 0.001f,
                         },
                     },
                 },
@@ -131,7 +161,7 @@ namespace Scripts
                 ByBlockHit = new ByBlockHitDef
                 {
                     Enable = true,
-                    Radius = 1.2f, // Meters
+                    Radius = 2f, // Meters
                     Damage = 1000f,
                     Depth = 3f, // Meters
                     MaxAbsorb = 0f,

@@ -55,8 +55,8 @@ namespace Scripts
             HardPoint = new HardPointDef
             {
                 PartName = "Avalanche Siege Cannon", // name of weapon in terminal
-                DeviateShotAngle = 1f,
-                AimingTolerance = 0.1f, // 0 - 180 firing angle
+                DeviateShotAngle = 0.05f,
+                AimingTolerance = 0.2f, // 0 - 180 firing angle
                 AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
@@ -115,8 +115,8 @@ namespace Scripts
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 1050, // 17.5 second reload time on the avalanche.
-                    DelayUntilFire = 0, 
+                    ReloadTime = 1650, // 29 second reload time on the avalanche.
+                    DelayUntilFire = 15, 
                     HeatPerShot = 0, //heat generated per shot
                     MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .95f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
