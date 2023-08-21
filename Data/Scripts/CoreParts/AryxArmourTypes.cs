@@ -51,8 +51,7 @@ namespace Scripts {
                 "HXL_HalfSlopeTip",
                 "HXL_PassageCorner",
                 "HXL_Passage",
-                "HXL_Hip",
-                "HXL_Passage"
+                "HXL_Hip"
             },
             EnergeticResistance = .75f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
             KineticResistance = .75f, //Resistance to Kinetic damage. Leave these as 1 for no effect
@@ -82,8 +81,7 @@ namespace Scripts {
                 "XL_HalfSlopeTip",
                 "XL_PassageCorner",
                 "XL_Passage",
-                "XL_Hip",
-                "XL_Passage"
+                "XL_Hip"
             },
             EnergeticResistance = .75f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
             KineticResistance = .75f, //Resistance to Kinetic damage. Leave these as 1 for no effect
