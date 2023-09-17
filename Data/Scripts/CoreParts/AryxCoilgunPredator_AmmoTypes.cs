@@ -117,43 +117,13 @@ namespace Scripts
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "LargeBlockCockpit",
-                            Modifier = 0.001f,
+                            SubTypeId = "Test1",
+                            Modifier = -1f,
                         },
                         new CustomBlocksDef
                         {
-                            SubTypeId = "LargeBlockCockpitSeat",
-                            Modifier = 0.001f,
-                        },
-                        new CustomBlocksDef
-                        {
-                            SubTypeId = "SmallBlockCockpit",
-                            Modifier = 0.001f,
-                        },
-                        new CustomBlocksDef
-                        {
-                            SubTypeId = "DBSmallBlockFighterCockpit",
-                            Modifier = 0.001f,
-                        },
-                        new CustomBlocksDef
-                        {
-                            SubTypeId = "CockpitOpen",
-                            Modifier = 0.001f,
-                        },
-                        new CustomBlocksDef
-                        {
-                            SubTypeId = "RoverCockpit",
-                            Modifier = 0.001f,
-                        },
-                        new CustomBlocksDef
-                        {
-                            SubTypeId = "OpenCockpitSmall",
-                            Modifier = 0.001f,
-                        },
-                        new CustomBlocksDef
-                        {
-                            SubTypeId = "OpenCockpitLarge",
-                            Modifier = 0.001f,
+                            SubTypeId = "Test2",
+                            Modifier = -1f,
                         },
                     },
                 },
