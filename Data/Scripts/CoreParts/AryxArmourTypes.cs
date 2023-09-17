@@ -51,7 +51,7 @@ namespace Scripts {
                 "HXL_HalfSlopeTip",
                 "HXL_PassageCorner",
                 "HXL_Passage",
-                "HXL_Hip"
+                "HXL_Hip",
             },
             EnergeticResistance = .75f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
             KineticResistance = .75f, //Resistance to Kinetic damage. Leave these as 1 for no effect
@@ -81,7 +81,7 @@ namespace Scripts {
                 "XL_HalfSlopeTip",
                 "XL_PassageCorner",
                 "XL_Passage",
-                "XL_Hip"
+                "XL_Hip",
             },
             EnergeticResistance = .75f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
             KineticResistance = .75f, //Resistance to Kinetic damage. Leave these as 1 for no effect
@@ -90,7 +90,6 @@ namespace Scripts {
         ArmorDefinition GrunkerArmourFixPt3 => new ArmorDefinition
         {
             SubtypeIds = new[] {
-
                 "MA_HeavyBridge_B1B",
                 "MA_HeavyBridge_B1T",
                 "MA_HeavyBridge_C1B",
@@ -119,7 +118,6 @@ namespace Scripts {
                 "MA_HeavyBridge_C4B",
                 "MA_HeavyBridge_C4T",
                 "MA_HeavyBridge_E4",
-
                 "MA_HB_Conveyor",
                 "MA_HB_Convtube_slab",
                 "MA_HB_Window_end_L",
@@ -134,26 +132,32 @@ namespace Scripts {
                 "MA_HB_Slab",
                 "MA_HB_SlabSteps",
                 "MA_HB_Window_Top",
-
                 "MA_HB_Railing_Single",
                 "MA_HB_Railing_Double",
                 "MA_HB_Railing_Corner",
                 "MA_HB_Railing_Triple",
-
                 "MA_HB_HalfSteps_Drail",
                 "MA_HB_HalfSteps_Lrail",
                 "MA_HB_HalfSteps_Rrail",
-
                 "MA_HB_Window_EndTableL",
                 "MA_HB_Window_EndTableR",
                 "MA_HB_Window_Workstation",
-
-                "MA_HB_Programmable"
-
+                "MA_HB_Programmable",
             },
             EnergeticResistance = .33f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
             KineticResistance = .33f, //Resistance to Kinetic damage. Leave these as 1 for no effect
             Kind = NonArmor, //Heavy, Light, NonArmor - which ammo damage multipliers to apply
-        };        
+        };    
+        ArmorDefinition GrunkerArmourFixPt4 => new ArmorDefinition
+        {
+            SubtypeIds = new[] {
+                "MA_Buster_ArmorBlock",
+                "MA_Buster_Window",
+                "MA_Buster_Passage",
+            },
+            EnergeticResistance = 0.5f, //Resistance to Energy damage. 0.5f = 200% damage, 2f = 50% damage
+            KineticResistance = 0.5f, //Resistance to Kinetic damage. Leave these as 1 for no effect
+            Kind = NonArmor, //Heavy, Light, NonArmor - which ammo damage multipliers to apply
+        };           
     }
 }
