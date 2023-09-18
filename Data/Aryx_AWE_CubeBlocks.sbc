@@ -495,7 +495,7 @@
         <Component Subtype="Motor" Count="80" />
         <Component Subtype="Computer" Count="100" />
         <Component Subtype="MetalGrid" Count="100" />		
-        <Component Subtype="MilitaryPlateAWE" Count="250" />
+        <Component Subtype="MilitaryPlateAWE" Count="150" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
