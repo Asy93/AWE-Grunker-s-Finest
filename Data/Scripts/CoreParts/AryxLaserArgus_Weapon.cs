@@ -25,6 +25,7 @@ namespace Scripts
                         MuzzlePartId = "OrbElevation",
                         AzimuthPartId = "OrbAzimuth",
                         ElevationPartId = "OrbElevation",
+                        DurabilityMod = 0.25f,
                     },
 
                 },
