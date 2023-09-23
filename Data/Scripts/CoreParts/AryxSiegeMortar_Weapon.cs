@@ -25,6 +25,7 @@ namespace Scripts
                         MuzzlePartId = "MortarElevation",
                         AzimuthPartId = "MortarAzimuth",
                         ElevationPartId = "MortarElevation",
+                        DurabilityMod = 0.25f,
                     },
                 },
                 Muzzles = new[] {
