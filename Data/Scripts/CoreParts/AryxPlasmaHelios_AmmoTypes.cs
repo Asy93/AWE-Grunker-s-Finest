@@ -33,7 +33,7 @@ namespace Scripts
             AmmoRound = "Helios Energy Bolt",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.24230508f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(4000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(2000 * AWEGlobalDamageScalar),
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 60f,
@@ -105,7 +105,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 12f,
+                    Modifier = 8f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -148,8 +148,8 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 6f, // Meters
-                    Damage = (float)(7500 * AWEGlobalDamageScalar),
+                    Radius = 4f, // Meters
+                    Damage = (float)(4000 * AWEGlobalDamageScalar),
                     Depth = 3f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
