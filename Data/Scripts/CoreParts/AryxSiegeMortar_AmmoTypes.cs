@@ -93,7 +93,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 6f,
+                    Modifier = 12f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
