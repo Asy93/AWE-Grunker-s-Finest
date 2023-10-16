@@ -51,7 +51,7 @@ namespace Scripts
                 LockedSmartOnly = false, // Only fire at smart projectiles that are locked on to parent grid.
                 MinimumDiameter = 0, // 0 = unlimited, Minimum radius of threat to engage.
                 MaximumDiameter = 0, // 0 = unlimited, Maximum radius of threat to engage.
-                MaxTargetDistance = 500, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
+                MaxTargetDistance = 660, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
                 MinTargetDistance = 0, // 0 = unlimited, Min target distance that targets will be automatically shot at.
                 TopTargets = 4, // 0 = unlimited, max number of top targets to randomize between.
                 TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
@@ -61,7 +61,7 @@ namespace Scripts
             {
                 PartName = "Argus PDL", // name of weapon in terminal
                 DeviateShotAngle = 0.00f,
-                AimingTolerance = 0.15f, // 0 - 180 firing angle
+                AimingTolerance = 0.1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Off, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
@@ -109,7 +109,7 @@ namespace Scripts
                     EnergyPriority = 0, // Deprecated.
                     MuzzleCheck = true, // Whether the weapon should check LOS from each individual muzzle in addition to the scope.
                     Debug = false, // Force enables debug mode.
-                    RestrictionRadius = 1.5f, // Prevents other blocks of this type from being placed within this distance of the centre of the block.
+                    RestrictionRadius = 2f, // Prevents other blocks of this type from being placed within this distance of the centre of the block.
                     CheckInflatedBox = false, // If true, the above distance check is performed from the edge of the block instead of the centre.
                     CheckForAnyWeapon = false, // If true, the check will fail if ANY weapon is present, not just weapons of the same subtype.
                 },

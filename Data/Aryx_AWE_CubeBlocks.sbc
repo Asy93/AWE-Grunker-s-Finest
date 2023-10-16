@@ -360,7 +360,7 @@
       </Id>
       <DisplayName>M240 Windfall Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Windfall.dds</Icon>	  
-      <Description>Muzzle Velocity: 900m/s
+      <Description>Muzzle Velocity: 1300m/s
 	  Effective Range: 4km
 	  Turreted: No
 	  Specialty Role: Balanced Kinetic
@@ -421,7 +421,7 @@
       <Description>Muzzle Velocity: 1600m/s
 	  Effective Range: 3.5km
 	  Turreted: No
-	  Specialty Role: Balanced Kinetic
+	  Specialty Role: Precision Dogfighter Assault Kinetic
 	  Ammo: 120mm Heavy Shell
 	  </Description>
 	  <CubeSize>Small</CubeSize>
@@ -784,6 +784,64 @@
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXArgusLaser</SubtypeId>
+		</Id>
+		<DisplayName>Argus Orb PD Laser</DisplayName>
+		<Description>Muzzle Velocity: c
+	  	Effective Range: 660m
+	  	Turreted: Yes
+	  	Specialty Role: Point Defense pulse
+	  	Ammo: Energy
+		</Description>
+		<Icon>Textures\GUI\Icons\Aryx_AWE_Argus.dds</Icon>			
+		<CubeSize>Small</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="2" z="1"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Argus\ARYX_SmallPDOrb.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="10" />
+			<Component Subtype="Construction" Count="5" />
+			<Component Subtype="PowerCell" Count="1" />
+			<Component Subtype="Motor" Count="8" />
+			<Component Subtype="Superconductor" Count="10" />
+			<Component Subtype="BulletproofGlass" Count="2" />
+			<Component Subtype="Computer" Count="15" />
+			<Component Subtype="SteelPlate" Count="5" />			
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Argus\ARYX_SmallPDOrb_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Argus\ARYX_SmallPDOrb_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Argus\ARYX_SmallPDOrb_BS3.mwm"/>
+			</BuildProgressModels>
+		<BlockPairName>ARYXArgusLaser</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>     		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXSmallBombBay</SubtypeId>
 		</Id>
 		<DisplayName>B2-M Shrike Bomb Bay</DisplayName>
@@ -962,7 +1020,7 @@
       </Id>
       <DisplayName>VL6 Modulus Variable-Laser</DisplayName>
       <Icon>Textures\GUI\Icons\AWEModulusLaser.dds</Icon>	  
-      <Description>Muzzle Velocity: Lightspeed
+      <Description>Muzzle Velocity: c
 	  Effective Range: 2km, damage falling off gradually over distance
 	  Turreted: Yes
 	  Specialty Role: Lowering shields, Disarming opponents
@@ -1024,7 +1082,12 @@
       </Id>
       <DisplayName>MG50 Coaxial ATLAS Gatling gun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FixedAtlas.dds</Icon>
-      <Description>ATLAS Gatling guns are compact rotary cannons designed to tear apart opposing strike craft. A high rate of fire and large magazine allows this weapon to easily intercept incoming threats. [ 1.2KM RANGE - Accepts 40mm ATLAS ammo. (Kinetic)]</Description>
+      <Description>Muzzle Velocity: 1000m/s
+	  Effective Range: 1.2km
+	  Turreted: No
+	  Specialty Role: Light Fighter Kinetic Repeater
+	  Ammo: 40mm ATLAS
+	  </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="3" z="9"/>
@@ -1079,7 +1142,12 @@
       </Id>
       <DisplayName>PL4-S Zarya Pulse Laser</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SmallPulseLaser.dds</Icon>
-      <Description>Pulse Lasers are light, rapid-fire laser weapons designed for combat usage aboard small strike craft. Whilst less efficient against armour, they are much more effective against shields and exposed components. [1.2KM RANGE - ENERGY WEAPON]</Description>
+      <Description>Muzzle Velocity: c
+	  Effective Range: 3.5km
+	  Turreted: No
+	  Specialty Role: Lowering shields at Long range
+	  Ammo: Energy
+	  </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="1" z="3"/>
@@ -1129,11 +1197,11 @@
 		<DisplayName>M-1000 Avalanche Siege Mortar</DisplayName>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_SiegeMortar.dds</Icon>
 		<Description>Muzzle Velocity: 800m/s
-	  	Effective Range: 10km, with 5km assist
+	  	Effective Range: 10km, with 5km AI-Aim assist
 	  	Turreted: Yes, limited-angle gimbal
 	  	Specialty Role: Kinetic siege artillery
 	  	Ammo: 1000mm Mortar shells
-		</Description>	
+		</Description>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="5" y="3" z="8"/>
@@ -1189,10 +1257,10 @@
       </Id>
       <DisplayName>AC54 Chord Autocannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FixedChord.dds</Icon>
-      <Description>Muzzle Velocity: 1500m/s
-	  Effective Range: 4km
+      <Description>Muzzle Velocity: 2000m/s
+	  Effective Range: 5km
 	  Turreted: No
-	  Specialty Role: Balanced Kinetic repeater
+	  Specialty Role: Fighter-to-fighter Kinetic repeater
 	  Ammo: 54mm Autocannon
 	</Description>
       <CubeSize>Small</CubeSize>
@@ -1294,7 +1362,7 @@
 			<SubtypeId>ARYX_ChordAutocannon</SubtypeId>
 		</Id>
 		<DisplayName>AC54 Chord</DisplayName>
-        <Description>Muzzle Velocity: 1500m/s
+        <Description>Muzzle Velocity: 2000m/s
 	  Effective Range: 4km
 	  Turreted: Yes
 	  Specialty Role: Balanced Kinetic repeater
@@ -1372,7 +1440,7 @@
 			<SubtypeId>ARYX_ChordAutocannon_SG</SubtypeId>
 		</Id>
 		<DisplayName>AC54 Chord</DisplayName>
-        <Description>Muzzle Velocity: 1500m/s
+        <Description>Muzzle Velocity: 2000m/s
 	  Effective Range: 4km
 	  Turreted: Yes
 	  Specialty Role: Balanced Kinetic repeater
@@ -1569,8 +1637,8 @@
 			<SubtypeId>ARYXPlasmaPulser</SubtypeId>
 		</Id>	
 		<DisplayName>M5D-4E Helios Plasma Rifle</DisplayName>
-		<Description>Muzzle Velocity: 4000m/s
-	  Effective Range: 10km
+		<Description>Muzzle Velocity: 2000m/s
+	  Effective Range: 10km (Arms after 1.5s)
 	  Turreted: No
 	  Specialty Role: Plasma siege artillery
 	  Ammo: Energy
@@ -1630,7 +1698,12 @@
 		</Id>
 		<DisplayName>M100-V Prometheus Focus Beam Lance</DisplayName>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_FocusBeamLance.dds</Icon>
-		<Description>A heavy drilling laser converted for battle via advanced modification (we upped the voltage). Fires a 1-second T2 equivalent pulse that builds upto a final charge, which delivers a pulse that deals 400% damage. [5KM RANGE - ENERGY WEAPON (Energy)]</Description>	
+		<Description>Muzzle Velocity: c
+		Effective Range: 7km
+		Turreted: No
+		Specialty Role: Lowering shields at Long range
+		Ammo: Energy
+		</Description>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="1" y="1" z="6"/>
@@ -1690,7 +1763,7 @@
 	  Turreted: No
 	  Specialty Role: Long range sniping
 	  Ammo: 1200mm Ferrous Slug
-		</Description>	
+		</Description>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="3" y="2" z="9"/>
@@ -1805,11 +1878,12 @@
 			<SubtypeId>ARYXHeavyCoilgun</SubtypeId>
 		</Id>
 		<DisplayName>E0-F Predator-850 Coilgun</DisplayName>
-		<Description>The Predator Coilgun is a massive sniper weapon that delivers a massive punch at relativistic velocity, though the rounds lose damage over range. [10KM TRAVEL, 6KM FALLOFF - Accepts 850mm Ferrous. (Kinetic)]
-		Effects: Fires a hitscan kinetic slug that explodes on impact and penetrates 8 blocks of heavy armour.
-		Size: 3x2x21
-		Role: Heavy Sniper
-		</Description>	
+		<Description>Muzzle Velocity: c
+	  	Effective Range: 10km
+	  	Turreted: No
+	  	Specialty Role: Heavy Kinetic Sniper, weak to armor
+	  	Ammo: 850mm Ferrous
+		</Description>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_HeavyCoilgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -1873,7 +1947,12 @@
       </Id>
       <DisplayName>KR115 Athena Picket Railgun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_PicketRailgun.dds</Icon>
-      <Description>The Athena is a medium-weight long range point defence weapon, utilising a revolver drum to fire three shots in rapid succession (Lawsuit from MA pending). Placing multiple in close proximity will cause interference with targeting.[5KM RANGE - Accepts 115mm Ferrous. (Kinetic)]</Description>
+      <Description>Muzzle Velocity: 5000m/s
+	  Effective Range: 10km, with 5km AI-Aiming (Falloff from 5km)
+	  Turreted: Yes, 3-round-burst
+	  Specialty Role: Long range sniping
+	  Ammo: 115mm Ferrous
+	  </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="2" z="3"/>
@@ -1920,7 +1999,12 @@
 			<SubtypeId>ARYXLightRailgun</SubtypeId>
 		</Id>
 		<DisplayName>KR115 Antaeus Railgun</DisplayName>
-		<Description>The Antaeus is a lightweight railgun designed to facilitate ship-to-ship combat of fighters and bombardment of larger vessels. [10KM TRAVEL - Accepts 115mm Ferrous. (Kinetic)]</Description>	
+		<Description>Muzzle Velocity: 5000m/s
+		Effective Range: 10km (Falloff from 5km)
+		Turreted: No
+		Specialty Role: Long range sniping
+		Ammo: 115mm Ferrous
+		</Description>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_LightRailgun.dds</Icon>
 		<CubeSize>Small</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2075,7 +2159,7 @@
       <DisplayName>T600A3 Magnetar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMagnetarCannon.dds</Icon>
       <Description>Muzzle Velocity: 1800m/s
-	  Effective Range: 5km
+	  Effective Range: 5km (Arms after .83s)
 	  Turreted: Yes, triple-barreled
 	  Specialty Role: Lowering shields, Moderate damage to internal components
 	  Ammo: Energy
@@ -2137,7 +2221,7 @@
       </Id>
       <DisplayName>Aurora Combat Laser</DisplayName>
       <Icon>Textures\GUI\Icons\AryxLaserGatling.dds</Icon>		  
-      <Description>Muzzle Velocity: Lightspeed
+      <Description>Muzzle Velocity: c
 	  Effective Range: 2km
 	  Turreted: Yes
 	  Specialty Role: Anti-Infantry, Balanced laser repeater
@@ -2202,7 +2286,7 @@
       <DisplayName>T400A2 Quasar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxQuasarCannon.dds</Icon>
       <Description>Muzzle Velocity: 1800m/s
-	  Effective Range: 5km
+	  Effective Range: 5km (Arms after .83s)
 	  Turreted: Yes, double-barreled
 	  Specialty Role: Lowering shields, Moderate damage to internal components
 	  Ammo: Energy
@@ -2265,7 +2349,7 @@
       <DisplayName>T200A1 Pulsar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxPulsarCannon.dds</Icon>
       <Description>Muzzle Velocity: 1800m/s
-	  Effective Range: 5km
+	  Effective Range: 5km (Arms after .83s)
 	  Turreted: Yes
 	  Specialty Role: Lowering shields, Moderate damage to internal components
 	  Ammo: Energy
@@ -2385,7 +2469,7 @@
       </Id>
       <DisplayName>AL35-R Spartan Plasma Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_MiniSpartan.dds</Icon>	  
-      <Description>Muzzle Velocity: 2200m/s
+      <Description>Muzzle Velocity: 1800m/s
 	  Effective Range: 3km
 	  Turreted: No
 	  Specialty Role: Lowering heavy shields and Light armor

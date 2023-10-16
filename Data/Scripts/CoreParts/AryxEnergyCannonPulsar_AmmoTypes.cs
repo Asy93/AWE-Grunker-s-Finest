@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Pulsar Energy Bolt", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(1000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(10 * AWEGlobalDamageScalar),
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -48,8 +48,8 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // 0 = disabled
-                CountBlocks = false, // counts gridBlocks and not just entities hit
+                MaxObjectsHit = 1, // 0 = disabled
+                CountBlocks = true, // counts gridBlocks and not just entities hit
             },
             Fragment = new FragmentDef
             {
@@ -89,18 +89,18 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = -1f,
+                    Small = 0.2f,
                 },
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 2f,
+                    NonArmor = 1.6f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 14f,
+                    Modifier = 12f,
                     Type = Default, // Default, Heal
                     BypassModifier = -2f,
                 },
@@ -135,11 +135,11 @@ namespace Scripts
                 ByBlockHit = new ByBlockHitDef
                 {
                     Enable = true,
-                    Radius = 2f, // Meters
-                    Damage = (float)(2000 * AWEGlobalDamageScalar),
-                    Depth = 1f, // Meters
+                    Radius = 2.5f, // Meters
+                    Damage = (float)(1700 * AWEGlobalDamageScalar),
+                    Depth = 1.5f, // Meters
                     MaxAbsorb = 0f,
-                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -150,8 +150,8 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 2.65f, // Meters
-                    Damage = (float)(4700 * AWEGlobalDamageScalar),
+                    Radius = 3f, // Meters
+                    Damage = (float)(3100 * AWEGlobalDamageScalar),
                     Depth = 1.5f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius

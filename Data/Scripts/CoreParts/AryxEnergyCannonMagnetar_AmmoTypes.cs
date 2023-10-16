@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Quasar Energy Bolt", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.149995f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(2400 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(10 * AWEGlobalDamageScalar),
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -48,8 +48,8 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // 0 = disabled
-                CountBlocks = false, // counts gridBlocks and not just entities hit
+                MaxObjectsHit = 1, // 0 = disabled
+                CountBlocks = true, // counts gridBlocks and not just entities hit
             },
             Fragment = new FragmentDef
             {
@@ -89,7 +89,7 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = -1f,
+                    Small = 0.2f,
                 },
                 Armor = new ArmorDef
                 {
@@ -100,7 +100,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 14f,
+                    Modifier = 12f,
                     Type = Default, // Default, Heal
                     BypassModifier = -2f,
                 },
@@ -135,11 +135,11 @@ namespace Scripts
                 ByBlockHit = new ByBlockHitDef
                 {
                     Enable = true,
-                    Radius = 3f, // Meters
-                    Damage = (float)(12000 * AWEGlobalDamageScalar),
-                    Depth = 1f, // Meters
+                    Radius = 5f, // Meters
+                    Damage = (float)(6900 * AWEGlobalDamageScalar),
+                    Depth = 3f, // Meters
                     MaxAbsorb = 0f,
-                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -151,8 +151,8 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 7f, // Meters
-                    Damage = (float)(12000 * AWEGlobalDamageScalar),
-                    Depth = 2f,
+                    Damage = (float)(10000 * AWEGlobalDamageScalar),
+                    Depth = 4f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -167,7 +167,7 @@ namespace Scripts
                     ParticleScale = 1,
                     CustomParticle = "AWE_Shockcannon_Explosion", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "ArcWepShipARYX_ShockCannonHit", // SubtypeID from your Audio SBC, not a filename
-                    Shape = Diamond, // Round or Diamond
+                    Shape = Round, // Round or Diamond
                 }, 
             },
             Ewar = new EwarDef

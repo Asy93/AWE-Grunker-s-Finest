@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Argus Laser",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(75f * AWEGlobalDamageScalar),
+            BaseDamage = (float)(1000f * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -54,9 +54,9 @@ namespace Scripts
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 8f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                HealthHitModifier = 5f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 1,
-                Characters = 33f,
+                Characters = 5f,
                 FallOff = new FallOffDef
                 {
                     Distance = 1000f, // Distance at which max damage begins falling off.
@@ -65,7 +65,7 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = -1f,
+                    Small = 2f,
                 },
                 Armor = new ArmorDef
                 {
@@ -76,7 +76,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 5, //Light laser type.
+                    Modifier = 8f, //Light laser type.
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -104,7 +104,7 @@ namespace Scripts
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
                 DesiredSpeed = 0,
-                MaxTrajectory = 500f,
+                MaxTrajectory = 660f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
