@@ -99,7 +99,7 @@ namespace Scripts
                     Armor = 16,
                     Light = -1,
                     Heavy = -1,
-                    NonArmor = -1,
+                    NonArmor = 8,
                 },
                 Shields = new ShieldDef
                 {

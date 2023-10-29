@@ -116,7 +116,7 @@ namespace Scripts
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 1650, // 29 second reload time on the avalanche.
+                    ReloadTime = 1000, // 29 second reload time on the avalanche.
                     DelayUntilFire = 15, 
                     HeatPerShot = 0, //heat generated per shot
                     MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)
