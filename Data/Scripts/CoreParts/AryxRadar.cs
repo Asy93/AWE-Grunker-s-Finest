@@ -23,12 +23,14 @@ namespace Scripts
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
+                        DurabilityMod = 0.25f,
                     },
                     new MountPointDef {
                         SubtypeId = "ARYXSmallRadar",
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
+                        DurabilityMod = 0.25f,
                     },
                 },
                 Muzzles = new[]{

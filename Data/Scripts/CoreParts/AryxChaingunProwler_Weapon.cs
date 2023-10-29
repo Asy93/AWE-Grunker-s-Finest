@@ -25,6 +25,7 @@ namespace Scripts
                         MuzzlePartId = "GatlingBarrel",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
+                        DurabilityMod = 0.25f,
                     },
                     
                 },
