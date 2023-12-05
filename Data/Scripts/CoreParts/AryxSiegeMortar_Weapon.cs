@@ -25,7 +25,6 @@ namespace Scripts
                         MuzzlePartId = "MortarElevation",
                         AzimuthPartId = "MortarAzimuth",
                         ElevationPartId = "MortarElevation",
-                        DurabilityMod = 0.25f,
                     },
                 },
                 Muzzles = new[] {
@@ -47,7 +46,7 @@ namespace Scripts
                 LockedSmartOnly = false, // Only fire at smart projectiles that are locked on to parent grid.
                 MinimumDiameter = 0, // 0 = unlimited, Minimum radius of threat to engage.
                 MaximumDiameter = 0, // 0 = unlimited, Maximum radius of threat to engage.
-                MaxTargetDistance = 5000, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
+                MaxTargetDistance = 10000, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
                 MinTargetDistance = 0, // 0 = unlimited, Min target distance that targets will be automatically shot at.
                 TopTargets = 16, // 0 = unlimited, max number of top targets to randomize between.
                 TopBlocks = 16, // 0 = unlimited, max number of blocks to randomize between
@@ -56,7 +55,7 @@ namespace Scripts
             HardPoint = new HardPointDef
             {
                 PartName = "Avalanche Siege Cannon", // name of weapon in terminal
-                DeviateShotAngle = 0.05f,
+                DeviateShotAngle = 0f,
                 AimingTolerance = 0.2f, // 0 - 180 firing angle
                 AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -116,7 +115,7 @@ namespace Scripts
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 1000, // 29 second reload time on the avalanche.
+                    ReloadTime = 240, // 29 second reload time on the avalanche.
                     DelayUntilFire = 15, 
                     HeatPerShot = 0, //heat generated per shot
                     MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)

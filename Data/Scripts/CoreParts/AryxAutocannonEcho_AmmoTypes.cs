@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "85mm HE ECHO",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 100,
+            BaseDamage = 1000,
             Mass = 40f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 7000,
@@ -51,7 +51,7 @@ namespace Scripts
             },
             Fragment = new FragmentDef
             {
-                AmmoRound = "HE Echo Frags",
+                AmmoRound = "",
                 Fragments = 20,
                 Degrees = 90,
                 Reverse = false,
@@ -85,14 +85,14 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = 2f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 2f,
+                    NonArmor = 3f,
                 },
                 Shields = new ShieldDef
                 {
@@ -234,8 +234,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 3000,
-                MaxTrajectory = 7000,
+                DesiredSpeed = 4000,
+                MaxTrajectory = 10000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed

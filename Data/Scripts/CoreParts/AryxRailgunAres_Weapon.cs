@@ -24,7 +24,6 @@ namespace Scripts
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-                        DurabilityMod = 0.25f,
                     },
 
                 },
@@ -83,7 +82,7 @@ namespace Scripts
                     MinElevation = 0,
                     MaxElevation = 0,
                     FixedOffset = false,
-                    InventorySize = 6f,
+                    InventorySize = 60f,
                     Offset = Vector(x: 0, y: 0, z: 0),
                     Type = BlockWeapon, // BlockWeapon, HandWeapon, Phantom 
                     CriticalReaction = new CriticalDef
@@ -106,32 +105,36 @@ namespace Scripts
                     CheckForAnyWeapon = false, // if true, the check will fail if ANY gun is present, false only looks for this subtype
                 },
                 Loading = new LoadingDef {
-                    RateOfFire = 30,
-                    BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
-                    BarrelsPerShot = 1,
-                    TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
-                    SkipBarrels = 0,
-                    ReloadTime = 1700, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    DelayUntilFire = 15, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 0, //heat generated per shot
-                    MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)
-                    Cooldown = .95f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 9000, //amount of heat lost per second
-                    DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 0,
-                    DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    FireFull = false,
-                    GiveUpAfter = false,
+                    RateOfFire = 600, // Set this to 3600 for beam weapons.
+                    BarrelsPerShot = 1, // How many muzzles will fire a projectile per fire event.
+                    TrajectilesPerBarrel = 1, // Number of projectiles per muzzle per fire event.
+                    SkipBarrels = 0, // Number of muzzles to skip after each fire event.
+                    ReloadTime = 1800, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    MagsToLoad = 10, // Number of physical magazines to consume on reload.
+                    DelayUntilFire = 30, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    HeatPerShot = 0, // Heat generated per shot.
+                    MaxHeat = 1000, // Max heat before weapon enters cooldown (70% of max heat).
+                    Cooldown = .95f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
+                    HeatSinkRate = 0, // Amount of heat lost per second.
+                    DegradeRof = false, // Progressively lower rate of fire when over 80% heat threshold (80% of max heat).
+                    ShotsInBurst = 0, // Use this if you don't want the weapon to fire an entire physical magazine in one go. Should not be more than your magazine capacity.
+                    DelayAfterBurst = 0, // How long to spend "reloading" after each burst. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    FireFull = false, // Whether the weapon should fire the full magazine (or the full burst instead if ShotsInBurst > 0), even if the target is lost or the player stops firing prematurely.
+                    GiveUpAfter = true, // Whether the weapon should drop its current target and reacquire a new target after finishing its magazine or burst.
+                    BarrelSpinRate = 0, // Visual only, 0 disables and uses RateOfFire.
+                    DeterministicSpin = false, // Spin barrel position will always be relative to initial / starting positions (spin will not be as smooth).
+                    SpinFree = true, // Spin barrel while not firing.
+                    StayCharged = false, // Will start recharging whenever power cap is not full.
                 },
                 Audio = new HardPointAudioDef {
                     PreFiringSound = "ArcWepShipARYXGauss_Windup",
                     FiringSound = "ArcWepShipARYXGauss_Fire", // WepShipGatlingShot
-                    FiringSoundPerShot = true,
+                    FiringSoundPerShot = false,
                     ReloadSound = "",
                     NoAmmoSound = "",
                     HardPointRotationSound = "",
                     BarrelRotationSound = "",
-                    FireSoundEndDelay = 180, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
+                    FireSoundEndDelay = 480, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
                 },
                 Graphics = new HardPointParticleDef {
                     Effect1 = new ParticleDef

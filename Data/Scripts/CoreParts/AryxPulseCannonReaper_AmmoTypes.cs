@@ -31,9 +31,9 @@ namespace Scripts
             AmmoMagazine = "AryxReaperPulseCell",
             AmmoRound = "AryxReaperAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 10f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(5000 * AWEGlobalDamageScalar),
-            Mass = 200, // in kilograms
+            EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            BaseDamage = (float)(75000 * AWEGlobalDamageScalar),
+            Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 30f,
             DecayPerShot = 0,
@@ -53,11 +53,11 @@ namespace Scripts
             {
                 AmmoRound = "Reaper Antimatter Bolt", // AmmoRound field of the ammo to spawn.
                 Fragments = 4, // Number of projectiles to spawn.
-                Degrees = 360, // Cone in which to randomize direction of spawned projectiles.
+                Degrees = 90, // Cone in which to randomize direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
                 DropVelocity = true, // fragments will not inherit velocity from parent.
                 Offset = 0f, // Offsets the fragment spawn by this amount, in meters (positive forward, negative for backwards).
-                Radial = 0f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
+                Radial = 30f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
                 MaxChildren = 8,
                 IgnoreArming = false, //Whether shrapnel should spawn regardless of whether the projectile is armed or not.
             },
@@ -84,8 +84,8 @@ namespace Scripts
                               // For the following modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01f = 1% damage, 2 = 200% damage.
             FallOff = new FallOffDef
             {
-                Distance = 5000f, // Distance at which damage begins falling off.
-                MinMultipler = 0.1f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
+                Distance = 200f, // Distance at which damage begins falling off.
+                MinMultipler = 0.001f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
             },
             Grids = new GridSizeDef
             {
@@ -96,21 +96,21 @@ namespace Scripts
             {
                 Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
                 Light = -1f, // Multiplier for damage against light armor.
-                Heavy = 1.5f, // Multiplier for damage against heavy armor.
-                NonArmor = 2, // Multiplier for damage against every else.
+                Heavy = -1f, // Multiplier for damage against heavy armor.
+                NonArmor = -1f, // Multiplier for damage against every else.
             },
             Shields = new ShieldDef
             {
-                Modifier = 5f, // Multiplier for damage against shields.
+                Modifier = 10f, // Multiplier for damage against shields.
                 Type = Default, // Damage vs healing against shields; Default, Heal
                 BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
             },
             DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
             {
-                Base = Kinetic,
+                Base = Energy,
                 AreaEffect = Energy,
                 Detonation = Energy,
-                Shield = Kinetic, // Damage against shields is currently all of one type per projectile.
+                Shield = Energy, // Damage against shields is currently all of one type per projectile.
             },
             Custom = new CustomScalesDef
             {
@@ -151,9 +151,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 5, // Meters
-                    Damage = 25000,
-                    Depth = 1f,
+                    Radius = 4, // Meters
+                    Damage = 7500,
+                    Depth = 4f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -239,8 +239,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 2150,
-                MaxTrajectory = 10000,
+                DesiredSpeed = 5000,
+                MaxTrajectory = 1300,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -421,10 +421,10 @@ namespace Scripts
             AmmoRound = "Reaper Antimatter Bolt",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(600 * AWEGlobalDamageScalar),
-            Mass = 500, // in kilograms
+            BaseDamage = (float)(100000 * AWEGlobalDamageScalar),
+            Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 200f,
+            BackKickForce = 0f,
             DecayPerShot = 0,
             HardPointUsable = false, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
@@ -441,7 +441,7 @@ namespace Scripts
             Fragment = new FragmentDef
             {
                 AmmoRound = "Reaper Antimatter Bolt", // AmmoRound field of the ammo to spawn.
-                Fragments = 2, // Number of projectiles to spawn.
+                Fragments = 0, // Number of projectiles to spawn.
                 Degrees = 360, // Cone in which to randomize direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
                 DropVelocity = true, // fragments will not inherit velocity from parent.
@@ -473,26 +473,26 @@ namespace Scripts
                 Characters = 20,
                 FallOff = new FallOffDef
                 {
-                    Distance = 0, // Distance at which max damage begins falling off.
-                    MinMultipler = 1, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 2, // Distance at which max damage begins falling off.
+                    MinMultipler = 0.05f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = 1f,
-                    Small = 1f,
+                    Large = -1f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 1f,
-                    Light = 1f,
-                    Heavy = 2.5f,
-                    NonArmor = 2,
+                    Armor = -1f,
+                    Light = -1f,
+                    Heavy = 1.5f,
+                    NonArmor = 6,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = -1,
+                    Modifier = 1f,
                     Type = Default,
-                    BypassModifier = -2f,
+                    BypassModifier = -1f,
                 },
                 DamageType = new DamageTypes
                 {
@@ -539,7 +539,7 @@ namespace Scripts
                 },
                 EndOfLife = new EndOfLifeDef
                 {
-                    Enable = true,
+                    Enable = false,
                     Radius = 1f, // Meters
                     Damage = 1,
                     Depth = 1f,
@@ -628,8 +628,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 20, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 40,
-                MaxTrajectory = 80,
+                DesiredSpeed = 900,
+                MaxTrajectory = 30,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 30), // subtracts value from DesiredSpeed
