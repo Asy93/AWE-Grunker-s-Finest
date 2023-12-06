@@ -87,7 +87,7 @@ namespace Scripts {
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -5,
-                    MaxElevation = 55,
+                    MaxElevation = 90,
                     FixedOffset = false,
                     InventorySize = 0f,
                     Offset = Vector(x: 0, y: 0, z: 0),

@@ -47,7 +47,7 @@ namespace Scripts
                 LockedSmartOnly = false, // Only fire at smart projectiles that are locked on to parent grid.
                 MinimumDiameter = 0, // 0 = unlimited, Minimum radius of threat to engage.
                 MaximumDiameter = 0, // 0 = unlimited, Maximum radius of threat to engage.
-                MaxTargetDistance = 5000, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
+                MaxTargetDistance = 1000, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
                 MinTargetDistance = 0, // 0 = unlimited, Min target distance that targets will be automatically shot at.
                 TopTargets = 4, // 0 = unlimited, max number of top targets to randomize between.
                 TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
@@ -56,8 +56,8 @@ namespace Scripts
             HardPoint = new HardPointDef
             {
                 PartName = "Reaper Pulse Cannon", // name of weapon in terminal
-                DeviateShotAngle = 0.45f,
-                AimingTolerance = 1f, // 0 - 180 firing angle
+                DeviateShotAngle = 0f,
+                AimingTolerance = 0.1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
@@ -80,8 +80,8 @@ namespace Scripts
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.0025f,
-                    ElevateRate = 0.0025f,
+                    RotateRate = 0.033f,
+                    ElevateRate = 0.033f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -10,
@@ -101,17 +101,17 @@ namespace Scripts
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 18,
+                    RateOfFire = 40,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 1800, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 1000, //heat generated per shot
-                    MaxHeat = 6000, //max heat before weapon enters cooldown (70% of max heat)
+                    ReloadTime = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    DelayUntilFire = 15, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    HeatPerShot = 900, //heat generated per shot
+                    MaxHeat = 12900, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = 0f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 150, //amount of heat lost per second
+                    HeatSinkRate = 100, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 0,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).

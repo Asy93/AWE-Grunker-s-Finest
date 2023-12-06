@@ -56,7 +56,7 @@ namespace Scripts {
             HardPoint = new HardPointDef
             {
                 PartName = "Pulsar Shock Cannon", // name of weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons)
-                DeviateShotAngle = 0.05f,
+                DeviateShotAngle = 0.286f,
                 AimingTolerance = 0.1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -82,8 +82,8 @@ namespace Scripts {
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.005f,
-                    ElevateRate = 0.005f,
+                    RotateRate = 0.015f,
+                    ElevateRate = 0.015f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -5,

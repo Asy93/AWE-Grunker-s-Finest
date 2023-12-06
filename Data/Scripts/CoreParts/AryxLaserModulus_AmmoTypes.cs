@@ -97,7 +97,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 8f, //Heavy laser type.
+                    Modifier = 10f, //Heavy laser type.
                     Type = Default,
                     BypassModifier = -2f,
                 },

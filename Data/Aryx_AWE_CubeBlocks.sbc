@@ -654,6 +654,126 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>	
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>ARYXHydraTurret</SubtypeId>
+      </Id>
+      <DisplayName>RL6 Hydra Rocket Battery</DisplayName>
+      <Icon>Textures\GUI\Icons\AryxHydraTurret.dds</Icon>	  
+      <Description>FIXTHIS
+	  The Hydra is an armoured rocket pod that fires rapid volleys of 6 guided rockets, with high tracking and a long reload, designed to overwhelm enemy PD and destroy small grids. [5KM MAX RANGE - Accepts Flechette Rockets]
+	  Effects: Fires six high-velocity guided rockets best suited for anti-fighter and anti-armour roles.
+	  Size: 3x3x3
+	  Role: Attrition
+	  Hardpoint: Full-traverse Turret
+	  Type: Guided Rocket
+	  </Description>
+ 		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="3" y="3" z="3"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\Hydra\LG_ARYXHydra_Base.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="225" />
+			<Component Subtype="Construction" Count="120" />
+			<Component Subtype="MetalGrid" Count="60" />
+			<Component Subtype="LargeTube" Count="18" />
+			<Component Subtype="Motor" Count="80" />
+			<Component Subtype="Detector" Count="40" />			
+			<Component Subtype="Computer" Count="200" />
+			<Component Subtype="MilitaryPlateAWE" Count="135" />		
+		</Components>
+		<CriticalComponent Index="0" Subtype="Computer"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+				<MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
+		</MountPoints>
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="Models\Hydra\LG_ARYXHydra_Base_BS1.mwm"/>
+			<Model BuildPercentUpperBound="0.66" File="Models\Hydra\LG_ARYXHydra_Base_BS2.mwm"/>
+			<Model BuildPercentUpperBound="1.0" File="Models\Hydra\LG_ARYXHydra_Base_BS3.mwm"/>
+		</BuildProgressModels>
+		<BlockPairName>LG_ARYXHydra_Base</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>
+      <!--WeaponDefinitionId Subtype="AryxBurstCannonWepDef" /-->
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.24</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXHeavyFlakTurret</SubtypeId>
+      </Id>
+      <DisplayName>F4-GL Thrasher Heavy Flak Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_HeavyFlak.dds</Icon>	  
+      <Description>FIXTHIS
+	  The Thrasher is a heavy flak cannon designed to punch through fighter formations and clear the skies of strike craft at long range, using a hailstorm of steel shards. [2KM RANGE - Accepts 135mm Thrasher Flak Shells (Kinetic).]
+	  Effects: Fires bursts of heavy flak shells at incoming threats, annihilating lesser-armoured targets.
+	  Size: 3x3x3
+	  Role: Heavy Defence
+	  Hardpoint: Full-traverse Turret
+	  Type: Flak Cannon
+	  </Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+	  <Model>Models\Flak\ARYX_LargeFlakCannon.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="300" />
+        <Component Subtype="Construction" Count="200" />
+        <Component Subtype="MetalGrid" Count="150" />
+        <Component Subtype="LargeTube" Count="80" />	
+        <Component Subtype="Motor" Count="40" />
+        <Component Subtype="Computer" Count="150" />
+        <Component Subtype="MilitaryPlateAWE" Count="250" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+				<MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
+			</MountPoints>
+
+      <BlockPairName>AryxHeavyFlak</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxHeavyFlakTurretWepDef" />
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.144</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
 
 	<!-- <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -781,6 +901,72 @@
       </TargetingGroups>      
     </Definition> -->
 	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXPhaseRepeaterCannon</SubtypeId>
+      </Id>
+      <DisplayName>XM-500 Medusa Phase Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_Medusa.dds</Icon>	  
+      <Description>FIXTHIS
+	  The Medusa is a powerful energy weapon that fires phasic energy bolts at a good rate of fire. These pass through shields to an extent and deal explosive impact damage. [2KM RANGE - HEAVY ENERGY WEAPON]
+	  Effects: Fires explosive energy bolts at 30rpm.
+	  Reload time: 0.5 seconds.
+	  Size: 5x5x4
+	  Power Draw: 160MW  
+	  </Description>
+ 		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="5" y="4" z="5"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Medusa\ARYX_PhaseCannonBase.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="1250" />
+			<Component Subtype="Construction" Count="350" />
+			<Component Subtype="PowerCell" Count="250" />
+			<Component Subtype="SmallTube" Count="500" />
+			<Component Subtype="Motor" Count="250" />
+			<Component Subtype="GravityGenerator" Count="150" />
+			<Component Subtype="SuperchargerAWE" Count="5" />			
+			<Component Subtype="Superconductor" Count="200" />
+			<Component Subtype="Computer" Count="250" />
+			<Component Subtype="Construction" Count="200" />		
+			<Component Subtype="MilitaryPlateAWE" Count="550" />
+		</Components>
+		<CriticalComponent Index="0" Subtype="Computer"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Medusa\ARYX_PhaseCannonBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Medusa\ARYX_PhaseCannonBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Medusa\ARYX_PhaseCannonBase_BS3.mwm"/>
+			</BuildProgressModels>		
+		<BlockPairName>ARYXPhaseRepeaterCannon</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>90</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxPulseLaserWepDef"/>
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.48</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>300</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
+
+	
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -890,6 +1076,68 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>125</PCU>     		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXJuryCannon</SubtypeId>
+      </Id>
+      <DisplayName>M120 Whirlwind Light Cannon</DisplayName>
+	  <Description>FIXTHIS
+	  The Whirlwind is a compact cannon turret capable of dealing powerful blast damage to targets from medium range. Excels against light armour and smaller vessels. [800m/s muzzle velocity, 3.5km range - Accepts 120mm Heavy Shells (Kinetic).]
+	  Effects: Fires medium-velocity shells at modest range which explode on impact and deal fragmentation damage.
+	  Size: 1x2x1
+	  Role: Assault
+	  Hardpoint: Full-traverse Turret
+	  Type: Strike Cannon
+	  </Description>
+	  <Icon>Textures\GUI\Icons\AryxJurycannon.dds</Icon>  
+	  <CubeSize>Large</CubeSize>
+	  <BlockTopology>TriangleMesh</BlockTopology>
+	  <Size x="1" y="2" z="1"/>
+	  <ModelOffset x="0" y="0" z="0"/>
+	  <Model>Models\Jury\LG_ARYXJury_Base.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="150" />
+        <Component Subtype="Construction" Count="35" />
+        <Component Subtype="MetalGrid" Count="20" />
+        <Component Subtype="LargeTube" Count="8" />
+        <Component Subtype="SmallTube" Count="12" />	
+        <Component Subtype="Motor" Count="30" />
+        <Component Subtype="Computer" Count="60" />
+        <Component Subtype="SteelPlate" Count="50" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+				<MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Jury\LG_ARYXJury_Base_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Jury\LG_ARYXJury_Base_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Jury\LG_ARYXJury_Base_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>LG_ARYXJury_Base</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxBurstCannonWepDef" />
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.18</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>200</PCU>      
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
@@ -1012,6 +1260,124 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>		
+
+
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXWarriorGatling</SubtypeId>
+      </Id>
+      <DisplayName>LS5-MG100 Warrior Heavy Gatling</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_Warrior.dds</Icon>	  
+      <Description>FIXTHIS
+	  The Warrior is a large armoured casemate gatling turret designed for broadside combat and base defence, firing 100mm shells of varying payload at a respectable rate of fire. Whilst limited in traversal, this powerful weapon can break through even the strongest armour. [ 1.5K RANGE - ACCEPTS 100MM WARRIOR (Kinetic)]
+	  Effects: Fires heavy ordinance at medium range at a high rate of fire. Highly damaging to armour.
+	  Size: 4x3x6
+	  Role: Assault
+	  Hardpoint: Limited-angle turret.
+	  Type: Rotary Cannon
+	  </Description>
+	  <CubeSize>Large</CubeSize>
+	  <BlockTopology>TriangleMesh</BlockTopology>
+	  <Size x="4" y="3" z="6"/>
+	  <ModelOffset x="0" y="0" z="0"/>
+	  <Model>Models\AWE_Warrior\LG_ARYX_WarriorGatling.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1200" />
+        <Component Subtype="Construction" Count="500" />
+        <Component Subtype="LargeTube" Count="200" />
+        <Component Subtype="Motor" Count="100" />			
+        <Component Subtype="Computer" Count="120" />
+        <Component Subtype="MetalGrid" Count="300" />		
+        <Component Subtype="MilitaryPlateAWE" Count="300" />
+		
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="4.00" EndY="3.00"/>
+				<MountPoint Side="Left" StartX="5.00" StartY="0.00" EndX="6.00" EndY="3.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="3.00"/>
+				<MountPoint Side="Top" StartX="1.00" StartY="1.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="4.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="1.00" StartY="4.00" EndX="3.00" EndY="5.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="5.00" EndX="4.00" EndY="6.00"/>
+			</MountPoints>
+			<BlockPairName>AryxWarriorGatling</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>90</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture> 
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxWarriorWepDef" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1.14</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>300</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXWarriorGatlingGun</SubtypeId>
+		</Id>
+		<DisplayName>LS5-MG100 Warrior Heavy Gatling Gun</DisplayName>
+		<Icon>Textures\GUI\Icons\Aryx_AWE_WarriorGun.dds</Icon>
+		<Description>FIXTHIS
+		The Warrior is a devastatingly powerful heavy gatling gun, throwing 100mm slugs at high velocity at extreme rates of fire. [ 5K TRAVEL - ACCEPTS 100MM WARRIOR (Kinetic)]
+	  Effects: Fires heavy ordinance at medium range at a high rate of fire. Highly damaging to armour.
+	  Size: 1x2x5
+	  Role: Assault
+	  Hardpoint: Static Weapon
+	  Type: Rotary Cannon
+		</Description>	
+		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="2" z="5"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Warrior\ARYXWarriorGun.mwm</Model>
+		<Components>
+        <Component Subtype="SteelPlate" Count="400" />
+        <Component Subtype="Construction" Count="350" />
+        <Component Subtype="LargeTube" Count="150" />
+        <Component Subtype="Motor" Count="60" />			
+        <Component Subtype="Computer" Count="60" />
+        <Component Subtype="MetalGrid" Count="150" />		
+        <Component Subtype="MilitaryPlateAWE" Count="100" />
+		
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="3.00" StartY="1.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Warrior\ARYXWarriorGun_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Warrior\ARYXWarriorGun_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Warrior\ARYXWarriorGun_BS3.mwm"/>
+			</BuildProgressModels>		
+			<BlockPairName>AWEWarriorGun</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>50</BuildTimeSeconds>
+		<InventoryMaxVolume>1</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>300</PCU>   		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
 
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -1306,7 +1672,7 @@
       </TargetingGroups>      
     </Definition>
 
-	<!-- <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXFlakTurret</SubtypeId>
@@ -1354,7 +1720,7 @@
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
-    </Definition> -->
+    </Definition>
 
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
 		<Id>
@@ -1585,7 +1951,8 @@
       <DisplayName>M8G-LS4 Longsword Missile Battery</DisplayName>
 	  <Public>false</Public>	  
       <Icon>Textures\GUI\Icons\AryxMissileBattery.dds</Icon>	  
-      <Description>The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [1KM MIN RANGE, 7.5KM MAX RANGE - Accepts Sabre Missiles]</Description>
+      <Description>FIXTHIS
+The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [1KM MIN RANGE, 7.5KM MAX RANGE - Accepts Sabre Missiles]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="5" y="5" z="5"/>
@@ -1943,6 +2310,62 @@
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXRailgunTurret</SubtypeId>
+      </Id>
+      <DisplayName>KR250 Apollo Railgun Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\AWERailgunTurret.dds</Icon>
+      <Description>FIXTHIS
+	  A turreted version of the Artemis railgun, sporting an armoured base and automatic aiming system. Whilst limited in elevation, the Apollo has full 360 traversal, allowing ship captains to focus on other threats. [5KM RANGE - Accepts 250mm Ferrous. (Kinetic)]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="5"/>
+      <ModelOffset x="0" y="0" z="0" />
+	  <Model>Models\AWERailTurret\LG_ARYXRailgunTurret_Base.mwm</Model>
+      <Components>
+			<Component Subtype="SteelPlate" Count="400" />
+			<Component Subtype="Construction" Count="270" />
+			<Component Subtype="MetalGrid" Count="120" />
+			<Component Subtype="PowerCell" Count="40" />	
+			<Component Subtype="Superconductor" Count="80" />				
+			<Component Subtype="SmallTube" Count="250" />
+			<Component Subtype="Motor" Count="400" />
+			<Component Subtype="ElectromagnetAWE" Count ="60" />			
+			<Component Subtype="Computer" Count="300" />
+			<Component Subtype="Construction" Count="220" />
+			<Component Subtype="SteelPlate" Count="600" />		
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+	  <MountPoints>
+		<MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="2.0" EndY="4.0"/>
+		<MountPoint Side="Bottom" StartX="2.0" StartY="1.6" EndX="2.5" EndY="4.0"/>
+		<MountPoint Side="Bottom" StartX="0.5" StartY="1.6" EndX="1.0" EndY="4.0"/>
+	  </MountPoints>
+	  <BuildProgressModels>
+		  <Model BuildPercentUpperBound="0.33" File="Models\AWERailTurret\LG_ARYXRailgunTurret_Base_BS1.mwm"/>
+		  <Model BuildPercentUpperBound="0.67" File="Models\AWERailTurret\LG_ARYXRailgunTurret_Base_BS2.mwm"/>
+		  <Model BuildPercentUpperBound="1.00" File="Models\AWERailTurret\LG_ARYXRailgunTurret_Base_BS3.mwm"/>
+	  </BuildProgressModels>
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <BlockPairName>AryxRailgunTurret</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>120</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxFlakTurretWepDef" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+	  <InventoryMaxVolume>1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>1000</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXPicketRailgun</SubtypeId>
       </Id>
       <DisplayName>KR115 Athena Picket Railgun Turret</DisplayName>
@@ -2053,6 +2476,229 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>	
+	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXReaperPulseCannon</SubtypeId>
+      </Id>
+      <DisplayName>VLX-5000 Reaper Pulse Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\AWEReaperPulseCannon.dds</Icon>
+	  <!--"The Reaper is the ultimate heavy weapons platform; Three quantum accelerators rigged to a a series of heavy pulse capacitors, giving the weapon unbridled destructive power. 5 second spin up, followed by a crushing volley of 12 devastatingly-powerful shots, shredding shield and armour alike" -->
+      <Description>FIXTHIS
+	  The Reaper is an experimental weapon platform designed as the sister project of the Typhoon and Magnetar. Rather than fire conventional energy bolts, the Reaper fires a stream of unstable accelerated particles that explode into antimatter and damaging electromagnetic photons that vaporize ship internals. [5KM RANGE - Accepts High Density Energy Cells. (Energy)]</Description>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="7" y="4" z="7"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Reaper\LG_ReaperPulseCannonBase.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="2000" />
+				<Component Subtype="Construction" Count="1000" />
+				<Component Subtype="MetalGrid" Count="800" />
+				<Component Subtype="LargeTube" Count="250" />		
+				<Component Subtype="Girder" Count="300" />					
+				<Component Subtype="PowerCell" Count="340" />
+				<Component Subtype="ElectromagnetAWE" Count ="120" />					
+				<Component Subtype="Superconductor" Count="400" />				
+				<Component Subtype="Motor" Count="400" />		
+				<Component Subtype="Computer" Count="900" />
+				<Component Subtype="Construction" Count="500" />
+				<Component Subtype="MilitaryPlateAWE" Count="1000" />
+			</Components>
+			<CriticalComponent Index="0" Subtype="Computer"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="7.0" EndY="1.0"/>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="7.0" EndY="1.0"/>
+				<MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="7.0" EndY="1.0"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="7.0" EndY="1.0"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="7.0" EndY="7.0"/>
+			</MountPoints>
+
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <BlockPairName>AryxReaperTurret</BlockPairName>
+	  <MirroringY>Z</MirroringY>
+	  <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>80</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxReaperWepDef" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.04</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>1500</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXMace</SubtypeId>
+		</Id>
+		<DisplayName>L82 Mace Combat Shotgun</DisplayName>
+		<Description>FIXTHIS
+		The Mace is a heavy combat shotgun that fires 150mm Buckshot rounds, dealing massive damage to close-up enemies. This fire comes at the cost of substantial falloff beyond 100m range, however. [Accepts 150mm Buckshot (Kinetic).]</Description>	
+		<Icon>Textures\GUI\Icons\AWEMaceShotgun.dds</Icon>
+		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="2" z="2"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\Mace\LG_ARYXMaceShotgun.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="100" />
+			<Component Subtype="Construction" Count="160" />
+			<Component Subtype="Motor" Count="40" />		
+			<Component Subtype="LargeTube" Count="8" />					
+			<Component Subtype="Computer" Count="150" />
+			<Component Subtype="Construction" Count="90" />
+			<Component Subtype="MilitaryPlateAWE" Count="100" />
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+		<MountPoints>
+			<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.0"/>
+			<MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="2.0" EndY="2.0"/>
+			<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="2.0" EndY="2.0"/>
+			<MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.0"/>
+			<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.0"/>
+		</MountPoints>
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="Models\Mace\LG_ARYXMaceShotgun_BS1.mwm"/>
+			<Model BuildPercentUpperBound="0.66" File="Models\Mace\LG_ARYXMaceShotgun_BS2.mwm"/>
+			<Model BuildPercentUpperBound="1.0" File="Models\Mace\LG_ARYXMaceShotgun_BS3.mwm"/>
+		</BuildProgressModels>
+			
+		<BlockPairName>AryxMaceShotgun</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>35</BuildTimeSeconds>
+		<InventoryMaxVolume>0.360</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>200</PCU>   		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYX_FW_NovaBlaster</SubtypeId>
+      </Id>
+      <DisplayName>EB-10 Nova Phase Blaster</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_NovaBlaster.dds</Icon>
+      <Description>FIXTHIS
+The Nova is a phasic energy weapon that fires bolts of high intensity energy at targets. Effective against shields and exposed parts. Pierces shields. [1.5km range - Energy Weapon]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+	  <Model>Models\Cubes\AWE_FutureWarfare\Aryx_NovaBlaster_Base.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="50" />
+        <Component Subtype="Construction" Count="25" />
+        <Component Subtype="PowerCell" Count="12" />
+        <Component Subtype="SmallTube" Count="20" />
+        <Component Subtype="Motor" Count="10" />
+	    <Component Subtype="GravityGenerator" Count="4" />	
+        <Component Subtype="Superconductor" Count="20" />
+        <Component Subtype="Computer" Count="50" />
+        <Component Subtype="SteelPlate" Count="25" />
+		
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+	  <MountPoints>
+		 <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+	  </MountPoints>
+	  <BuildProgressModels>
+		 <Model BuildPercentUpperBound="0.33" File="Models\Cubes\AWE_FutureWarfare\Aryx_NovaBlaster_Base_BS1.mwm"/>
+		 <Model BuildPercentUpperBound="0.67" File="Models\Cubes\AWE_FutureWarfare\Aryx_NovaBlaster_Base_BS2.mwm"/>
+		 <Model BuildPercentUpperBound="1.00" File="Models\Cubes\AWE_FutureWarfare\Aryx_NovaBlaster_Base_BS3.mwm"/>
+	  </BuildProgressModels>
+
+      <BlockPairName>AryxNovaTurretBPair</BlockPairName>
+	  <MirroringY>Z</MirroringY>
+	  <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>35</BuildTimeSeconds>
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture> 
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxFWEnergyWeaponDefinition" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>150</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>AWE_MarkV_SuperLaser_Large_CB</SubtypeId>
+      </Id>
+      <DisplayName>CO-P3 Sunderer Heavy Lance</DisplayName>
+      <Icon>Textures\GUI\Icons\AryxMarkVAtlasLaser.dds</Icon>
+      <Description>FIXTHIS
+	  The Sunderer is an apex of energy weapon technology, adapting high-power charge coils and an extended projector array. Unlike its predecessor, this weapon fires a manmade phased energy pulse, able to cut through even the strongest hulls. [Energy Weapon]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="9"/>
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\AWE_Superlaser\ARYX_AtlasLaser.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="3500" />
+        <Component Subtype="Construction" Count="1000" />
+        <Component Subtype="Superconductor" Count="4000" />
+        <Component Subtype="SuperchargerAWE" Count="500" />		
+        <Component Subtype="MetalGrid" Count="600" />
+        <Component Subtype="LargeTube" Count="200" />
+        <Component Subtype="Motor" Count="400" />
+        <Component Subtype="Computer" Count="600" />
+        <Component Subtype="SteelPlate" Count="1500" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="9.00" EndY="3.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="9.00" EndY="3.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="9.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="9.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Superlaser\ARYX_AtlasLaser_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Superlaser\ARYX_AtlasLaser_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Superlaser\ARYX_AtlasLaser_BS3.mwm"/>
+			</BuildProgressModels>
+      <BlockPairName>AWE_MarkV_SuperLaser</BlockPairName>
+	  <MirroringY>Z</MirroringY>
+	  <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>160</BuildTimeSeconds>
+      <DisassembleRatio>50</DisassembleRatio>
+      <NavigationDefinition>Default</NavigationDefinition>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>1500</PCU>
+	  <IsAirTight>true</IsAirTight>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -2519,6 +3165,62 @@
       </TargetingGroups>      
     </Definition>	
 	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXVulcanTurret</SubtypeId>
+      </Id>
+      <DisplayName>MG65-T Vulcan Gatling Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_VulcanCannon.dds</Icon>	  
+      <Description>FIXTHIS
+	  The Vulcan is a double-barrelled gatling turret designed to hurl teflon and tungsten dealings of bad days downrange at a staggering rate of fire. The devastating firepower of this weapon can only be sustained for short amounts of time in rapid bursts. [2KM RANGE - Accepts 40mm ATLAS.]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+			<Model>Models\AWE_Vulcan\ARYXVulcanBase.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="500" />
+        <Component Subtype="Construction" Count="200" />
+        <Component Subtype="SmallTube" Count="120" />
+        <Component Subtype="Motor" Count="120" />	
+        <Component Subtype="Computer" Count="150" />
+        <Component Subtype="MetalGrid" Count="100" />	
+        <Component Subtype="SteelPlate" Count="250" />		
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Vulcan\ARYXVulcanBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Vulcan\ARYXVulcanBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Vulcan\ARYXVulcanBase_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>ARYXVulcanBase</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxFWEnergyWeaponDefinition" />
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.144</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+	
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2674,6 +3376,7 @@
 		<MaxBroadcastPowerDrainkW>200000</MaxBroadcastPowerDrainkW>
 		<DamagedSound>ParticleElectrical</DamagedSound>
 		<PCU>5000</PCU>
+		<IsAirTight>true</IsAirTight>
 	</Definition>
 </CubeBlocks>
   <BlockPositions>

@@ -31,14 +31,14 @@ namespace Scripts
             AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
             AmmoRound = "MainAmmo", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
-            EnergyCost = 1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = (float)(2250 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
+            EnergyCost = 0.05f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
+            BaseDamage = (float)(1500 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 0f, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0f, // Recoil.
             DecayPerShot = 0f, // Damage to the firing weapon itself.
             HardPointUsable = true, // Whether this is a primary ammo type fired directly by the turret. Set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
-            EnergyMagazineSize = 514, // For energy weapons, how many shots to fire before reloading.
+            EnergyMagazineSize = 5140, // For energy weapons, how many shots to fire before reloading.
             IgnoreWater = true, // Whether the projectile should be able to penetrate water when using WaterMod.
 
             Shape = new ShapeDef // Defines the collision shape of the projectile, defaults to LineShape and uses the visual Line Length if set to 0.
@@ -59,19 +59,6 @@ namespace Scripts
                 Reverse = false, // Spawn projectiles backward instead of forward.
                 
             },
-            Pattern = new PatternDef
-            {
-                Patterns = new[] { // If enabled, set of multiple ammos to fire in order instead of the main ammo.
-                    "AWELightningAmmo",
-                },
-                Enable = true,
-                TriggerChance = 1f,
-                Random = false,
-                RandomMin = 0,
-                RandomMax = 0,
-                SkipParent = false,
-                PatternSteps = 1, // Number of Ammos activated per round, will progress in order and loop. Ignored if Random = true.
-            },
             DamageScales = new DamageScaleDef
             {
                 MaxIntegrity = 0f, // Blocks with integrity higher than this value will be immune to damage from this projectile; 0 = disabled.
@@ -84,7 +71,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 5000f, // Distance at which damage begins falling off.
-                    MinMultipler = 0.45f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
+                    MinMultipler = 1f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -94,13 +81,13 @@ namespace Scripts
                 Armor = new ArmorDef
                 {
                     Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
-                    Light = 2.5f, // Multiplier for damage against light armor.
-                    Heavy = -1f, // Multiplier for damage against heavy armor.
-                    NonArmor = -1f, // Multiplier for damage against every else.
+                    Light = -1f, // Multiplier for damage against light armor.
+                    Heavy = 2f, // Multiplier for damage against heavy armor.
+                    NonArmor = 0.3f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 3f, // Multiplier for damage against shields.
+                    Modifier = 0.1f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
                     BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
@@ -135,7 +122,7 @@ namespace Scripts
             {
                 ByBlockHit = new ByBlockHitDef
                 {
-                    Enable = true,
+                    Enable = false,
                     Radius = 4f, // Meters
                     Damage = 10000f,
                     Depth = 2f, // Meters
@@ -387,13 +374,13 @@ namespace Scripts
             AmmoRound = "AWELightningAmmo", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.88f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = (float)(120 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
+            BaseDamage = (float)(1200 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 0f, // In kilograms; how much force the impact will apply to the target.
             Health = 1000, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0f, // Recoil.
             DecayPerShot = 0f, // Damage to the firing weapon itself.
             HardPointUsable = false, // Whether this is a primary ammo type fired directly by the turret. Set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
-            EnergyMagazineSize = 0, // For energy weapons, how many shots to fire before reloading.
+            EnergyMagazineSize = 1, // For energy weapons, how many shots to fire before reloading.
             IgnoreWater = true, // Whether the projectile should be able to penetrate water when using WaterMod.
 
             Shape = new ShapeDef // Defines the collision shape of the projectile, defaults to LineShape and uses the visual Line Length if set to 0.
