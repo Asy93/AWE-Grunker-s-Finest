@@ -58,7 +58,7 @@ namespace Scripts
             HardPoint = new HardPointDef
             {
                 PartName = "Typhoon Heavy Cannon", // name of weapon in terminal
-                DeviateShotAngle = 0.036f,
+                DeviateShotAngle = 0.12f,
                 AimingTolerance = 0.1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -112,15 +112,15 @@ namespace Scripts
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 600, // Set this to 3600 for beam weapons.
+                    RateOfFire = 300, // Set this to 3600 for beam weapons.
                     BarrelsPerShot = 1, // How many muzzles will fire a projectile per fire event.
                     TrajectilesPerBarrel = 1, // Number of projectiles per muzzle per fire event.
                     SkipBarrels = 0, // Number of muzzles to skip after each fire event.
-                    ReloadTime = 60, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 800, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     MagsToLoad = 3, // Number of physical magazines to consume on reload.
                     DelayUntilFire = 0, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 377, // Heat generated per shot.
-                    MaxHeat = 3000, // Max heat before weapon enters cooldown (70% of max heat).
+                    HeatPerShot = 0, // Heat generated per shot.
+                    MaxHeat = 0, // Max heat before weapon enters cooldown (70% of max heat).
                     Cooldown = 0f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
                     HeatSinkRate = 100, // Amount of heat lost per second.
                     DegradeRof = false, // Progressively lower rate of fire when over 80% heat threshold (80% of max heat).
