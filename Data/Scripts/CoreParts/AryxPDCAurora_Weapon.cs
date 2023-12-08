@@ -24,7 +24,7 @@ namespace Scripts {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        DurabilityMod = 0.2f,						
+                        DurabilityMod = 0.06f,						
                     },
 
                 },

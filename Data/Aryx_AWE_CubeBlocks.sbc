@@ -131,14 +131,14 @@
       <ModelOffset x="0" y="0" z="0" />
 	  <Model>Models\AWE_HeavyCannon\ARYX_HurricaneCannonBase.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="750" />
-        <Component Subtype="Construction" Count="350" />
-        <Component Subtype="MetalGrid" Count="360" />
-        <Component Subtype="LargeTube" Count="120" />	
-        <Component Subtype="Motor" Count="240" />
-        <Component Subtype="Computer" Count="250" />
-        <Component Subtype="Construction" Count="100" />		
-        <Component Subtype="MilitaryPlateAWE" Count="500" />
+        <Component Subtype="SteelPlate" Count="3750" />
+        <Component Subtype="Construction" Count="1750" />
+        <Component Subtype="MetalGrid" Count="1800" />
+        <Component Subtype="LargeTube" Count="600" />	
+        <Component Subtype="Motor" Count="1200" />
+        <Component Subtype="Computer" Count="1250" />
+        <Component Subtype="Construction" Count="500" />		
+        <Component Subtype="MilitaryPlateAWE" Count="2500" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -191,14 +191,14 @@
       <ModelOffset x="0" y="0" z="0" />
 	  <Model>Models\AWE_HeavyCannon\ARYX_TyphoonCannonBase.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="1500" />
-        <Component Subtype="Construction" Count="400" />
-        <Component Subtype="MetalGrid" Count="400" />
-        <Component Subtype="LargeTube" Count="180" />	
-        <Component Subtype="Motor" Count="300" />
-        <Component Subtype="Computer" Count="325" />
-        <Component Subtype="Construction" Count="150" />		
-        <Component Subtype="MilitaryPlateAWE" Count="1000" />
+        <Component Subtype="SteelPlate" Count="15000" />
+        <Component Subtype="Construction" Count="4000" />
+        <Component Subtype="MetalGrid" Count="4000" />
+        <Component Subtype="LargeTube" Count="1800" />	
+        <Component Subtype="Motor" Count="3000" />
+        <Component Subtype="Computer" Count="3250" />
+        <Component Subtype="Construction" Count="1500" />		
+        <Component Subtype="MilitaryPlateAWE" Count="10000" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -654,70 +654,7 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>	
-	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
-      <Id>
-        <TypeId>ConveyorSorter</TypeId>
-        <SubtypeId>ARYXHydraTurret</SubtypeId>
-      </Id>
-      <DisplayName>RL6 Hydra Rocket Battery</DisplayName>
-      <Icon>Textures\GUI\Icons\AryxHydraTurret.dds</Icon>	  
-      <Description>FIXTHIS
-	  The Hydra is an armoured rocket pod that fires rapid volleys of 6 guided rockets, with high tracking and a long reload, designed to overwhelm enemy PD and destroy small grids. [5KM MAX RANGE - Accepts Flechette Rockets]
-	  Effects: Fires six high-velocity guided rockets best suited for anti-fighter and anti-armour roles.
-	  Size: 3x3x3
-	  Role: Attrition
-	  Hardpoint: Full-traverse Turret
-	  Type: Guided Rocket
-	  </Description>
- 		<CubeSize>Large</CubeSize>
-		<BlockTopology>TriangleMesh</BlockTopology>
-		<Size x="3" y="3" z="3"/>
-		<ModelOffset x="0" y="0" z="0"/>
-		<Model>Models\Hydra\LG_ARYXHydra_Base.mwm</Model>
-		<Components>
-			<Component Subtype="SteelPlate" Count="225" />
-			<Component Subtype="Construction" Count="120" />
-			<Component Subtype="MetalGrid" Count="60" />
-			<Component Subtype="LargeTube" Count="18" />
-			<Component Subtype="Motor" Count="80" />
-			<Component Subtype="Detector" Count="40" />			
-			<Component Subtype="Computer" Count="200" />
-			<Component Subtype="MilitaryPlateAWE" Count="135" />		
-		</Components>
-		<CriticalComponent Index="0" Subtype="Computer"/>
-			<MountPoints>
-				<MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
-				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
-				<MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
-				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0"/>
-				<MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
-		</MountPoints>
-		<BuildProgressModels>
-			<Model BuildPercentUpperBound="0.33" File="Models\Hydra\LG_ARYXHydra_Base_BS1.mwm"/>
-			<Model BuildPercentUpperBound="0.66" File="Models\Hydra\LG_ARYXHydra_Base_BS2.mwm"/>
-			<Model BuildPercentUpperBound="1.0" File="Models\Hydra\LG_ARYXHydra_Base_BS3.mwm"/>
-		</BuildProgressModels>
-		<BlockPairName>LG_ARYXHydra_Base</BlockPairName>
-		<MirroringY>Z</MirroringY>
-		<MirroringZ>Y</MirroringZ>
-      <BuildTimeSeconds>50</BuildTimeSeconds>
-	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
-      <EdgeType>Light</EdgeType>
-      <!--WeaponDefinitionId Subtype="AryxBurstCannonWepDef" /-->
-	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
-      <ResourceSinkGroup>Defense</ResourceSinkGroup>
-      <InventoryMaxVolume>0.24</InventoryMaxVolume>
-      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
-      <DamagedSound>ParticleWeapExpl</DamagedSound>
-      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>200</PCU>      
-      <TargetingGroups>
-		<string>Weapons</string>
-      </TargetingGroups>      
-    </Definition>
-
-		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXHeavyFlakTurret</SubtypeId>
@@ -1260,67 +1197,6 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>		
-
-
-	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
-      <Id>
-        <TypeId>LargeMissileTurret</TypeId>
-        <SubtypeId>ARYXWarriorGatling</SubtypeId>
-      </Id>
-      <DisplayName>LS5-MG100 Warrior Heavy Gatling</DisplayName>
-      <Icon>Textures\GUI\Icons\Aryx_AWE_Warrior.dds</Icon>	  
-      <Description>FIXTHIS
-	  The Warrior is a large armoured casemate gatling turret designed for broadside combat and base defence, firing 100mm shells of varying payload at a respectable rate of fire. Whilst limited in traversal, this powerful weapon can break through even the strongest armour. [ 1.5K RANGE - ACCEPTS 100MM WARRIOR (Kinetic)]
-	  Effects: Fires heavy ordinance at medium range at a high rate of fire. Highly damaging to armour.
-	  Size: 4x3x6
-	  Role: Assault
-	  Hardpoint: Limited-angle turret.
-	  Type: Rotary Cannon
-	  </Description>
-	  <CubeSize>Large</CubeSize>
-	  <BlockTopology>TriangleMesh</BlockTopology>
-	  <Size x="4" y="3" z="6"/>
-	  <ModelOffset x="0" y="0" z="0"/>
-	  <Model>Models\AWE_Warrior\LG_ARYX_WarriorGatling.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="1200" />
-        <Component Subtype="Construction" Count="500" />
-        <Component Subtype="LargeTube" Count="200" />
-        <Component Subtype="Motor" Count="100" />			
-        <Component Subtype="Computer" Count="120" />
-        <Component Subtype="MetalGrid" Count="300" />		
-        <Component Subtype="MilitaryPlateAWE" Count="300" />
-		
-      </Components>
-      <CriticalComponent Subtype="Computer" Index="0" />
-			<MountPoints>
-				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="4.00" EndY="3.00"/>
-				<MountPoint Side="Left" StartX="5.00" StartY="0.00" EndX="6.00" EndY="3.00"/>
-				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="3.00"/>
-				<MountPoint Side="Top" StartX="1.00" StartY="1.00" EndX="3.00" EndY="2.00"/>
-				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="4.00" EndY="1.00"/>
-				<MountPoint Side="Bottom" StartX="1.00" StartY="4.00" EndX="3.00" EndY="5.00"/>
-				<MountPoint Side="Bottom" StartX="0.00" StartY="5.00" EndX="4.00" EndY="6.00"/>
-			</MountPoints>
-			<BlockPairName>AryxWarriorGatling</BlockPairName>
-			<MirroringY>Z</MirroringY>
-			<MirroringZ>Y</MirroringZ>
-      <BuildTimeSeconds>90</BuildTimeSeconds>
-	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
-	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture> 
-      <EdgeType>Light</EdgeType>
-      <WeaponDefinitionId Subtype="AryxWarriorWepDef" />
-      <ResourceSinkGroup>Defense</ResourceSinkGroup>
-      <InventoryMaxVolume>1.14</InventoryMaxVolume>
-      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
-      <DamagedSound>ParticleWeapExpl</DamagedSound>
-      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>300</PCU>      
-      <TargetingGroups>
-		<string>Weapons</string>
-      </TargetingGroups>      
-    </Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -1949,7 +1825,7 @@
         <SubtypeId>ARYXMissileBattery</SubtypeId>
       </Id>
       <DisplayName>M8G-LS4 Longsword Missile Battery</DisplayName>
-	  <Public>false</Public>	  
+	  <Public>true</Public>	  
       <Icon>Textures\GUI\Icons\AryxMissileBattery.dds</Icon>	  
       <Description>FIXTHIS
 The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [1KM MIN RANGE, 7.5KM MAX RANGE - Accepts Sabre Missiles]</Description>
@@ -1959,16 +1835,15 @@ The Longsword is a heavy missile battery designed for capital ship combat and ba
 		<ModelOffset x="0" y="0" z="0"/>
 		<Model>Models\AWE_Longbow\ARYX_MissileBatteryBase.mwm</Model>
 		<Components>
-			<Component Subtype="SteelPlate" Count="1250" />
-			<Component Subtype="Construction" Count="300" />
-			<Component Subtype="MetalGrid" Count="200" />
-			<Component Subtype="LargeTube" Count="40" />	
-			<Component Subtype="Motor" Count="200" />
-			<Component Subtype="Detector" Count="40" />			
-			<Component Subtype="Unobtainium" Count="1" />
-			<Component Subtype="Construction" Count="125" />
-			<Component Subtype="MetalGrid" Count="200" />
-			<Component Subtype="MilitaryPlateAWE" Count="500" />
+			<Component Subtype="SteelPlate" Count="25000" />
+			<Component Subtype="Construction" Count="6000" />
+			<Component Subtype="MetalGrid" Count="4000" />
+			<Component Subtype="LargeTube" Count="800" />	
+			<Component Subtype="Motor" Count="4000" />
+			<Component Subtype="Detector" Count="800" />			
+			<Component Subtype="Construction" Count="2500" />
+			<Component Subtype="MetalGrid" Count="5000" />
+			<Component Subtype="MilitaryPlateAWE" Count="15000" />
 		</Components>
 		<CriticalComponent Index="0" Subtype="Unobtainium"/>
 		<MountPoints>
@@ -2138,17 +2013,17 @@ The Longsword is a heavy missile battery designed for capital ship combat and ba
 		<Center x="1" y="0" z="7" />
 		<Model>Models\Gauss\LG_AryxGaussCannon.mwm</Model>
 		<Components>
-			<Component Subtype="SteelPlate" Count="1250" />
-			<Component Subtype="Construction" Count="600" />
-			<Component Subtype="MetalGrid" Count="250" />
-			<Component Subtype="PowerCell" Count="168" />	
-			<Component Subtype="Superconductor" Count="336" />				
-			<Component Subtype="SmallTube" Count="500" />
-			<Component Subtype="Motor" Count="250" />		
-			<Component Subtype="ElectromagnetAWE" Count ="328" />	
-			<Component Subtype="Computer" Count="820" />
-			<Component Subtype="Construction" Count="400" />
-			<Component Subtype="SteelPlate" Count="750" />
+			<Component Subtype="SteelPlate" Count="25000" />
+			<Component Subtype="Construction" Count="12000" />
+			<Component Subtype="MetalGrid" Count="5000" />
+			<Component Subtype="PowerCell" Count="3000" />	
+			<Component Subtype="Superconductor" Count="7000" />				
+			<Component Subtype="SmallTube" Count="10000" />
+			<Component Subtype="Motor" Count="5000" />		
+			<Component Subtype="ElectromagnetAWE" Count ="7000" />	
+			<Component Subtype="Computer" Count="16000" />
+			<Component Subtype="Construction" Count="8000" />
+			<Component Subtype="SteelPlate" Count="15000" />
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
 		<!--lmao this is how you comment in xml-->		
@@ -2199,17 +2074,17 @@ The Longsword is a heavy missile battery designed for capital ship combat and ba
       <ModelOffset x="0" y="0" z="0" />
 	  <Model>Models\Gauss\ARYX_GaussTurretBase.mwm</Model>
 		<Components>
-			<Component Subtype="SteelPlate" Count="5000" />
-			<Component Subtype="Construction" Count="1500" />
-			<Component Subtype="MetalGrid" Count="1000" />
-			<Component Subtype="PowerCell" Count="240" />	
-			<Component Subtype="Superconductor" Count="600" />				
-			<Component Subtype="SmallTube" Count="500" />
-			<Component Subtype="Motor" Count="1000" />		
-			<Component Subtype="ElectromagnetAWE" Count ="400" />	
-			<Component Subtype="Computer" Count="1240" />
-			<Component Subtype="Construction" Count="1000" />
-			<Component Subtype="SteelPlate" Count="2500" />
+			<Component Subtype="SteelPlate" Count="40000" />
+			<Component Subtype="Construction" Count="12000" />
+			<Component Subtype="MetalGrid" Count="8000" />
+			<Component Subtype="PowerCell" Count="2000" />	
+			<Component Subtype="Superconductor" Count="4800" />				
+			<Component Subtype="SmallTube" Count="4000" />
+			<Component Subtype="Motor" Count="8000" />		
+			<Component Subtype="ElectromagnetAWE" Count ="3200" />	
+			<Component Subtype="Computer" Count="10000" />
+			<Component Subtype="Construction" Count="8000" />
+			<Component Subtype="SteelPlate" Count="20000" />
 		</Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -2258,17 +2133,17 @@ The Longsword is a heavy missile battery designed for capital ship combat and ba
 		<ModelOffset x="0" y="0" z="0"/>
 		<Model>Models\AWE_Coilgun\ARYX_HeavyCoilgun.mwm</Model>
 		<Components>
-			<Component Subtype="SteelPlate" Count="3500" />
-			<Component Subtype="Construction" Count="1250" />
-			<Component Subtype="MetalGrid" Count="800" />
-			<Component Subtype="PowerCell" Count="500" />	
-			<Component Subtype="Superconductor" Count="750" />				
-			<Component Subtype="LargeTube" Count="800" />
-			<Component Subtype="Motor" Count="600" />		
-			<Component Subtype="ElectromagnetAWE" Count ="500" />	
-			<Component Subtype="Computer" Count="700" />
-			<Component Subtype="MetalGrid" Count="600" />
-			<Component Subtype="SteelPlate" Count="1250" />
+			<Component Subtype="SteelPlate" Count="17500" />
+			<Component Subtype="Construction" Count="7500" />
+			<Component Subtype="MetalGrid" Count="4000" />
+			<Component Subtype="PowerCell" Count="2500" />	
+			<Component Subtype="Superconductor" Count="3750" />				
+			<Component Subtype="LargeTube" Count="4000" />
+			<Component Subtype="Motor" Count="3000" />		
+			<Component Subtype="ElectromagnetAWE" Count ="2500" />	
+			<Component Subtype="Computer" Count="3500" />
+			<Component Subtype="MetalGrid" Count="3000" />
+			<Component Subtype="SteelPlate" Count="7500" />
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -2585,62 +2460,7 @@ The Longsword is a heavy missile battery designed for capital ship combat and ba
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
-    </Definition>
-	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
-      <Id>
-        <TypeId>LargeMissileTurret</TypeId>
-        <SubtypeId>ARYX_FW_NovaBlaster</SubtypeId>
-      </Id>
-      <DisplayName>EB-10 Nova Phase Blaster</DisplayName>
-      <Icon>Textures\GUI\Icons\Aryx_AWE_NovaBlaster.dds</Icon>
-      <Description>FIXTHIS
-The Nova is a phasic energy weapon that fires bolts of high intensity energy at targets. Effective against shields and exposed parts. Pierces shields. [1.5km range - Energy Weapon]</Description>
-      <CubeSize>Large</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="1" z="1" />
-      <ModelOffset x="0" y="0" z="0" />
-	  <Model>Models\Cubes\AWE_FutureWarfare\Aryx_NovaBlaster_Base.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="50" />
-        <Component Subtype="Construction" Count="25" />
-        <Component Subtype="PowerCell" Count="12" />
-        <Component Subtype="SmallTube" Count="20" />
-        <Component Subtype="Motor" Count="10" />
-	    <Component Subtype="GravityGenerator" Count="4" />	
-        <Component Subtype="Superconductor" Count="20" />
-        <Component Subtype="Computer" Count="50" />
-        <Component Subtype="SteelPlate" Count="25" />
-		
-      </Components>
-      <CriticalComponent Subtype="Computer" Index="0" />
-	  <MountPoints>
-		 <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
-	  </MountPoints>
-	  <BuildProgressModels>
-		 <Model BuildPercentUpperBound="0.33" File="Models\Cubes\AWE_FutureWarfare\Aryx_NovaBlaster_Base_BS1.mwm"/>
-		 <Model BuildPercentUpperBound="0.67" File="Models\Cubes\AWE_FutureWarfare\Aryx_NovaBlaster_Base_BS2.mwm"/>
-		 <Model BuildPercentUpperBound="1.00" File="Models\Cubes\AWE_FutureWarfare\Aryx_NovaBlaster_Base_BS3.mwm"/>
-	  </BuildProgressModels>
-
-      <BlockPairName>AryxNovaTurretBPair</BlockPairName>
-	  <MirroringY>Z</MirroringY>
-	  <MirroringZ>Y</MirroringZ>
-      <BuildTimeSeconds>35</BuildTimeSeconds>
-	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture> 
-      <EdgeType>Light</EdgeType>
-      <WeaponDefinitionId Subtype="AryxFWEnergyWeaponDefinition" />
-      <ResourceSinkGroup>Defense</ResourceSinkGroup>
-      <InventoryMaxVolume>1</InventoryMaxVolume>
-      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
-      <DamagedSound>ParticleWeapExpl</DamagedSound>
-      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>150</PCU>      
-      <TargetingGroups>
-		<string>Weapons</string>
-      </TargetingGroups>      
-    </Definition>
-	
+    </Definition>	
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -2816,17 +2636,17 @@ The Nova is a phasic energy weapon that fires bolts of high intensity energy at 
       <ModelOffset x="0" y="0" z="0" />
 	  <Model>Models\AWE_ShockCannon\ARYX_MagnetarCannonBase.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="1500" />
-        <Component Subtype="Construction" Count="400" />
-        <Component Subtype="MetalGrid" Count="100"/>
-        <Component Subtype="LargeTube" Count="70" />
-        <Component Subtype="ElectromagnetAWE" Count="200" />		
-        <Component Subtype="Superconductor" Count="100" />
-        <Component Subtype="GravityGenerator" Count="50" />			
-        <Component Subtype="Motor" Count="200" />
-        <Component Subtype="Computer" Count="325" />
-        <Component Subtype="Construction" Count="350" />		
-        <Component Subtype="MilitaryPlateAWE" Count="1000" />
+        <Component Subtype="SteelPlate" Count="15000" />
+        <Component Subtype="Construction" Count="4000" />
+        <Component Subtype="MetalGrid" Count="1000"/>
+        <Component Subtype="LargeTube" Count="700" />
+        <Component Subtype="ElectromagnetAWE" Count="2000" />		
+        <Component Subtype="Superconductor" Count="1000" />
+        <Component Subtype="GravityGenerator" Count="500" />			
+        <Component Subtype="Motor" Count="2000" />
+        <Component Subtype="Computer" Count="3250" />
+        <Component Subtype="Construction" Count="3500" />		
+        <Component Subtype="MilitaryPlateAWE" Count="10000" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -2943,17 +2763,17 @@ The Nova is a phasic energy weapon that fires bolts of high intensity energy at 
       <ModelOffset x="0" y="0" z="0" />
 	  <Model>Models\AWE_ShockCannon\ARYX_QuasarCannonBase.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="700" />
-        <Component Subtype="Construction" Count="200" />
-        <Component Subtype="MetalGrid" Count="200" />
-        <Component Subtype="LargeTube" Count="50" />
-        <Component Subtype="ElectromagnetAWE" Count="200" />		
-        <Component Subtype="Superconductor" Count="100" />
-        <Component Subtype="GravityGenerator" Count="50" />			
-        <Component Subtype="Motor" Count="200" />
-        <Component Subtype="Computer" Count="250" />
-        <Component Subtype="Construction" Count="100" />		
-        <Component Subtype="MilitaryPlateAWE" Count="500" />	
+        <Component Subtype="SteelPlate" Count="2100" />
+        <Component Subtype="Construction" Count="600" />
+        <Component Subtype="MetalGrid" Count="600" />
+        <Component Subtype="LargeTube" Count="150" />
+        <Component Subtype="ElectromagnetAWE" Count="600" />		
+        <Component Subtype="Superconductor" Count="300" />
+        <Component Subtype="GravityGenerator" Count="150" />			
+        <Component Subtype="Motor" Count="600" />
+        <Component Subtype="Computer" Count="750" />
+        <Component Subtype="Construction" Count="300" />		
+        <Component Subtype="MilitaryPlateAWE" Count="1500" />	
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
