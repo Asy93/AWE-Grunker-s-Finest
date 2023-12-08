@@ -57,64 +57,6 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
-	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
-      <Id>
-        <TypeId>ConveyorSorter</TypeId>
-        <SubtypeId>ARYXMissileBattery</SubtypeId>
-      </Id>
-      <DisplayName>M8G-LS4 Longsword Missile Battery</DisplayName>
-      <Icon>Textures\GUI\Icons\AryxMissileBattery.dds</Icon>	  
-      <Description>The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [1KM MIN RANGE, 7.5KM MAX RANGE - Accepts Sabre Missiles]
-	  Effects: Fires eight powerful guided Sabre missiles at enemy vessels which explode on impact.
-	  Size: 5x5x5
-	  Role: Heavy Defence
-	  Hardpoint: Full-traverse Turret
-	  Type: Missile Turret
-	  </Description>
- 		<CubeSize>Large</CubeSize>
-		<BlockTopology>TriangleMesh</BlockTopology>
-		<Size x="5" y="5" z="5"/>
-		<ModelOffset x="0" y="0" z="0"/>
-		<Model>Models\AWE_Longbow\ARYX_MissileBatteryBase.mwm</Model>
-		<Components>
-			<Component Subtype="SteelPlate" Count="1250" />
-			<Component Subtype="Construction" Count="300" />
-			<Component Subtype="MetalGrid" Count="200" />
-			<Component Subtype="LargeTube" Count="40" />	
-			<Component Subtype="Motor" Count="200" />
-			<Component Subtype="Detector" Count="40" />			
-			<Component Subtype="Computer" Count="300" />
-			<Component Subtype="Construction" Count="125" />
-			<Component Subtype="MetalGrid" Count="200" />
-			<Component Subtype="MilitaryPlateAWE" Count="500" />
-		</Components>
-		<CriticalComponent Index="0" Subtype="Computer"/>
-		<MountPoints>
-			<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
-			<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
-			<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
-			<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
-			<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00"/>
-		</MountPoints>
-		<BlockPairName>LG_ARYXMissileBattery_Base</BlockPairName>
-		<MirroringY>Z</MirroringY>
-		<MirroringZ>Y</MirroringZ>
-      <BuildTimeSeconds>85</BuildTimeSeconds>
-	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
-      <EdgeType>Light</EdgeType>
-      <!--WeaponDefinitionId Subtype="AryxBurstCannonWepDef" /-->
-	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
-      <ResourceSinkGroup>Defense</ResourceSinkGroup>
-      <InventoryMaxVolume>0.48</InventoryMaxVolume>
-      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
-      <DamagedSound>ParticleWeapExpl</DamagedSound>
-      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>300</PCU>      
-      <TargetingGroups>
-		<string>Weapons</string>
-      </TargetingGroups>      
-    </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -1883,7 +1825,7 @@
         <SubtypeId>ARYXMissileBattery</SubtypeId>
       </Id>
       <DisplayName>M8G-LS4 Longsword Missile Battery</DisplayName>
-	  <Public>false</Public>	  
+	  <Public>true</Public>	  
       <Icon>Textures\GUI\Icons\AryxMissileBattery.dds</Icon>	  
       <Description>FIXTHIS
 The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [1KM MIN RANGE, 7.5KM MAX RANGE - Accepts Sabre Missiles]</Description>
@@ -1893,16 +1835,15 @@ The Longsword is a heavy missile battery designed for capital ship combat and ba
 		<ModelOffset x="0" y="0" z="0"/>
 		<Model>Models\AWE_Longbow\ARYX_MissileBatteryBase.mwm</Model>
 		<Components>
-			<Component Subtype="SteelPlate" Count="1250" />
-			<Component Subtype="Construction" Count="300" />
-			<Component Subtype="MetalGrid" Count="200" />
-			<Component Subtype="LargeTube" Count="40" />	
-			<Component Subtype="Motor" Count="200" />
-			<Component Subtype="Detector" Count="40" />			
-			<Component Subtype="Unobtainium" Count="1" />
-			<Component Subtype="Construction" Count="125" />
-			<Component Subtype="MetalGrid" Count="200" />
-			<Component Subtype="MilitaryPlateAWE" Count="500" />
+			<Component Subtype="SteelPlate" Count="25000" />
+			<Component Subtype="Construction" Count="6000" />
+			<Component Subtype="MetalGrid" Count="4000" />
+			<Component Subtype="LargeTube" Count="800" />	
+			<Component Subtype="Motor" Count="4000" />
+			<Component Subtype="Detector" Count="800" />			
+			<Component Subtype="Construction" Count="2500" />
+			<Component Subtype="MetalGrid" Count="5000" />
+			<Component Subtype="MilitaryPlateAWE" Count="15000" />
 		</Components>
 		<CriticalComponent Index="0" Subtype="Unobtainium"/>
 		<MountPoints>
