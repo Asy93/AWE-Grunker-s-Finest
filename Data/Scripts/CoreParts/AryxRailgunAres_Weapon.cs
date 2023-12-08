@@ -24,6 +24,7 @@ namespace Scripts
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
+                        DurabilityMod = 0.25f,
                     },
 
                 },
@@ -55,7 +56,7 @@ namespace Scripts
             {
                 PartName = "Ares 1200mm Heavy Railgun", // name of weapon in terminal
                 DeviateShotAngle = 0,
-                AimingTolerance = 1f, // 0 - 180 firing angle
+                AimingTolerance = 0.1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 120, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
