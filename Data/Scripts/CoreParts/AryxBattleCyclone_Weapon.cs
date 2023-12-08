@@ -25,6 +25,7 @@ namespace Scripts
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
+                        DurabilityMod = 0.25f,
                     },
                     new MountPointDef {
                         SubtypeId = "ARYXCycloneCannon_SG",
@@ -32,6 +33,7 @@ namespace Scripts
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
+                        DurabilityMod = 0.25f,
                     },
                 },
                 Muzzles = new[] {
