@@ -68,14 +68,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
-                    Light = 2.5f, // Multiplier for damage against light armor.
-                    Heavy = 2f, // Multiplier for damage against heavy armor.
-                    NonArmor = 3f, // Multiplier for damage against every else.
+                    Armor = 0.5f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
+                    Light = -1f, // Multiplier for damage against light armor.
+                    Heavy = -1f, // Multiplier for damage against heavy armor.
+                    NonArmor = 0.5f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1f, // Multiplier for damage against shields.
+                    Modifier = 100f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
                     BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
@@ -144,8 +144,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 250f,
-                DesiredSpeed = 550, // voxel phasing if you go above 5100
-                MaxTrajectory = 10000,
+                DesiredSpeed = 500, // voxel phasing if you go above 5100
+                MaxTrajectory = 20000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0.25f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -231,7 +231,7 @@ namespace Scripts
                         Enable = true,
                         Length = 10f,
                         Width = 0.005f,
-                        Color = Color(red: 10, green: 20, blue: 25, alpha: 1),
+                        Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
@@ -247,7 +247,7 @@ namespace Scripts
                             SegmentLength = 0f, // Uses the values below.
                             SegmentGap = 0f, // Uses Tracer textures and values
                             Speed = 1f, // meters per second
-                            Color = Color(red: 1, green: 2, blue: 2.5f, alpha: 1),
+                            Color = Color(red: 2.5f, green: 2.5f, blue: 2.5f, alpha: 1),
                             WidthMultiplier = 1f,
                             Reverse = false,
                             UseLineVariance = true,
@@ -263,7 +263,7 @@ namespace Scripts
                         },
                         TextureMode = Normal,
                         DecayTime = 60,
-                        Color = Color(red: 6, green: 20, blue: 25, alpha: 1),
+                        Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Back = false,
                         CustomWidth = 0.1f,
                         UseWidthVariance = false,
