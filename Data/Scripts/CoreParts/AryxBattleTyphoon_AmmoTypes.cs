@@ -51,8 +51,8 @@ namespace Scripts
             },
             Fragment = new FragmentDef
             {
-                AmmoRound = "AryxKineticFrags",
-                Fragments = 24,
+                AmmoRound = "",
+                Fragments = 0,
                 Degrees = 360,
                 Reverse = true,               
             },
@@ -145,11 +145,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 7f, // Meters
-                    Damage = (float)(28000 * AWEGlobalDamageScalar),
-                    Depth = 2f,
+                    Radius = 9f, // Meters
+                    Damage = (float)(10000 * AWEGlobalDamageScalar),
+                    Depth = 1f,
                     MaxAbsorb = 0f,
-                    Falloff = InvCurve, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Curve, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius

@@ -53,9 +53,9 @@ namespace Scripts
             Fragment = new FragmentDef
             {
                 AmmoRound = "AryxFlakShrapWC",
-                Fragments = 8,
+                Fragments = 16,
                 Degrees = 360,
-                Reverse = false,
+                Reverse = true,
                 
             },
             Pattern = new PatternDef
@@ -148,11 +148,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 1f, // Meters
-                    Damage = 0,
+                    Radius = 5f, // Meters
+                    Damage = 1000,
                     Depth = 0f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -231,7 +231,7 @@ namespace Scripts
             },
             Trajectory = new TrajectoryDef
             {
-                Guidance = None,
+                Guidance = TravelTo,
                 TargetLossDegree = 80f,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
