@@ -14,8 +14,8 @@ namespace GrunkQuest
     [MyEntityComponentDescriptor(typeof(Sandbox.Common.ObjectBuilders.MyObjectBuilder_Beacon), false, "JumpInhibitor")]
     public class InhibRewrite : MyGameLogicComponent
     {
-        public const double INHIB_ACTIVE_TIME = 120.0;
-        public const double INHIB_COOLDOWN_TIME = 45.0;
+        public const double INHIB_ACTIVE_TIME = 45.0;
+        public const double INHIB_COOLDOWN_TIME = 135.0;
 
         public InhibitorState InhibState;
 
