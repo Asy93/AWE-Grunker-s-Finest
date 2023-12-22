@@ -33,7 +33,7 @@ namespace Scripts
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(2000 * AWEGlobalDamageScalar),
-            Mass = 30000f, // in kilograms
+            Mass = 1000f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 300000,
             DecayPerShot = 0,
@@ -51,8 +51,8 @@ namespace Scripts
             },
             Fragment = new FragmentDef
             {
-                AmmoRound = "AryxKineticFrags",
-                Fragments = 24,
+                AmmoRound = "",
+                Fragments = 0,
                 Degrees = 360,
                 Reverse = true,               
             },
@@ -145,11 +145,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 7f, // Meters
-                    Damage = (float)(28000 * AWEGlobalDamageScalar),
-                    Depth = 2f,
+                    Radius = 9f, // Meters
+                    Damage = (float)(10000 * AWEGlobalDamageScalar),
+                    Depth = 1f,
                     MaxAbsorb = 0f,
-                    Falloff = InvCurve, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Curve, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
