@@ -23,7 +23,7 @@ namespace Scripts {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        DurabilityMod = 0.25f,
+                        DurabilityMod = 2.0f,
                         IconName = "AryxMagnetarCannon.dds"
                     },
                    

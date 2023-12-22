@@ -90,7 +90,7 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
+                    Armor = 0.5f,
                     Light = 1.25f,
                     Heavy = -1f,
                     NonArmor = -1f,

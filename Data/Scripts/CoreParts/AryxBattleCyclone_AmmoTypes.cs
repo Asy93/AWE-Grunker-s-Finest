@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "240mm Heavy Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(900 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(100 * AWEGlobalDamageScalar),
             Mass = 120f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 90000,
@@ -89,14 +89,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 1.8f,
+                    Armor = 0.5f,
                     Light = -1f,
                     Heavy = -1f,
                     NonArmor = 1.6f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 0.1f,
+                    Modifier = 0.3f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -146,11 +146,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 4.75f, // Meters
-                    Damage = (float)(9000 * AWEGlobalDamageScalar),
-                    Depth = 1.5f,
+                    Radius = 8f, // Meters
+                    Damage = (float)(6000 * AWEGlobalDamageScalar),
+                    Depth = 1f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = InvCurve, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius

@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxGaussAmmoWC",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 20000,
+            BaseDamage = 10000,
             Mass = 200, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 100000f,
@@ -96,10 +96,10 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 10,
+                    Armor = 5,
                     Light = -1,
                     Heavy = -1,
-                    NonArmor = 8,
+                    NonArmor = 10,
                 },
                 Shields = new ShieldDef
                 {
