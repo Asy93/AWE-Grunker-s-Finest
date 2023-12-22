@@ -31,7 +31,7 @@ namespace Scripts
             AmmoMagazine = "Energy",
             AmmoRound = "Zarya Pulse Laser",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 0.05f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(500 * AWEGlobalDamageScalar),
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.

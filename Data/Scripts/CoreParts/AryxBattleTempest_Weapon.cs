@@ -25,7 +25,7 @@ namespace Scripts
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-                        DurabilityMod = 0.25f,
+                        DurabilityMod = 1.0f,
                     },
                     new MountPointDef {
                         SubtypeId = "ARYXTempestCannon_SG",
@@ -33,7 +33,7 @@ namespace Scripts
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-                        DurabilityMod = 0.25f,
+                        DurabilityMod = 1.0f,
                     },
                 },
                 Muzzles = new[] {

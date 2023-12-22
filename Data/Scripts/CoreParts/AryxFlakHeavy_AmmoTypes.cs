@@ -52,8 +52,8 @@ namespace Scripts
             },
             Fragment = new FragmentDef
             {
-                AmmoRound = "AryxHeavyFlakShrapWC",
-                Fragments = 16,
+                AmmoRound = "",
+                Fragments = 0,
                 Degrees = 360,
                 Reverse = false,
                 
@@ -90,14 +90,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.5f,
+                    Armor = 12f,
                     Light = -1f,
                     Heavy = -1f,
                     NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 2f,
+                    Modifier = 20f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -148,18 +148,18 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 1f, // Meters
-                    Damage = 0,
+                    Radius = 15f, // Meters
+                    Damage = 1000,
                     Depth = 1f, //idk lmao
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 1, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,

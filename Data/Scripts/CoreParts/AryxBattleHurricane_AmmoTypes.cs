@@ -89,14 +89,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 1.4f,
+                    Armor = 0.7f,
                     Light = -1f,
                     Heavy = -1f,
                     NonArmor = 1.3f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 0.5f,
+                    Modifier = 0.8f,
                     Type = Default,
                     BypassModifier = -2f,
                 },

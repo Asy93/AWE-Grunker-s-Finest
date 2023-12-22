@@ -253,14 +253,14 @@
       <ModelOffset x="0" y="0" z="0" />
 	  <Model>Models\AWE_HeavyCannon\ARYX_TempestCannon.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="650" />
-        <Component Subtype="Construction" Count="150" />
-        <Component Subtype="MetalGrid" Count="120" />
-        <Component Subtype="LargeTube" Count="60" />	
-        <Component Subtype="Motor" Count="60" />
-        <Component Subtype="Computer" Count="100" />
-        <Component Subtype="Construction" Count="150" />		
-        <Component Subtype="MilitaryPlateAWE" Count="350" />
+        <Component Subtype="SteelPlate" Count="2600" />
+        <Component Subtype="Construction" Count="600" />
+        <Component Subtype="MetalGrid" Count="480" />
+        <Component Subtype="LargeTube" Count="240" />	
+        <Component Subtype="Motor" Count="240" />
+        <Component Subtype="Computer" Count="400" />
+        <Component Subtype="Construction" Count="600" />		
+        <Component Subtype="MilitaryPlateAWE" Count="1400" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -1783,7 +1783,7 @@ The Longsword is a heavy missile battery designed for capital ship combat and ba
 			<Component Subtype="MetalGrid" Count="5000" />
 			<Component Subtype="MilitaryPlateAWE" Count="15000" />
 		</Components>
-		<CriticalComponent Index="0" Subtype="Unobtainium"/>
+		<CriticalComponent Index="0" Subtype="LargeTube"/>
 		<MountPoints>
 			<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
 			<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>

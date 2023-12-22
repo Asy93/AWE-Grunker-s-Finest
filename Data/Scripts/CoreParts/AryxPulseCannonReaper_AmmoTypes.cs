@@ -58,8 +58,7 @@ namespace Scripts
                 DropVelocity = true, // fragments will not inherit velocity from parent.
                 Offset = 0f, // Offsets the fragment spawn by this amount, in meters (positive forward, negative for backwards).
                 Radial = 30f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
-                MaxChildren = 8,
-                IgnoreArming = false, //Whether shrapnel should spawn regardless of whether the projectile is armed or not.
+                IgnoreArming = true, //Whether shrapnel should spawn regardless of whether the projectile is armed or not.
             },
             Pattern = new PatternDef
             {
@@ -84,8 +83,8 @@ namespace Scripts
                               // For the following modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01f = 1% damage, 2 = 200% damage.
             FallOff = new FallOffDef
             {
-                Distance = 200f, // Distance at which damage begins falling off.
-                MinMultipler = 0.001f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
+                Distance = 500f, // Distance at which damage begins falling off.
+                MinMultipler = 0.1f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
             },
             Grids = new GridSizeDef
             {
@@ -94,7 +93,7 @@ namespace Scripts
             },
             Armor = new ArmorDef
             {
-                Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
+                Armor = 0.9f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
                 Light = -1f, // Multiplier for damage against light armor.
                 Heavy = -1f, // Multiplier for damage against heavy armor.
                 NonArmor = -1f, // Multiplier for damage against every else.
@@ -239,7 +238,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 5000,
+                DesiredSpeed = 4999,
                 MaxTrajectory = 1300,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -485,8 +484,8 @@ namespace Scripts
                 {
                     Armor = -1f,
                     Light = -1f,
-                    Heavy = 1.5f,
-                    NonArmor = 6,
+                    Heavy = -1f,
+                    NonArmor = 4,
                 },
                 Shields = new ShieldDef
                 {
