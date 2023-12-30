@@ -14,8 +14,8 @@
      Role: Short Range, Anti-Armor, Anti-Component
      Ammo: 240mm Heavy Shell
      Heavy Armor DPS per PCU: 20.1
-          Shield Armor DPS per PCU: 4.0
-          Component Armor DPS per PCU: 38.4
+     Shield Armor DPS per PCU: 4.0
+     Component Armor DPS per PCU: 38.4
 
      </Description>
       <CubeSize>Large</CubeSize>
@@ -67,13 +67,14 @@
       </Id>
       <DisplayName>M240 Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>     
-      <Description>Muzzle Velocity: 1600m/s
+      <Description>
+     Muzzle Velocity: 1600m/s
      Maximum Range: 10km
      Role: Short Range, Anti-Armor, Anti-Component
      Ammo: 240mm Heavy Shell
      Heavy Armor DPS per PCU: 20.1
-          Shield Armor DPS per PCU: 4.0
-          Component Armor DPS per PCU: 38.4
+     Shield Armor DPS per PCU: 4.0
+     Component Armor DPS per PCU: 38.4
      </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -124,13 +125,14 @@
       </Id>
       <DisplayName>M480 Hurricane Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHurricaneCannon.dds</Icon>     
-      <Description>Muzzle Velocity: 2400m/s
+      <Description>
+     Muzzle Velocity: 2400m/s
      Maximum Range: 10km
      Specialty Role: Medium Range, Anti-Armor, Anti-Component
      Ammo: 480mm Heavy Shell
      Heavy Armor DPS per PCU: 16.2
-          Shield Armor DPS per PCU: 7.3
-          Component Armor DPS per PCU: 30.0
+     Shield Armor DPS per PCU: 7.3
+     Component Armor DPS per PCU: 30.0
      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -186,13 +188,14 @@
       </Id>
       <DisplayName>M600 Typhoon Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxTyphoonCannon.dds</Icon>     
-      <Description>Muzzle Velocity: 4000m/s
+      <Description>
+     Muzzle Velocity: 4000m/s
      Effective Range: 10km
      Specialty Role: Long Range, Anti-Armor, Anti-Component
      Ammo: 600mm Heavy Shell
      Heavy Armor DPS per PCU: 12.5
-          Shield Armor DPS per PCU: 12.4
-          Component Armor DPS per PCU: 27.0
+     Shield Armor DPS per PCU: 12.4
+     Component Armor DPS per PCU: 27.0
      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -249,13 +252,14 @@
       </Id>
       <DisplayName>M600 Tempest Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>     
-      <Description>Muzzle Velocity: Muzzle Velocity: 4000m/s
+      <Description>
+     Muzzle Velocity: 4000m/s
      Effective Range: 10km
      Specialty Role: Fixed, Long Range, Anti-Armor, Anti-Component
      Ammo: 600mm Heavy Shell
      Heavy Armor DPS per PCU: 14.1
-          Shield Armor DPS per PCU: 14.0
-          Component Armor DPS per PCU: 30.4
+     Shield Armor DPS per PCU: 14.0
+     Component Armor DPS per PCU: 30.4
      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -311,13 +315,14 @@
       </Id>
       <DisplayName>M600 Tempest Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>     
-      <Description>Muzzle Velocity: Muzzle Velocity: 4000m/s
+      <Description>
+     Muzzle Velocity: 4000m/s
      Effective Range: 10km
      Specialty Role: Fixed, Long Range, Anti-Armor, Anti-Component
      Ammo: 600mm Heavy Shell
      Heavy Armor DPS per PCU: 14.1
-          Shield Armor DPS per PCU: 14.0
-          Component Armor DPS per PCU: 30.4
+     Shield Armor DPS per PCU: 14.0
+     Component Armor DPS per PCU: 30.4
      </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -373,13 +378,14 @@
       </Id>
       <DisplayName>M240 Windfall Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Windfall.dds</Icon>     
-      <Description>Muzzle Velocity: Muzzle Velocity: 1300m/s
+      <Description>
+     Muzzle Velocity: 1300m/s
      Effective Range: 4km
      Specialty Role: Fixed, Anti-Armor, Anti-Component
      Ammo: 240mm Heavy Shell
      Heavy Armor DPS per PCU: 11.9
-          Shield Armor DPS per PCU: 11.8
-          Component Armor DPS per PCU: 14.4
+     Shield Armor DPS per PCU: 11.8
+     Component Armor DPS per PCU: 14.4
      </Description>
      <CubeSize>Small</CubeSize>
      <BlockTopology>TriangleMesh</BlockTopology>
@@ -433,13 +439,14 @@
       </Id>
       <DisplayName>M120 Storm Light Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Storm.dds</Icon>     
-      <Description>Muzzle Velocity: 1600m/s
+      <Description>
+     Muzzle Velocity: 1600m/s
      Effective Range: 3500km
      Specialty Role: Fixed, Anti-Armor, Anti-Component
      Ammo: 120mm Heavy Shell
      Heavy Armor DPS per PCU: 12.9
-          Shield Armor DPS per PCU: 3.4
-          Component Armor DPS per PCU: 10.6
+     Shield Armor DPS per PCU: 3.4
+     Component Armor DPS per PCU: 10.6
      </Description>
      <CubeSize>Small</CubeSize>
      <BlockTopology>TriangleMesh</BlockTopology>
@@ -492,13 +499,14 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>     
-      <Description>Muzzle Velocity: 2400m/s
+      <Description>
+     Muzzle Velocity: 2400m/s
      Effective Range: 10km
      Specialty Role: Medium Range, Kinetic, Anti Shield
      Ammo: 70mm HE Cartridge
      Heavy Armor DPS per PCU: 6.4
-          Shield Armor DPS per PCU: 42.6
-          Component Armor DPS per PCU: 4.3
+     Shield Armor DPS per PCU: 42.6
+     Component Armor DPS per PCU: 4.3
      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -556,13 +564,14 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>  
-      <Description>Muzzle Velocity: 2400m/s
+      <Description>
+     Muzzle Velocity: 2400m/s
      Effective Range: 10km
      Specialty Role: Medium Range, Kinetic, Anti Shield
      Ammo: 70mm HE Cartridge
      Heavy Armor DPS per PCU: 6.4
-          Shield Armor DPS per PCU: 42.6
-          Component Armor DPS per PCU: 4.3
+     Shield Armor DPS per PCU: 42.6
+     Component Armor DPS per PCU: 4.3
      </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -620,13 +629,14 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Slanted Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SlantedBurstCannon.dds</Icon>     
-      <Description>Muzzle Velocity: 2400m/s
+      <Description>
+     Muzzle Velocity: 2400m/s
      Effective Range: 10km
      Specialty Role: Medium Range, Kinetic, Anti Shield
      Ammo: 70mm HE Cartridge
      Heavy Armor DPS per PCU: 6.4
-          Shield Armor DPS per PCU: 42.6
-          Component Armor DPS per PCU: 4.3
+     Shield Armor DPS per PCU: 42.6
+     Component Armor DPS per PCU: 4.3
      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -683,13 +693,14 @@
       </Id>
       <DisplayName>F4-GL Thrasher Heavy Flak Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_HeavyFlak.dds</Icon>     
-      <Description>Muzzle Velocity: 1200m/s
+      <Description>
+     Muzzle Velocity: 1200m/s
      Effective Range: 6km
      Specialty Role: Medium Range, Kinetic, Anti Shield, Anti Armor, Anti Small Grid
      Ammo: 135mm Thrasher Flak Shells
      Heavy Armor DPS per PCU: 16.3
-          Shield Armor DPS per PCU: 27.2
-          Component Armor DPS per PCU: 2.5
+     Shield Armor DPS per PCU: 27.2
+     Component Armor DPS per PCU: 2.5
      2x Damage Multiplier Against Small Grids
      </Description>
       <CubeSize>Large</CubeSize>
@@ -868,12 +879,13 @@
       </Id>
       <DisplayName>XM-500 Medusa Phase Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Medusa.dds</Icon>     
-      <Description>Muzzle Velocity: 1800m/s
+      <Description>
+     Muzzle Velocity: 1800m/s
      Effective Range: 10km
      Specialty Role: Medium Range, Shield Phasing, Energy, Anti Component
      Heavy Armor DPS per PCU: 1.4
-          Shield Armor DPS per PCU: 17.7 (against shunt-reinforced shields which block phasing)
-          Component Armor DPS per PCU: 18.1
+     Shield Armor DPS per PCU: 17.7 (against shunt-reinforced shields which block phasing)
+     Component Armor DPS per PCU: 18.1
      </Description>
        <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -933,10 +945,11 @@
          <SubtypeId>ARYXArgusLaser</SubtypeId>
       </Id>
       <DisplayName>Argus Orb PD Laser</DisplayName>
-      <Description>Muzzle Velocity: Hitscan
-        Effective Range: 660m
-        Specialty Role: Point Defense pulse
-        Ammo: Energy
+      <Description>
+     Muzzle Velocity: Hitscan
+     Effective Range: 660m
+     Specialty Role: Point Defense pulse
+     Ammo: Energy
       </Description>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Argus.dds</Icon>         
       <CubeSize>Small</CubeSize>
@@ -990,7 +1003,8 @@
          <SubtypeId>ARYXSmallBombBay</SubtypeId>
       </Id>
       <DisplayName>B2-M Shrike Bomb Bay</DisplayName>
-      <Description>The Shrike is a bomb launcher designed to deliver heavy unguided ordinance onto shielded targets. Powerful warheads and shield modulators allow the bombs to bypass shields and deliver devastating damage on impact. [Accepts Shrike Bombs]
+      <Description>The Shrike is a bomb launcher designed to deliver heavy unguided ordinance onto shielded targets. Powerful fusion warheads and shield modulators allow the bombs to bypass shields and deliver devastating damage on impact.
+     When striking a shield that has been reinforced by shunting, the shield modulators automatically switch to reverberation mode, catastrophically damaging the shield. [Accepts Shrike Bombs]
      Effects: Launches heavy fusion bombs that bypass shields and explode with massive firepower on impact. Inherits grid velocity.
      Size: 2x3x7
      Role: Assault
@@ -1164,13 +1178,14 @@
       </Id>
       <DisplayName>LS5-MG100 Warrior Heavy Gatling Gun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_WarriorGun.dds</Icon>
-      <Description>Muzzle Velocity: 4000m/s
+      <Description>
+     Muzzle Velocity: 4000m/s
      Effective Range: 10km
      Specialty Role: Long Range, Kinetic, Anti Shield, Anti Component
      Ammo: 100mm Warrior
      Heavy Armor DPS per PCU: 4.3
-          Shield Armor DPS per PCU: 21.3
-          Component Armor DPS per PCU: 17.0
+     Shield Armor DPS per PCU: 21.3
+     Component Armor DPS per PCU: 17.0
       </Description>   
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1222,12 +1237,13 @@
       </Id>
       <DisplayName>VL6 Modulus Variable-Laser</DisplayName>
       <Icon>Textures\GUI\Icons\AWEModulusLaser.dds</Icon>     
-      <Description>Muzzle Velocity: Hitscan
+      <Description>
+     Muzzle Velocity: Hitscan
      Effective Range: 2km, Falloff starts at 1km
      Specialty Role: Short Range, Energy, Anti Shield, Anti Small Grid
-          Heavy Armor DPS per PCU: 3.4
-          Shield Armor DPS per PCU: 49.1
-          Component Armor DPS per PCU: 4.1
+     Heavy Armor DPS per PCU: 3.4
+     Shield Armor DPS per PCU: 49.1
+     Component Armor DPS per PCU: 4.1
      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1285,9 +1301,10 @@
       </Id>
       <DisplayName>MG50 Coaxial ATLAS Gatling gun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FixedAtlas.dds</Icon>
-      <Description>Muzzle Velocity: 1000m/s
+      <Description>
+     Muzzle Velocity: 1000m/s
      Effective Range: 1.2km
-     Specialty Role: Crappy brrrt gun for roleplay (seriously just use a fixed Chord)
+     Specialty Role: Crappy brrrt gun for roleplay or tickling Asy, or both. (seriously just use a fixed Chord)
      Ammo: 40mm ATLAS
      </Description>
       <CubeSize>Small</CubeSize>
@@ -1344,9 +1361,13 @@
       </Id>
       <DisplayName>PL4-S Zarya Pulse Laser</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SmallPulseLaser.dds</Icon>
-      <Description>Muzzle Velocity: Hitscan
+      <Description>
+     Muzzle Velocity: Hitscan
      Effective Range: 3.5km (Falloff starts at 1.3km)
      Specialty Role: Close Range, Anti Shield, Energy
+     Heavy Armor DPS per PCU: 1.3
+     Shield Armor DPS per PCU: 30.0
+     Component Armor DPS per PCU: 2.5
      </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1396,13 +1417,14 @@
       </Id>
       <DisplayName>M-1000 Avalanche Siege Mortar</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SiegeMortar.dds</Icon>
-      <Description>Muzzle Velocity: 800m/s
-        Effective Range: 10km (2.4km minimum arming time)
-        Specialty Role: Long Range, High Knockback, Kinetic, Siege artillery
-        Ammo: 1000mm Mortar shells
-      Heavy Armor DPS per PCU: 107.5
-              Shield Armor DPS per PCU: 59.0
-             Component Armor DPS per PCU: 58.5
+      <Description>
+     Muzzle Velocity: 800m/s
+     Effective Range: 10km (2.4km minimum arming time)
+     Specialty Role: Long Range, High Knockback, Kinetic, Siege artillery
+     Ammo: 1000mm Mortar shells
+     Heavy Armor DPS per PCU: 107.5
+     Shield Armor DPS per PCU: 59.0
+     Component Armor DPS per PCU: 58.5
       </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1459,14 +1481,15 @@
       </Id>
       <DisplayName>AC54 Chord Autocannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FixedChord.dds</Icon>
-      <Description>Muzzle Velocity: 4000m/s
-        Effective Range: 6km
-        Specialty Role: Medium range, Kinetic, Anti Small Grid
-        Ammo: 54mm Autocannon
-      Heavy Armor DPS per PCU: 2.9
-              Shield Armor DPS per PCU: 9.4
-             Component Armor DPS per PCU: 4.7
-      2x Damage Multiplier against Small Grids
+      <Description>
+     Muzzle Velocity: 4000m/s
+     Effective Range: 6km
+     Specialty Role: Medium range, Kinetic, Anti Small Grid
+     Ammo: 54mm Autocannon
+     Heavy Armor DPS per PCU: 2.9
+     Shield Armor DPS per PCU: 9.4
+     Component Armor DPS per PCU: 4.7
+     2x Damage Multiplier against Small Grids
    </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1518,13 +1541,14 @@
       </Id>
       <DisplayName>Riptide Flak Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AryxRiptideFlak.dds</Icon>
-      <Description>Muzzle Velocity: 800m/s
-        Effective Range: 900km
-        Specialty Role: Short range, Kinetic, Anti Shield, Point Defense
-        Ammo: 38mm Riptide Shell
-      Heavy Armor DPS per PCU: 2.2
-              Shield Armor DPS per PCU: 24.0
-             Component Armor DPS per PCU: 8.0
+      <Description>
+     Muzzle Velocity: 800m/s
+     Effective Range: 900m
+     Specialty Role: Short range, Kinetic, Anti Shield, Point Defense
+     Ammo: 38mm Riptide Shell
+     Heavy Armor DPS per PCU: 2.2
+     Shield Armor DPS per PCU: 24.0
+     Component Armor DPS per PCU: 8.0
    </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1574,14 +1598,15 @@
          <SubtypeId>ARYX_ChordAutocannon</SubtypeId>
       </Id>
       <DisplayName>AC54 Chord</DisplayName>
-        <Description>Muzzle Velocity: 4000m/s
-        Effective Range: 6km
-        Specialty Role: Medium range, Kinetic, Anti Small Grid
-        Ammo: 54mm Autocannon
-      Heavy Armor DPS per PCU: 3.4
-              Shield Armor DPS per PCU: 10.9
-             Component Armor DPS per PCU: 5.5
-      2x Damage Multiplier against Small Grids
+        <Description>
+     Muzzle Velocity: 4000m/s
+     Effective Range: 6km
+     Specialty Role: Medium range, Kinetic, Anti Small Grid
+     Ammo: 54mm Autocannon
+     Heavy Armor DPS per PCU: 3.4
+     Shield Armor DPS per PCU: 10.9
+     Component Armor DPS per PCU: 5.5
+     2x Damage Multiplier against Small Grids
    </Description>
       <Icon>Textures\GUI\Icons\AryxChordCannon.dds</Icon>
       <CubeSize>Large</CubeSize>
@@ -1655,14 +1680,15 @@
          <SubtypeId>ARYX_ChordAutocannon_SG</SubtypeId>
       </Id>
       <DisplayName>AC54 Chord</DisplayName>
-        <Description>Muzzle Velocity: 4000m/s
-        Effective Range: 6km
-        Specialty Role: Medium range, Kinetic, Anti Small Grid
-        Ammo: 54mm Autocannon
-      Heavy Armor DPS per PCU: 2.0
-              Shield Armor DPS per PCU: 6.6
-             Component Armor DPS per PCU: 3.3
-      2x Damage Multiplier against Small Grids
+        <Description>
+     Muzzle Velocity: 4000m/s
+     Effective Range: 6km
+     Specialty Role: Medium range, Kinetic, Anti Small Grid
+     Ammo: 54mm Autocannon
+     Heavy Armor DPS per PCU: 2.0
+     Shield Armor DPS per PCU: 6.6
+     Component Armor DPS per PCU: 3.3
+     2x Damage Multiplier against Small Grids
    </Description>
       <Icon>Textures\GUI\Icons\AryxChordCannon.dds</Icon>
       <CubeSize>Small</CubeSize>
@@ -1736,13 +1762,14 @@
          <SubtypeId>ARYX_EchoAutocannon</SubtypeId>
       </Id>
       <DisplayName>AC85 Echo Autocannon</DisplayName>
-        <Description>Muzzle Velocity: 4000m/s
-        Effective Range: 10km
-        Specialty Role: Long range, Kinetic, Anti Shield, Anti Component
-        Ammo: 85mm Autocannon
-      Heavy Armor DPS per PCU: 3.2
-              Shield Armor DPS per PCU: 19.3
-             Component Armor DPS per PCU: 12.3
+        <Description>
+     Muzzle Velocity: 4000m/s
+     Effective Range: 10km
+     Specialty Role: Long range, Kinetic, Anti Shield, Anti Component
+     Ammo: 85mm Autocannon
+     Heavy Armor DPS per PCU: 3.2
+     Shield Armor DPS per PCU: 19.3
+     Component Armor DPS per PCU: 12.3
    </Description>
       <Icon>Textures\GUI\Icons\AryxEchoCannon.dds</Icon>
       <CubeSize>Large</CubeSize>
@@ -1805,13 +1832,14 @@
       <DisplayName>M8G-LS4 Longsword Missile Battery</DisplayName>
      <Public>true</Public>     
       <Icon>Textures\GUI\Icons\AryxMissileBattery.dds</Icon>     
-      <Description>Missile Velocity: 500m/s
-        Effective Range: 10km
-        Specialty Role: Long range, Energy, Anti Shield
-        Ammo: Sabre Missiles
-      Heavy Armor DPS per PCU: 2.0
-              Shield Armor DPS per PCU: 212.1
-             Component Armor DPS per PCU: 2.1
+      <Description>
+     Missile Velocity: 500m/s
+     Effective Range: 10km
+     Specialty Role: Long range, Energy, Anti Shield
+     Ammo: Sabre Missiles
+     Heavy Armor DPS per PCU: 2.0
+     Shield Armor DPS per PCU: 212.1
+     Component Armor DPS per PCU: 2.1
        </Description>
        <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1863,12 +1891,13 @@
          <SubtypeId>ARYXPlasmaPulser</SubtypeId>
       </Id>   
       <DisplayName>M5D-4E Helios Plasma Rifle</DisplayName>
-      <Description>Muzzle Velocity: 2000m/s
-        Effective Range: 10km (3km Minimum Arming Time)
-        Specialty Role: Long range, Energy, Siege Artillery
-      Heavy Armor DPS per PCU: 12.6
-              Shield Armor DPS per PCU: 166.0
-             Component Armor DPS per PCU: 18.0
+      <Description>
+     Muzzle Velocity: 2000m/s
+     Effective Range: 10km (3km Minimum Arming Time)
+     Specialty Role: Long range, Energy, Siege Artillery
+     Heavy Armor DPS per PCU: 12.6
+     Shield Armor DPS per PCU: 166.0
+     Component Armor DPS per PCU: 18.0
       </Description>
       <Icon>Textures\GUI\Icons\AryxPlasmaGun.dds</Icon>
       <CubeSize>Large</CubeSize>
@@ -1925,12 +1954,13 @@
       </Id>
       <DisplayName>M100-V Prometheus Focus Beam Lance</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FocusBeamLance.dds</Icon>
-      <Description>Muzzle Velocity: Hitscan
-        Effective Range: 10km (Falloff starts at 1000m)
-        Specialty Role: Long range, Energy, Anti Shield, Anti Component
-      Heavy Armor DPS per PCU: 3.4
-              Shield Armor DPS per PCU: 44.9
-             Component Armor DPS per PCU: 11.9
+      <Description>
+     Muzzle Velocity: Hitscan
+     Effective Range: 10km (Falloff starts at 1000m)
+     Specialty Role: Long range, Energy, Anti Shield, Anti Component
+     Heavy Armor DPS per PCU: 3.4
+     Shield Armor DPS per PCU: 44.9
+     Component Armor DPS per PCU: 11.9
       </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1986,13 +2016,14 @@
       </Id>
       <DisplayName>ZS-1200-S Ares Heavy Railgun</DisplayName>
       <Icon>Textures\GUI\Icons\AryxGaussCannon.dds</Icon>
-      <Description>Muzzle Velocity: 4999m/s
-        Effective Range: 10km
-        Specialty Role: Long range, Kinetic, Armor Piercing
-      Heavy Armor DPS per PCU: 8.5
-              Shield Armor DPS per PCU: 11.4
-             Component Armor DPS per PCU: 14.0
-      Ammo: 1200mm Ferrous
+      <Description>
+     Muzzle Velocity: 4999m/s
+     Effective Range: 10km
+     Specialty Role: Long range, Kinetic, Armor Piercing
+     Heavy Armor DPS per PCU: 8.5
+     Shield Armor DPS per PCU: 11.4
+     Component Armor DPS per PCU: 14.0
+     Ammo: 1200mm Ferrous
       </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2049,13 +2080,14 @@
       </Id>
       <DisplayName>ZS-1200 Ariana Grande Heavy Railgun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_GaussTurret.dds</Icon>
-      <Description>Muzzle Velocity: 4999m/s
-        Effective Range: 10km
-        Specialty Role: Long range, Kinetic, Armor Piercing
-      Heavy Armor DPS per PCU: 8.5
-              Shield Armor DPS per PCU: 11.4
-             Component Armor DPS per PCU: 14.0
-      Ammo: 1200mm Ferrous
+      <Description>
+     Muzzle Velocity: 4999m/s
+     Effective Range: 10km
+     Specialty Role: Long range, Kinetic, Armor Piercing
+     Heavy Armor DPS per PCU: 8.5
+     Shield Armor DPS per PCU: 11.4
+     Component Armor DPS per PCU: 14.0
+     Ammo: 1200mm Ferrous
    </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2110,13 +2142,14 @@
          <SubtypeId>ARYXHeavyCoilgun</SubtypeId>
       </Id>
       <DisplayName>E0-F Predator-850 Coilgun</DisplayName>
-      <Description>Muzzle Velocity: Hitscan
-        Effective Range: 10km
-        Specialty Role: Long range, Kinetic, Anti-Component
-      Heavy Armor DPS per PCU: 0.9
-              Shield Armor DPS per PCU: 10.9
-             Component Armor DPS per PCU: 426.7
-      Ammo: 850mm Ferrous
+      <Description>
+     Muzzle Velocity: Hitscan
+     Effective Range: 10km
+     Specialty Role: Long range, Kinetic, Anti-Component
+     Heavy Armor DPS per PCU: 0.9
+     Shield Armor DPS per PCU: 10.9
+     Component Armor DPS per PCU: 426.7
+     Ammo: 850mm Ferrous
       </Description>
       <Icon>Textures\GUI\Icons\Aryx_AWE_HeavyCoilgun.dds</Icon>
       <CubeSize>Large</CubeSize>
@@ -2181,13 +2214,14 @@
       </Id>
       <DisplayName>KR250 Apollo Railgun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AWERailgunTurret.dds</Icon>
-      <Description>Muzzle Velocity: 4999m/s
-        Effective Range: 10km
-        Specialty Role: Long range, Kinetic, Armor Piercing
-      Heavy Armor DPS per PCU: 9.3
-              Shield Armor DPS per PCU: 8.6
-             Component Armor DPS per PCU: 10.6
-      Ammo: 250mm Ferrous
+      <Description>
+     Muzzle Velocity: 4999m/s
+     Effective Range: 10km
+     Specialty Role: Long range, Kinetic, Armor Piercing
+     Heavy Armor DPS per PCU: 9.3
+     Shield Armor DPS per PCU: 8.6
+     Component Armor DPS per PCU: 10.6
+     Ammo: 250mm Ferrous
    </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2243,13 +2277,14 @@
       </Id>
       <DisplayName>KR115 Athena Picket Railgun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_PicketRailgun.dds</Icon>
-      <Description>Muzzle Velocity: 4999m/s
-        Effective Range: 10km
-        Specialty Role: Long range, Kinetic, Armor Piercing
-      Heavy Armor DPS per PCU: 10.0
-              Shield Armor DPS per PCU: 6.0
-             Component Armor DPS per PCU: 6.0
-      Ammo: 115mm Ferrous
+      <Description>
+     Muzzle Velocity: 4999m/s
+     Effective Range: 10km
+     Specialty Role: Long range, Kinetic, Armor Piercing
+     Heavy Armor DPS per PCU: 10.0
+     Shield Armor DPS per PCU: 6.0
+     Component Armor DPS per PCU: 6.0
+     Ammo: 115mm Ferrous
      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2297,13 +2332,14 @@
          <SubtypeId>ARYXLightRailgun</SubtypeId>
       </Id>
       <DisplayName>KR115 Antaeus Railgun</DisplayName>
-      <Description>Muzzle Velocity: 4999m/s
-        Effective Range: 10km
-        Specialty Role: Long range, Kinetic, Armor Piercing
-      Heavy Armor DPS per PCU: 6.7
-              Shield Armor DPS per PCU: 4.0
-             Component Armor DPS per PCU: 4.0
-      Ammo: 115mm Ferrous
+      <Description>
+     Muzzle Velocity: 4999m/s
+     Effective Range: 10km
+     Specialty Role: Long range, Kinetic, Armor Piercing
+     Heavy Armor DPS per PCU: 6.7
+     Shield Armor DPS per PCU: 4.0
+     Component Armor DPS per PCU: 4.0
+     Ammo: 115mm Ferrous
       </Description>
       <Icon>Textures\GUI\Icons\Aryx_AWE_LightRailgun.dds</Icon>
       <CubeSize>Small</CubeSize>
@@ -2362,13 +2398,14 @@
       <DisplayName>VLX-5000 Reaper Pulse Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AWEReaperPulseCannon.dds</Icon>
      <!--"E" -->
-      <Description>Muzzle Velocity: 5000m/s
-        Effective Range: 1.3km (Falloff starts at 500m)
-        Specialty Role: Short range, Kinetic, Armor Piercing, Anti-Component, Anti-Shield
-      Heavy Armor DPS per PCU: 11.6
-              Shield Armor DPS per PCU: 25.1
-             Component Armor DPS per PCU: 55.1
-      Ammo: High Density Energy Cells
+      <Description>
+     Muzzle Velocity: 5000m/s
+     Effective Range: 1.3km (Falloff starts at 500m)
+     Specialty Role: Short range, Kinetic, Armor Piercing, Anti-Component, Anti-Shield
+     Heavy Armor DPS per PCU: 11.6
+     Shield Armor DPS per PCU: 25.1
+     Component Armor DPS per PCU: 55.1
+     Ammo: High Density Energy Cells
       </Description>
          <CubeSize>Large</CubeSize>
          <BlockTopology>TriangleMesh</BlockTopology>
@@ -2422,13 +2459,14 @@
          <SubtypeId>ARYXMace</SubtypeId>
       </Id>
       <DisplayName>L82 Mace Combat Shotgun</DisplayName>
-      <Description>Muzzle Velocity: 1500m/s
-        Effective Range: 1km (Falloff starts at 100m)
-        Specialty Role: Short range, Kinetic, Anti-Shield
-      Heavy Armor DPS per PCU: 17.0
-              Shield Armor DPS per PCU: 138.7
-             Component Armor DPS per PCU: 11.2
-      Ammo: 150mm Buckshot
+      <Description>
+     Muzzle Velocity: 1500m/s
+     Effective Range: 1km (Falloff starts at 100m)
+     Specialty Role: Short range, Kinetic, Anti-Shield
+     Heavy Armor DPS per PCU: 17.0
+     Shield Armor DPS per PCU: 138.7
+     Component Armor DPS per PCU: 11.2
+     Ammo: 150mm Buckshot
       </Description>   
       <Icon>Textures\GUI\Icons\AWEMaceShotgun.dds</Icon>
       <CubeSize>Large</CubeSize>
@@ -2482,12 +2520,13 @@
       </Id>
       <DisplayName>CO-P3 Sunderer Heavy Lance</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMarkVAtlasLaser.dds</Icon>
-      <Description>Muzzle Velocity: Hitscan
-        Effective Range: 10km (Falloff starts at 5km)
-        Specialty Role: Short range, Energy, Anti Armor
-      Heavy Armor DPS per PCU: 66.6
-              Shield Armor DPS per PCU: 3.1
-             Component Armor DPS per PCU: 3.1
+      <Description>
+     Muzzle Velocity: Hitscan
+     Effective Range: 10km (Falloff starts at 5km)
+     Specialty Role: Short range, Energy, Anti Armor
+     Heavy Armor DPS per PCU: 66.6
+     Shield Armor DPS per PCU: 3.1
+     Component Armor DPS per PCU: 3.1
       </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2643,12 +2682,13 @@
       </Id>
       <DisplayName>T600A3 Magnetar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMagnetarCannon.dds</Icon>
-      <Description>Muzzle Velocity: 4000m/s
-        Effective Range: 10km (2km Minimum Arming Time)
-        Specialty Role: Long range, Energy, Anti Shield, Anti Component
-      Heavy Armor DPS per PCU: 5.5
-              Shield Armor DPS per PCU: 40.5
-             Component Armor DPS per PCU: 17.5
+      <Description>
+     Muzzle Velocity: 4000m/s
+     Effective Range: 10km (2km Minimum Arming Time)
+     Specialty Role: Long range, Energy, Anti Shield, Anti Component
+     Heavy Armor DPS per PCU: 5.5
+     Shield Armor DPS per PCU: 40.5
+     Component Armor DPS per PCU: 17.5
    </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2707,12 +2747,13 @@
       </Id>
       <DisplayName>Aurora Combat Laser</DisplayName>
       <Icon>Textures\GUI\Icons\AryxLaserGatling.dds</Icon>        
-      <Description>Muzzle Velocity: Hitscan
-        Effective Range: 3km (Falloff starts at 500m)
-        Specialty Role: Short range, Energy, Anti Shield, Anti Personnel
-      Heavy Armor DPS per PCU: 7.2
-              Shield Armor DPS per PCU: 24.0
-             Component Armor DPS per PCU: 7.2
+      <Description>
+     Muzzle Velocity: Hitscan
+     Effective Range: 3km (Falloff starts at 500m)
+     Specialty Role: Short range, Energy, Anti Shield, Anti Personnel
+     Heavy Armor DPS per PCU: 7.2
+     Shield Armor DPS per PCU: 24.0
+     Component Armor DPS per PCU: 7.2
    </Description>
      <CubeSize>Large</CubeSize>
      <BlockTopology>TriangleMesh</BlockTopology>
@@ -2772,12 +2813,13 @@
       </Id>
       <DisplayName>T400A2 Quasar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxQuasarCannon.dds</Icon>
-      <Description>Muzzle Velocity: 2400m/s
-        Effective Range: 10km (1.5km Minimum Arming Time)
-        Specialty Role: Medium range, Energy, Anti Shield, Anti Component
-      Heavy Armor DPS per PCU: 3.0
-              Shield Armor DPS per PCU: 49.2
-             Component Armor DPS per PCU: 21.6
+      <Description>
+     Muzzle Velocity: 2400m/s
+     Effective Range: 10km (1.5km Minimum Arming Time)
+     Specialty Role: Medium range, Energy, Anti Shield, Anti Component
+     Heavy Armor DPS per PCU: 3.0
+     Shield Armor DPS per PCU: 49.2
+     Component Armor DPS per PCU: 21.6
    </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2836,12 +2878,13 @@
       </Id>
       <DisplayName>T200A1 Pulsar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxPulsarCannon.dds</Icon>
-      <Description>Muzzle Velocity: 1600m/s
-        Effective Range: 10km (1km Minimum Arming Time)
-        Specialty Role: Short/Medium range, Energy, Anti Shield, Anti Component
-      Heavy Armor DPS per PCU: 2.3
-              Shield Armor DPS per PCU: 64.0
-             Component Armor DPS per PCU: 28.1
+      <Description>
+     Muzzle Velocity: 1600m/s
+     Effective Range: 10km (1km Minimum Arming Time)
+     Specialty Role: Short/Medium range, Energy, Anti Shield, Anti Component
+     Heavy Armor DPS per PCU: 2.3
+     Shield Armor DPS per PCU: 64.0
+     Component Armor DPS per PCU: 28.1
    </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2896,12 +2939,13 @@
       </Id>
       <DisplayName>AL35 Spartan Plasma Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SpartanCannon.dds</Icon>     
-      <Description>Muzzle Velocity: 2400m/s
-        Effective Range: 6km
-        Specialty Role: Medium range, Energy, Anti Shield
-      Heavy Armor DPS per PCU: 2.5
-              Shield Armor DPS per PCU: 30.0
-             Component Armor DPS per PCU: 3.8
+      <Description>
+     Muzzle Velocity: 2400m/s
+     Effective Range: 6km
+     Specialty Role: Medium range, Energy, Anti Shield
+     Heavy Armor DPS per PCU: 2.5
+     Shield Armor DPS per PCU: 30.0
+     Component Armor DPS per PCU: 3.8
    </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2959,12 +3003,13 @@
       </Id>
       <DisplayName>AL35-R Spartan Plasma Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_MiniSpartan.dds</Icon>     
-      <Description>Muzzle Velocity: 2400m/s
-        Effective Range: 6km
-        Specialty Role: Medium range, Energy, Anti Shield
-      Heavy Armor DPS per PCU: 3.5
-              Shield Armor DPS per PCU: 42.0
-             Component Armor DPS per PCU: 5.3
+      <Description>
+     Muzzle Velocity: 2400m/s
+     Effective Range: 6km
+     Specialty Role: Medium range, Energy, Anti Shield
+     Heavy Armor DPS per PCU: 3.5
+     Shield Armor DPS per PCU: 42.0
+     Component Armor DPS per PCU: 5.3
    </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -3017,13 +3062,14 @@
       </Id>
       <DisplayName>MG65-T Vulcan Gatling Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_VulcanCannon.dds</Icon>     
-      <Description>Muzzle Velocity: 2400m/s
-        Effective Range: 2km
-        Specialty Role: Short range, Kinetic, Anti Component, Anti Shield
-      Heavy Armor DPS per PCU: 3.8
-              Shield Armor DPS per PCU: 19.2
-             Component Armor DPS per PCU: 38.4
-      Ammo: 40mm ATLAS
+      <Description>
+     Muzzle Velocity: 2400m/s
+     Effective Range: 2km
+     Specialty Role: Short range, Kinetic, Anti Component, Anti Shield
+     Heavy Armor DPS per PCU: 3.8
+     Shield Armor DPS per PCU: 19.2
+     Component Armor DPS per PCU: 38.4
+     Ammo: 40mm ATLAS
       </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
