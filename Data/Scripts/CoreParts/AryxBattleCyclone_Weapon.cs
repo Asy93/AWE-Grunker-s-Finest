@@ -64,7 +64,7 @@ namespace Scripts
             HardPoint = new HardPointDef
             {
                 PartName = "Cyclone Heavy Cannon", // name of weapon in terminal
-                DeviateShotAngle = 0.7f,
+                DeviateShotAngle = 0.4f,
                 AimingTolerance = 0.1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).

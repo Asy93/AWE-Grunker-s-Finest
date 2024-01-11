@@ -94,7 +94,7 @@ namespace Scripts
                     Armor = 3.0f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
                     Light = -1f, // Multiplier for damage against light armor.
                     Heavy = -1f, // Multiplier for damage against heavy armor.
-                    NonArmor = 5f, // Multiplier for damage against every else.
+                    NonArmor = 2.5f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {
@@ -235,7 +235,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 4999,
+                DesiredSpeed = 7500,
                 MaxTrajectory = 10000,
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
