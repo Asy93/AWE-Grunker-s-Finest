@@ -23,7 +23,7 @@ namespace Scripts {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        DurabilityMod = 0.2f,
+                        DurabilityMod = 0.15f,
                     },
                     new MountPointDef {
                         SubtypeId = "ARYXBurstTurretSlanted",
@@ -31,7 +31,7 @@ namespace Scripts {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        DurabilityMod = 0.2f,
+                        DurabilityMod = 0.15f,
                     },
                     new MountPointDef {
                         SubtypeId = "ARYXBurstTurret_SG",
@@ -39,7 +39,7 @@ namespace Scripts {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        DurabilityMod = 0.2f,
+                        DurabilityMod = 0.15f,
                     },
                 },
                 Muzzles = new[] {
@@ -197,6 +197,7 @@ namespace Scripts {
             },
             Ammos = new[] {
                 AryxHEBurstAmmoWC,
+                AryxHEBusterAmmoWC,
             },
             //Animations = Weapon75_Animation,
             //Upgrades = UpgradeModules,

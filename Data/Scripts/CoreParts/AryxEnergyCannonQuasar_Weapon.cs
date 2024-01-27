@@ -180,7 +180,8 @@ namespace Scripts {
                 },
             },
             Ammos = new[] {
-                AryxQuasarAmmo, // must list primary, shrapnel and pattern ammos
+                AryxQuasarAmmo,
+                AryxQuasarBusterAmmo, // must list primary, shrapnel and pattern ammos
             },
             //Animations = Weapon75_Animation,
             //Upgrades = UpgradeModules,
