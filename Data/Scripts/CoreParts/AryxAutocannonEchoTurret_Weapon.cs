@@ -23,7 +23,7 @@ namespace Scripts
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        DurabilityMod = 0.2f,
+                        DurabilityMod = 0.1f,
                     },
                     
                 },
@@ -166,6 +166,7 @@ namespace Scripts
             },
             Ammos = new [] {
                 AryxEchoHEAmmo,
+                AryxEchoHEBusterAmmo,
             },
             Animations = AryxEchoAnimations,
             // Don't edit below this line

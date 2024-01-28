@@ -100,7 +100,7 @@ namespace Scripts
                 {
                     Modifier = -1f,
                     Type = Default,
-                    BypassModifier = -2f,
+                    BypassModifier = -1f,
                 },
                 DamageType = new DamageTypes
                 {

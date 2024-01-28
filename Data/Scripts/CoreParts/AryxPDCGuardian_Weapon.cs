@@ -25,7 +25,7 @@ namespace Scripts
                         MuzzlePartId = "GatlingBarrel",
                         AzimuthPartId = "GatlingTurretBase1",
                         ElevationPartId = "GatlingTurretBase2",
-                        DurabilityMod = 0.2f,	 
+                        DurabilityMod = 0.1f,	 
 					},
                     new MountPointDef {
                         SubtypeId = "ARYXSlantedAtlasPDC",
@@ -33,7 +33,7 @@ namespace Scripts
                         MuzzlePartId = "GatlingBarrel",
                         AzimuthPartId = "GatlingTurretBase1",
                         ElevationPartId = "GatlingTurretBase2",
-                        DurabilityMod = 0.2f,
+                        DurabilityMod = 0.1f,
                     },
                 },
                 Muzzles = new[] {

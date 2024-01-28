@@ -29,7 +29,7 @@ namespace Scripts
         private AmmoDef AryxModulusLaser_VioletLaser => new AmmoDef //Longest range, lowest dmg.
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "380nm Laser - MODVIO",
+            AmmoRound = "380nm Standard Laser",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 4f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(450 * AWEGlobalDamageScalar),
