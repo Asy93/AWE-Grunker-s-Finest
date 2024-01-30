@@ -24,7 +24,7 @@ namespace Scripts
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-                        DurabilityMod = 0.125f,
+                        DurabilityMod = 0.167f,
                     },
 
                 },
