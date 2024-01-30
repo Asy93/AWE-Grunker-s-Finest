@@ -33,7 +33,7 @@ namespace Scripts
                         MuzzlePartId = "GatlingBarrel",
                         AzimuthPartId = "GatlingTurretBase1",
                         ElevationPartId = "GatlingTurretBase2",
-                        DurabilityMod = 0.1f,
+                        DurabilityMod = 0.125f,
                     },
                 },
                 Muzzles = new[] {
