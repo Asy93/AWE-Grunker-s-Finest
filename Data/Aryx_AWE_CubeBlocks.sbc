@@ -2910,7 +2910,7 @@
       <DisplayName>T200A1 Pulsar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxPulsarCannon.dds</Icon>
       <Description>
-     Muzzle Velocity: 1600m/s
+     Muzzle Velocity: 1800m/s
      Effective Range: 10km
      Specialty Role: Short/Medium range, Energy, Anti Shield, Anti Component
      Heavy Armor DPS per PCU: 2.3
