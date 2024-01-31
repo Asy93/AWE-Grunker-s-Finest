@@ -15,7 +15,7 @@ namespace GrunkQuest
     public class InhibRewrite : MyGameLogicComponent
     {
         public const double INHIB_ACTIVE_TIME = 45.0;
-        public const double INHIB_COOLDOWN_TIME = 135.0;
+        public const double INHIB_COOLDOWN_TIME = 85.0;
 
         public InhibitorState InhibState;
 
