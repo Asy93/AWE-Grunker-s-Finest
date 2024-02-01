@@ -22,7 +22,7 @@ namespace Scripts {
                         MuzzlePartId = "MissileTurretBarrels", // The subpart where your muzzle empties are located.
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        DurabilityMod = 0.083f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 0.100f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                     },
                 },
                 Muzzles = new[] {

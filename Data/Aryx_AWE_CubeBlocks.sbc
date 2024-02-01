@@ -9,13 +9,13 @@
       </Id>
       <DisplayName>M240 Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>
-      <Description>Muzzle Velocity: 1600m/s
+      <Description>Muzzle Velocity: 1800m/s
      Maximum Range: 10km
      Role: Short Range, Anti-Armor, Anti-Component
      Ammo: 240mm Heavy Shell
-     Heavy Armor DPS per PCU: 20.1
-     Shield Armor DPS per PCU: 4.0
-     Component Armor DPS per PCU: 38.4
+     Heavy Armor DPS per PCU: 23.2
+     Shield Armor DPS per PCU: 12.7
+     Component Armor DPS per PCU: 44.3
 
      </Description>
       <CubeSize>Large</CubeSize>
@@ -68,13 +68,13 @@
       <DisplayName>M240 Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>     
       <Description>
-     Muzzle Velocity: 1600m/s
+     Muzzle Velocity: 1800m/s
      Maximum Range: 10km
      Role: Short Range, Anti-Armor, Anti-Component
      Ammo: 240mm Heavy Shell
-     Heavy Armor DPS per PCU: 20.1
-     Shield Armor DPS per PCU: 4.0
-     Component Armor DPS per PCU: 38.4
+     Heavy Armor DPS per PCU: 23.2
+     Shield Armor DPS per PCU: 12.7
+     Component Armor DPS per PCU: 44.3
      </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -126,13 +126,13 @@
       <DisplayName>M480 Hurricane Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHurricaneCannon.dds</Icon>     
       <Description>
-     Muzzle Velocity: 2400m/s
+     Muzzle Velocity: 2800m/s
      Maximum Range: 10km
      Specialty Role: Medium Range, Anti-Armor, Anti-Component
      Ammo: 480mm Heavy Shell
-     Heavy Armor DPS per PCU: 15.7
-     Shield Armor DPS per PCU: 8.1
-     Component Armor DPS per PCU: 30.5
+     Heavy Armor DPS per PCU: 17.4
+     Shield Armor DPS per PCU: 13.4
+     Component Armor DPS per PCU: 33.8
      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2841,7 +2841,7 @@
       <DisplayName>T400A2 Quasar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxQuasarCannon.dds</Icon>
       <Description>
-     Muzzle Velocity: 2400m/s
+     Muzzle Velocity: 2800m/s
      Effective Range: 10km
      Specialty Role: Medium range, Energy, Anti Shield, Anti Component
      Heavy Armor DPS per PCU: 3.0
@@ -2910,7 +2910,7 @@
       <DisplayName>T200A1 Pulsar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxPulsarCannon.dds</Icon>
       <Description>
-     Muzzle Velocity: 1600m/s
+     Muzzle Velocity: 1800m/s
      Effective Range: 10km
      Specialty Role: Short/Medium range, Energy, Anti Shield, Anti Component
      Heavy Armor DPS per PCU: 2.3
