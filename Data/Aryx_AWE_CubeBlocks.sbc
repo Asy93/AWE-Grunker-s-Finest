@@ -3281,10 +3281,10 @@
       <ModelOffset x="0" y="0" z="0" />
       <Model>Models\JumpInhibitor\JumpInhibitor_Large.mwm</Model>
       <Components>
-         <Component Subtype="SteelPlate" Count="500" />
+         <Component Subtype="SteelPlate" Count="40" />
          <Component Subtype="GravityGenerator" Count="100" />
          <Component Subtype="ShieldComponent" Count="800" />
-         <Component Subtype="MetalGrid" Count="100" />
+         <Component Subtype="MetalGrid" Count="10" />
          <Component Subtype="Construction" Count="100" />
          <Component Subtype="GravityGenerator" Count="20" />
          <Component Subtype="Detector" Count="20" />
@@ -3292,8 +3292,8 @@
          <Component Subtype="Superconductor" Count="1000" />
          <Component Subtype="Computer" Count="300" />
          <Component Subtype="RadioCommunication" Count="160" />
-         <Component Subtype="MetalGrid" Count="10" />
-         <Component Subtype="SteelPlate" Count="40" />
+         <Component Subtype="MetalGrid" Count="100" />
+         <Component Subtype="SteelPlate" Count="500" />
       </Components>
       <CriticalComponent Subtype="RadioCommunication" Index="0" />
       <BuildProgressModels>
