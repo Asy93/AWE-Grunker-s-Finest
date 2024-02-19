@@ -2418,7 +2418,7 @@
       <Description>
      Muzzle Velocity: 5000m/s
      Effective Range: 1.3km (Falloff starts at 500m)
-     Specialty Role: Short range, Kinetic, Armor Piercing, Anti-Component, Anti-Shield
+     Specialty Role: Short range, Energy, Armor Piercing, Anti-Component, Anti-Shield
      Heavy Armor DPS per PCU: 11.6
      Shield Armor DPS per PCU: 25.1
      Component Armor DPS per PCU: 55.1
