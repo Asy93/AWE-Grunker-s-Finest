@@ -3268,6 +3268,61 @@
    </Definition>      
 
 <!-- Jump Inhibitor ELITE-->      
+	<Definition xsi:type="MyObjectBuilder_BeaconDefinition">
+		<Id>
+			<TypeId>Beacon</TypeId>
+			<SubtypeId>SmallJumpInhibitor</SubtypeId>
+		</Id>
+		<DisplayName>Jump Inhibitor</DisplayName>
+		<Icon>Textures\Icons\JumpInhibitor.png</Icon>
+		<CubeSize>Small</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="3" y="3" z="2"/>
+		<ModelOffset x="0" y="0" z="0" />
+		<Model>Models\Cubes\JumpDrive\JumpDrive.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="50" />
+			<Component Subtype="GravityGenerator" Count="10" />
+			<Component Subtype="ShieldComponent" Count="80" />
+			<Component Subtype="MetalGrid" Count="10" />
+			<Component Subtype="Construction" Count="10" />
+			<Component Subtype="GravityGenerator" Count="2" />
+			<Component Subtype="Detector" Count="2" />
+			<Component Subtype="PowerCell" Count="12" />
+			<Component Subtype="Superconductor" Count="100" />
+			<Component Subtype="Computer" Count="30" />
+			<Component Subtype="RadioCommunication" Count="16" />
+			<Component Subtype="MetalGrid" Count="1" />
+			<Component Subtype="SteelPlate" Count="4" />
+		</Components>
+		<CriticalComponent Subtype="RadioCommunication" Index="0" />
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="Models\Cubes\JumpDrive\JumpDriveConstruction_1.mwm"/>
+			<Model BuildPercentUpperBound="0.66" File="Models\Cubes\JumpDrive\JumpDriveConstruction_2.mwm"/>
+			<Model BuildPercentUpperBound="1.00" File="Models\Cubes\JumpDrive\JumpDriveConstruction_3.mwm"/>
+		</BuildProgressModels>
+		<MountPoints>
+			<MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="2.9" EndY="1.9"/>
+			<MountPoint Side="Back" StartX="0.1" StartY="0.1" EndX="2.9" EndY="2.9"/>
+			<MountPoint Side="Left" StartX="0.1" StartY="0.1" EndX="1.9" EndY="2.9"/>
+			<MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="2.9" EndY="2.9"/>
+			<MountPoint Side="Right" StartX="0.1" StartY="0.1" EndX="1.9" EndY="2.9"/>
+			<MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="2.9" EndY="1.9"/>
+		</MountPoints>
+		<ResourceSinkGroup>Utility</ResourceSinkGroup>
+		<BlockPairName>JumpDriveInhibitor</BlockPairName>
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>30</BuildTimeSeconds>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+		<DamageEffectId>214</DamageEffectId>
+		<MaxBroadcastRadius>3000</MaxBroadcastRadius>
+		<MaxBroadcastPowerDrainkW>20000</MaxBroadcastPowerDrainkW>
+		<DamagedSound>ParticleElectrical</DamagedSound>
+		<PCU>5000</PCU>
+		<IsAirTight>true</IsAirTight>
+	</Definition>
+
    <Definition xsi:type="MyObjectBuilder_BeaconDefinition">
       <Id>
          <TypeId>Beacon</TypeId>
