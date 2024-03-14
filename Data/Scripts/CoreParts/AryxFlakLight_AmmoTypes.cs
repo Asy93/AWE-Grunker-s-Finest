@@ -149,7 +149,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 5f, // Meters
-                    Damage = 1000,
+                    Damage = (float)(1000 * AWEGlobalDamageScalar),
                     Depth = 0f,
                     MaxAbsorb = 0f,
                     Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius

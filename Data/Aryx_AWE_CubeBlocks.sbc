@@ -48,7 +48,7 @@
       <BuildTimeSeconds>90</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxCycloneWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.24</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -106,7 +106,7 @@
       <BuildTimeSeconds>90</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxCycloneWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.24</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -169,7 +169,7 @@
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxHurricaneWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.576</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -232,7 +232,7 @@
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxTyphoonWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.9</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -548,7 +548,7 @@
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxBurstCannonWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.144</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -613,7 +613,7 @@
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxBurstCannonWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.144</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -737,7 +737,7 @@
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxHeavyFlakTurretWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.144</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -749,13 +749,76 @@
       <string>Weapons</string>
       </TargetingGroups>      
     </Definition>   
+<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXKingswordSupercannon</SubtypeId>
+		</Id>
+		<DisplayName>S12A-3KS Kingsword Casaba Lance</DisplayName>
+		<Description>Designated the S12A-3KS KING SWORD, or more commonly, the Boomstick, is a superheavy casaba lance. These work by detonating a shaped fusion charge in the barrel, then using high-powered electromagnets to direct the blast into a devastating beam of nuclear fire. At an approximate 153.5m long, it is the largest ship-mounted weapon on the market designated for civilian use.
 
-   <!-- <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+Wrought forth from the forges of divinity, bring the ultimate arbiter of destruction; Cast down into eternal perdition ye shall send. [Accepts Kingsword Nukes - 50km range (Energy)]
+Effects: Fires a beam of nuclear fire that destroys anything it hits.
+Reload time: 120 seconds.
+Size: 5x9x61
+
+		</Description>	
+
+		<Icon>Textures\GUI\Icons\Aryx_AWE_Kingsword.dds</Icon>
+		<CubeSize>Large</CubeSize>
+      		<Public>true</Public> 
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="5" y="9" z="61"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Kingsword\ARYX_KingswordBase.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="11250" />
+			<Component Subtype="Construction" Count="7500" />
+			<Component Subtype="MetalGrid" Count="5000" />
+			<Component Subtype="PowerCell" Count="2500" />	
+			<Component Subtype="Superconductor" Count="6000" />				
+			<Component Subtype="LargeTube" Count="2500" />
+			<Component Subtype="Girder" Count="2500" />
+			<Component Subtype="ElectromagnetAWE" Count="2000" />
+			<Component Subtype="Motor" Count="5000" />		
+			<Component Subtype="SuperchargerAWE" Count ="2500" />	
+			<Component Subtype="Computer" Count="5000" />
+			<Component Subtype="MetalGrid" Count="5000" />
+			<Component Subtype="MilitaryPlateAWE" Count="9750" />
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="9.00"/>
+				<MountPoint Side="Left" StartX="44.00" StartY="0.27" EndX="61.00" EndY="8.73"/>
+				<MountPoint Side="Left" StartX="9.00" StartY="2.00" EndX="44.00" EndY="7.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.27" EndX="17.00" EndY="8.73"/>
+				<MountPoint Side="Right" StartX="17.00" StartY="2.00" EndX="52.00" EndY="7.00"/>
+				<MountPoint Side="Top" StartX="0.25" StartY="0.29" EndX="4.75" EndY="57.71"/>
+				<MountPoint Side="Bottom" StartX="0.25" StartY="3.29" EndX="4.75" EndY="60.71"/>
+			</MountPoints>
+
+			<BlockPairName>AWEKingswordCoilcannon</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>200</BuildTimeSeconds>
+		<InventoryMaxVolume>1</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>2500</PCU>   		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>ARYXRocketArtillery</SubtypeId>
       </Id>
       <DisplayName>RA-5 Starfall Rocket Artillery</DisplayName>
+      <Public>true</Public> 
       <Icon>Textures\GUI\Icons\Aryx_AWE_Starfall.dds</Icon>     
       <Description>The Starfall is a heavy rocket battery designed for plunging fire that launches long-range nuclear missiles at extreme velocity, able to strike targets regardless of cover. The missiles disengage guidance during their final stage and accelerate to massive speeds, able to slip through PD screens and obliterate the delicate hull beneath. Hurricane on the roof; Armageddon on your doorstep. [15km range - Accepts Starfall Nuclear Missiles]
      Effects: Fires five extremely fast and deadly missiles at enemies from long range.
@@ -801,8 +864,8 @@
       <BuildTimeSeconds>85</BuildTimeSeconds>
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
-      < WeaponDefinitionId Subtype="AryxBurstCannonWepDef" \>
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+      <WeaponDefinitionId Subtype="AryxBurstCannonWepDef" />
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.48</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -813,7 +876,7 @@
       <TargetingGroups>
       <string>Weapons</string>
       </TargetingGroups>      
-    </Definition> -->
+    </Definition>
    <!-- <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -862,7 +925,7 @@
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxPulseLaserWepDef"/>
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.48</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -932,7 +995,7 @@
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxPulseLaserWepDef"/>
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.48</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -992,7 +1055,7 @@
       <MirroringZ>Y</MirroringZ>
       <BuildTimeSeconds>15</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
       <DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -1106,7 +1169,7 @@
       <BuildTimeSeconds>45</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxAtlasWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>     
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>     
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.2</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -1288,7 +1351,7 @@
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <BuildTimeSeconds>40</BuildTimeSeconds>
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture> 
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture> 
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxPulseLaserWepDef" />
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
@@ -1590,7 +1653,7 @@
       <BuildTimeSeconds>35</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxFlakTurretWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.180</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -1662,7 +1725,7 @@
          </BuildProgressModels>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>30</BuildTimeSeconds>
-      <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <WeaponDefinitionId Subtype="AutocannonTurret" />
       <InventoryMaxVolume>0.150</InventoryMaxVolume>
       <DamageEffectId>213</DamageEffectId>
@@ -1744,7 +1807,7 @@
          </BuildProgressModels>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>30</BuildTimeSeconds>
-      <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <WeaponDefinitionId Subtype="AutocannonTurret" />
       <InventoryMaxVolume>0.150</InventoryMaxVolume>
       <DamageEffectId>213</DamageEffectId>
@@ -1816,7 +1879,7 @@
       </BuildProgressModels>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>45</BuildTimeSeconds>
-      <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <WeaponDefinitionId Subtype="AutocannonTurret" />
       <InventoryMaxVolume>0.150</InventoryMaxVolume>
       <DamageEffectId>213</DamageEffectId>
@@ -1887,7 +1950,7 @@
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
       <!--WeaponDefinitionId Subtype="AryxBurstCannonWepDef" /-->
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.48</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -2134,7 +2197,7 @@
             <Model BuildPercentUpperBound="0.66" File="Models\Gauss\ARYX_GaussTurretBase_BS2.mwm"/>
             <Model BuildPercentUpperBound="1.0" File="Models\Gauss\ARYX_GaussTurretBase_BS3.mwm"/>
          </BuildProgressModels>         
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <BlockPairName>AryxGaussTurret</BlockPairName>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
@@ -2269,7 +2332,7 @@
         <Model BuildPercentUpperBound="0.67" File="Models\AWERailTurret\LG_ARYXRailgunTurret_Base_BS2.mwm"/>
         <Model BuildPercentUpperBound="1.00" File="Models\AWERailTurret\LG_ARYXRailgunTurret_Base_BS3.mwm"/>
      </BuildProgressModels>
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <BlockPairName>AryxRailgunTurret</BlockPairName>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
@@ -2324,7 +2387,7 @@
      <MountPoints>
       <MountPoint Side="Bottom" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00"/>
      </MountPoints>
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <BlockPairName>AryxPicketRailTurret</BlockPairName>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
@@ -2418,7 +2481,7 @@
       <Description>
      Muzzle Velocity: 5000m/s
      Effective Range: 1.3km (Falloff starts at 500m)
-     Specialty Role: Short range, Energy, Armor Piercing, Anti-Component, Anti-Shield
+     Specialty Role: Short range, Kinetic, Armor Piercing, Anti-Component, Anti-Shield
      Heavy Armor DPS per PCU: 11.6
      Shield Armor DPS per PCU: 25.1
      Component Armor DPS per PCU: 55.1
@@ -2458,7 +2521,7 @@
             <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="7.0" EndY="7.0"/>
          </MountPoints>
 
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <BlockPairName>AryxReaperTurret</BlockPairName>
      <MirroringY>Z</MirroringY>
      <MirroringZ>Y</MirroringZ>
@@ -2754,7 +2817,7 @@
       <BuildTimeSeconds>120</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxTyphoonWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.9</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -2817,7 +2880,7 @@
          <MirroringY>Z</MirroringY>
          <MirroringZ>Y</MirroringZ>
       <BuildTimeSeconds>45</BuildTimeSeconds>
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture> 
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture> 
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxAtlasWepDef" />
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
@@ -2889,7 +2952,7 @@
       <BuildTimeSeconds>60</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxTyphoonWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.9</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -2954,7 +3017,7 @@
       <BuildTimeSeconds>30</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxTyphoonWepDef" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.9</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -3025,7 +3088,7 @@
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxFWEnergyWeaponDefinition" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.144</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -3151,7 +3214,7 @@
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxFWEnergyWeaponDefinition" />
-     <OverlayTexture>Textures\GUI\Screens    urret_overlay.dds</OverlayTexture>          
+     <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.144</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -3267,62 +3330,7 @@
       </TargetingGroups>      
    </Definition>      
 
-<!-- Jump Inhibitor ELITE-->      
-	<Definition xsi:type="MyObjectBuilder_BeaconDefinition">
-		<Id>
-			<TypeId>Beacon</TypeId>
-			<SubtypeId>SmallJumpInhibitor</SubtypeId>
-		</Id>
-		<DisplayName>Jump Inhibitor</DisplayName>
-		<Icon>Textures\Icons\JumpInhibitor.png</Icon>
-		<CubeSize>Small</CubeSize>
-		<BlockTopology>TriangleMesh</BlockTopology>
-		<Size x="3" y="3" z="2"/>
-		<ModelOffset x="0" y="0" z="0" />
-		<Model>Models\Cubes\JumpDrive\JumpDrive.mwm</Model>
-		<Components>
-			<Component Subtype="SteelPlate" Count="50" />
-			<Component Subtype="GravityGenerator" Count="10" />
-			<Component Subtype="ShieldComponent" Count="80" />
-			<Component Subtype="MetalGrid" Count="10" />
-			<Component Subtype="Construction" Count="10" />
-			<Component Subtype="GravityGenerator" Count="2" />
-			<Component Subtype="Detector" Count="2" />
-			<Component Subtype="PowerCell" Count="12" />
-			<Component Subtype="Superconductor" Count="100" />
-			<Component Subtype="Computer" Count="30" />
-			<Component Subtype="RadioCommunication" Count="16" />
-			<Component Subtype="MetalGrid" Count="1" />
-			<Component Subtype="SteelPlate" Count="4" />
-		</Components>
-		<CriticalComponent Subtype="RadioCommunication" Index="0" />
-		<BuildProgressModels>
-			<Model BuildPercentUpperBound="0.33" File="Models\Cubes\JumpDrive\JumpDriveConstruction_1.mwm"/>
-			<Model BuildPercentUpperBound="0.66" File="Models\Cubes\JumpDrive\JumpDriveConstruction_2.mwm"/>
-			<Model BuildPercentUpperBound="1.00" File="Models\Cubes\JumpDrive\JumpDriveConstruction_3.mwm"/>
-		</BuildProgressModels>
-		<MountPoints>
-			<MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="2.9" EndY="1.9"/>
-			<MountPoint Side="Back" StartX="0.1" StartY="0.1" EndX="2.9" EndY="2.9"/>
-			<MountPoint Side="Left" StartX="0.1" StartY="0.1" EndX="1.9" EndY="2.9"/>
-			<MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="2.9" EndY="2.9"/>
-			<MountPoint Side="Right" StartX="0.1" StartY="0.1" EndX="1.9" EndY="2.9"/>
-			<MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="2.9" EndY="1.9"/>
-		</MountPoints>
-		<ResourceSinkGroup>Utility</ResourceSinkGroup>
-		<BlockPairName>JumpDriveInhibitor</BlockPairName>
-		<EdgeType>Light</EdgeType>
-		<BuildTimeSeconds>30</BuildTimeSeconds>
-		<MirroringY>Z</MirroringY>
-		<MirroringZ>Y</MirroringZ>
-		<DamageEffectId>214</DamageEffectId>
-		<MaxBroadcastRadius>3000</MaxBroadcastRadius>
-		<MaxBroadcastPowerDrainkW>20000</MaxBroadcastPowerDrainkW>
-		<DamagedSound>ParticleElectrical</DamagedSound>
-		<PCU>5000</PCU>
-		<IsAirTight>true</IsAirTight>
-	</Definition>
-
+<!-- Jump Inhibitor LARGE-->      
    <Definition xsi:type="MyObjectBuilder_BeaconDefinition">
       <Id>
          <TypeId>Beacon</TypeId>
@@ -3336,21 +3344,22 @@
       <ModelOffset x="0" y="0" z="0" />
       <Model>Models\JumpInhibitor\JumpInhibitor_Large.mwm</Model>
       <Components>
-         <Component Subtype="SteelPlate" Count="40" />
-         <Component Subtype="GravityGenerator" Count="100" />
-         <Component Subtype="ShieldComponent" Count="800" />
-         <Component Subtype="MetalGrid" Count="10" />
-         <Component Subtype="Construction" Count="100" />
-         <Component Subtype="GravityGenerator" Count="20" />
-         <Component Subtype="Detector" Count="20" />
-         <Component Subtype="PowerCell" Count="120" />
-         <Component Subtype="Superconductor" Count="1000" />
-         <Component Subtype="Computer" Count="300" />
-         <Component Subtype="RadioCommunication" Count="160" />
-         <Component Subtype="MetalGrid" Count="100" />
-         <Component Subtype="SteelPlate" Count="500" />
+         <Component Subtype="SteelPlate" Count="1000" />
+         <Component Subtype="GravityGenerator" Count="200" />
+         <Component Subtype="ShieldComponent" Count="1600" />
+	 <Component Subtype="MilitaryPlateAWE" Count="1000" />
+         <Component Subtype="MetalGrid" Count="200" />
+         <Component Subtype="Construction" Count="200" />
+         <Component Subtype="GravityGenerator" Count="40" />
+         <Component Subtype="Detector" Count="40" />
+         <Component Subtype="PowerCell" Count="240" />
+         <Component Subtype="Superconductor" Count="2000" />
+         <Component Subtype="Computer" Count="600" />
+         <Component Subtype="RadioCommunication" Count="320" />
+         <Component Subtype="MetalGrid" Count="20" />
+         <Component Subtype="SteelPlate" Count="80" />
       </Components>
-      <CriticalComponent Subtype="RadioCommunication" Index="0" />
+      <CriticalComponent Subtype="ShieldComponent" Index="0" />
       <BuildProgressModels>
          <Model BuildPercentUpperBound="0.33" File="Models\JumpInhibitor\JumpInhibitor_Large_Constr1.mwm" />
          <Model BuildPercentUpperBound="0.66" File="Models\JumpInhibitor\JumpInhibitor_Large_Constr2.mwm" />
@@ -3372,6 +3381,61 @@
       <DamageEffectId>214</DamageEffectId>
       <MaxBroadcastRadius>6000</MaxBroadcastRadius>
       <MaxBroadcastPowerDrainkW>200000</MaxBroadcastPowerDrainkW>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <PCU>5000</PCU>
+      <IsAirTight>true</IsAirTight>
+   </Definition>
+<!-- Jump Inhibitor SMALL-->      
+   <Definition xsi:type="MyObjectBuilder_BeaconDefinition">
+      <Id>
+         <TypeId>Beacon</TypeId>
+         <SubtypeId>SmallJumpInhibitor</SubtypeId>
+      </Id>
+      <DisplayName>Jump Inhibitor</DisplayName>
+      <Icon>Textures\Icons\JumpInhibitor.png</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\JumpInhibitor\JumpInhibitor_Small.mwm</Model>
+      <Components>
+         <Component Subtype="SteelPlate" Count="30" />
+         <Component Subtype="GravityGenerator" Count="10" />
+         <Component Subtype="ShieldComponent" Count="40" />
+	       <Component Subtype="MilitaryPlateAWE" Count="10" />
+         <Component Subtype="MetalGrid" Count="10" />
+         <Component Subtype="Construction" Count="10" />
+         <Component Subtype="GravityGenerator" Count="4" />
+         <Component Subtype="Detector" Count="4" />
+         <Component Subtype="PowerCell" Count="10" />
+         <Component Subtype="Superconductor" Count="25" />
+         <Component Subtype="Computer" Count="25" />
+         <Component Subtype="RadioCommunication" Count="10" />
+         <Component Subtype="MetalGrid" Count="2" />
+         <Component Subtype="SteelPlate" Count="8" />
+      </Components>
+      <CriticalComponent Subtype="ShieldComponent" Index="0" />
+      <BuildProgressModels>
+         <Model BuildPercentUpperBound="0.33" File="Models\JumpInhibitor\JumpInhibitor_Small_Constr1.mwm" />
+         <Model BuildPercentUpperBound="0.66" File="Models\JumpInhibitor\JumpInhibitor_Small_Constr2.mwm" />
+         <Model BuildPercentUpperBound="1.00" File="Models\JumpInhibitor\JumpInhibitor_Small_Constr3.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+          <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="2.9" EndY="1.9"/>
+          <MountPoint Side="Back" StartX="0.1" StartY="0.1" EndX="2.9" EndY="2.9"/>
+          <MountPoint Side="Left" StartX="0.1" StartY="0.1" EndX="1.9" EndY="2.9"/>
+          <MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="2.9" EndY="2.9"/>
+          <MountPoint Side="Right" StartX="0.1" StartY="0.1" EndX="1.9" EndY="2.9"/>
+          <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="2.9" EndY="1.9"/>
+      </MountPoints>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <BlockPairName>JumpDriveInhibitor</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>300</BuildTimeSeconds>
+      <MirroringY>Z</MirroringY>
+      <DamageEffectId>214</DamageEffectId>
+      <MaxBroadcastRadius>3000</MaxBroadcastRadius>
+      <MaxBroadcastPowerDrainkW>75000</MaxBroadcastPowerDrainkW>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <PCU>5000</PCU>
       <IsAirTight>true</IsAirTight>
