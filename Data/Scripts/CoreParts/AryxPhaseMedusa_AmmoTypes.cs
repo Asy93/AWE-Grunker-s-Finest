@@ -92,7 +92,7 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 1f,
+                    Armor = 5f,
                     Light = 1f,
                     Heavy = 1f,
                     NonArmor = 15f,
@@ -236,7 +236,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1800, // voxel phasing if you go above 5100
+                DesiredSpeed = 2400, // voxel phasing if you go above 5100
                 MaxTrajectory = 10000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -402,10 +402,10 @@ namespace Scripts
         };
 
 
-        private AmmoDef AryxMedusaBusterAmmo => new AmmoDef
+        private AmmoDef BusterAryxMedusaAmmo => new AmmoDef
         {
             AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
-            AmmoRound = "Medusa Bunker Buster Phase Bolt", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
+            AmmoRound = "Bunker Buster Medusa Phase Bolt", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.11851852f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
             BaseDamage = (float)(1 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
@@ -535,7 +535,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 90, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 45, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1f,
