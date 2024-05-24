@@ -231,7 +231,7 @@ namespace Scripts
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
                 DesiredSpeed = 2400, // voxel phasing if you go above 5100
-                MaxTrajectory = 6000f,
+                MaxTrajectory = 10000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -393,10 +393,10 @@ namespace Scripts
             },
         };
 
-        private AmmoDef AryxHEBusterAmmoWC => new AmmoDef
+        private AmmoDef BusterAryxHEAmmoWC => new AmmoDef
         {
             AmmoMagazine = "70mmBurstMag", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo
-            AmmoRound = "Punisher Buster HE 70mm", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
+            AmmoRound = "Buster Punisher HE 70mm", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(1 * AWEGlobalDamageScalar),
@@ -520,7 +520,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available after it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 120, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 60, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,

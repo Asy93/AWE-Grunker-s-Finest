@@ -185,7 +185,7 @@ namespace Scripts
             },
             Ammos = new[] {
                 AryxVulcanAmmoWC,
-                AryxVulcanBusterAmmoWC,
+                BusterAryxVulcanAmmoWC,
             },
             Animations = AryxVulcanAnimations,
             // Don't edit below this line

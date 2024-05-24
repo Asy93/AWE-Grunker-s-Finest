@@ -179,7 +179,7 @@ namespace Scripts {
             },
             Ammos = new[] {
                 AryxPulsarAmmo,
-                AryxPulsarBusterAmmo, // must list primary, shrapnel and pattern ammos
+                BusterAryxPulsarAmmo, // must list primary, shrapnel and pattern ammos
             },
             //Animations = Weapon75_Animation,
             //Upgrades = UpgradeModules,

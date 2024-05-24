@@ -91,7 +91,7 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
+                    Armor = 1.8f,
                     Light = -1f,
                     Heavy = -1f,
                     NonArmor = 10f,
@@ -409,10 +409,10 @@ namespace Scripts
             },
         };
 
-        private AmmoDef AryxVulcanBusterAmmoWC => new AmmoDef
+        private AmmoDef BusterAryxVulcanAmmoWC => new AmmoDef
         {
             AmmoMagazine = "ATLASAmmoMagazine",
-            AmmoRound = "MG61T Vulcan Buster Ammo",
+            AmmoRound = "Buster MG61T Vulcan Ammo",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(1 * AWEGlobalDamageScalar),
@@ -542,7 +542,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 90, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 45, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,
