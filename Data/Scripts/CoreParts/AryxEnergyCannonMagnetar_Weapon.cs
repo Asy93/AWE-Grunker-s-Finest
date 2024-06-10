@@ -23,7 +23,7 @@ namespace Scripts {
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        DurabilityMod = 1.0f,
+                        DurabilityMod = 0.5f,
                         IconName = "AryxMagnetarCannon.dds"
                     },
                    
@@ -182,7 +182,7 @@ namespace Scripts {
             },
             Ammos = new[] {
                 AryxMagnetarAmmo,
-                AryxMagnetarBusterAmmo, // must list primary, shrapnel and pattern ammos
+                BusterAryxMagnetarAmmo, // must list primary, shrapnel and pattern ammos
             },
             //Animations = Weapon75_Animation,
             //Upgrades = UpgradeModules,

@@ -166,7 +166,7 @@ namespace Scripts
             },
             Ammos = new[] {
                 AryxReaperAmmoWC,
-                AryxReaperBusterAmmoWC,
+                BusterAryxReaperAmmoWC,
                 AryxReaperAntimatterAmmo,
             },
             //Animations = AryxReaperAnims,

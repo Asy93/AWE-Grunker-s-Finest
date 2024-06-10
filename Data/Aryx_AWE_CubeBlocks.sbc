@@ -257,9 +257,9 @@
      Effective Range: 10km
      Specialty Role: Fixed, Long Range, Anti-Armor, Anti-Component
      Ammo: 600mm Heavy Shell
-     Heavy Armor DPS per PCU: 14.3
-     Shield Armor DPS per PCU: 13.5
-     Component Armor DPS per PCU: 31.8
+     Heavy Armor DPS per PCU: 17.8
+     Shield Armor DPS per PCU: 16.8
+     Component Armor DPS per PCU: 39.6
      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -501,7 +501,7 @@
       <Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>     
       <Description>
      Muzzle Velocity: 2400m/s
-     Effective Range: 6km
+     Effective Range: 10km
      Specialty Role: Medium Range, Kinetic, Anti Shield
      Ammo: 70mm HE Cartridge
      Heavy Armor DPS per PCU: 6.4
@@ -510,7 +510,7 @@
      Switch to Bunker Buster ammo for these different stats:
      Heavy Armor and Component DPS per PCU: 0
      Shield Armor DPS per PCU: 104.8
-     Muzzle Velocity: 800m/s (1.2km Minimum Arming Time)
+     Muzzle Velocity: 800m/s (600m Minimum Arming Time)
      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -749,76 +749,13 @@
       <string>Weapons</string>
       </TargetingGroups>      
     </Definition>   
-<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
-		<Id>
-			<TypeId>ConveyorSorter</TypeId>
-			<SubtypeId>ARYXKingswordSupercannon</SubtypeId>
-		</Id>
-		<DisplayName>S12A-3KS Kingsword Casaba Lance</DisplayName>
-		<Description>Designated the S12A-3KS KING SWORD, or more commonly, the Boomstick, is a superheavy casaba lance. These work by detonating a shaped fusion charge in the barrel, then using high-powered electromagnets to direct the blast into a devastating beam of nuclear fire. At an approximate 153.5m long, it is the largest ship-mounted weapon on the market designated for civilian use.
 
-Wrought forth from the forges of divinity, bring the ultimate arbiter of destruction; Cast down into eternal perdition ye shall send. [Accepts Kingsword Nukes - 50km range (Energy)]
-Effects: Fires a beam of nuclear fire that destroys anything it hits.
-Reload time: 120 seconds.
-Size: 5x9x61
-
-		</Description>	
-
-		<Icon>Textures\GUI\Icons\Aryx_AWE_Kingsword.dds</Icon>
-		<CubeSize>Large</CubeSize>
-      		<Public>true</Public> 
-		<BlockTopology>TriangleMesh</BlockTopology>
-		<Size x="5" y="9" z="61"/>
-		<ModelOffset x="0" y="0" z="0"/>
-		<Model>Models\AWE_Kingsword\ARYX_KingswordBase.mwm</Model>
-		<Components>
-			<Component Subtype="SteelPlate" Count="11250" />
-			<Component Subtype="Construction" Count="7500" />
-			<Component Subtype="MetalGrid" Count="5000" />
-			<Component Subtype="PowerCell" Count="2500" />	
-			<Component Subtype="Superconductor" Count="6000" />				
-			<Component Subtype="LargeTube" Count="2500" />
-			<Component Subtype="Girder" Count="2500" />
-			<Component Subtype="ElectromagnetAWE" Count="2000" />
-			<Component Subtype="Motor" Count="5000" />		
-			<Component Subtype="SuperchargerAWE" Count ="2500" />	
-			<Component Subtype="Computer" Count="5000" />
-			<Component Subtype="MetalGrid" Count="5000" />
-			<Component Subtype="MilitaryPlateAWE" Count="9750" />
-		</Components>
-		<CriticalComponent Subtype="Computer" Index="0" />
-			<MountPoints>
-				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="9.00"/>
-				<MountPoint Side="Left" StartX="44.00" StartY="0.27" EndX="61.00" EndY="8.73"/>
-				<MountPoint Side="Left" StartX="9.00" StartY="2.00" EndX="44.00" EndY="7.00"/>
-				<MountPoint Side="Right" StartX="0.00" StartY="0.27" EndX="17.00" EndY="8.73"/>
-				<MountPoint Side="Right" StartX="17.00" StartY="2.00" EndX="52.00" EndY="7.00"/>
-				<MountPoint Side="Top" StartX="0.25" StartY="0.29" EndX="4.75" EndY="57.71"/>
-				<MountPoint Side="Bottom" StartX="0.25" StartY="3.29" EndX="4.75" EndY="60.71"/>
-			</MountPoints>
-
-			<BlockPairName>AWEKingswordCoilcannon</BlockPairName>
-			<MirroringY>Z</MirroringY>
-			<MirroringZ>Y</MirroringZ>
-		<EdgeType>Light</EdgeType>
-		<BuildTimeSeconds>200</BuildTimeSeconds>
-		<InventoryMaxVolume>1</InventoryMaxVolume>
-		<DamageEffectId>213</DamageEffectId>
-		<DamagedSound>ParticleWeapExpl</DamagedSound>
-		<ResourceSinkGroup>Defense</ResourceSinkGroup>
-		<EmissiveColorPreset>Default</EmissiveColorPreset>
-      <PCU>2500</PCU>   		
-      <TargetingGroups>
-		<string>Weapons</string>
-      </TargetingGroups>      
-    </Definition>
-<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+   <!-- <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>ARYXRocketArtillery</SubtypeId>
       </Id>
       <DisplayName>RA-5 Starfall Rocket Artillery</DisplayName>
-      <Public>true</Public> 
       <Icon>Textures\GUI\Icons\Aryx_AWE_Starfall.dds</Icon>     
       <Description>The Starfall is a heavy rocket battery designed for plunging fire that launches long-range nuclear missiles at extreme velocity, able to strike targets regardless of cover. The missiles disengage guidance during their final stage and accelerate to massive speeds, able to slip through PD screens and obliterate the delicate hull beneath. Hurricane on the roof; Armageddon on your doorstep. [15km range - Accepts Starfall Nuclear Missiles]
      Effects: Fires five extremely fast and deadly missiles at enemies from long range.
@@ -864,7 +801,7 @@ Size: 5x9x61
       <BuildTimeSeconds>85</BuildTimeSeconds>
      <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>
-      <WeaponDefinitionId Subtype="AryxBurstCannonWepDef" />
+      < WeaponDefinitionId Subtype="AryxBurstCannonWepDef" \>
      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>          
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.48</InventoryMaxVolume>
@@ -876,7 +813,7 @@ Size: 5x9x61
       <TargetingGroups>
       <string>Weapons</string>
       </TargetingGroups>      
-    </Definition>
+    </Definition> -->
    <!-- <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -946,10 +883,10 @@ Size: 5x9x61
       <DisplayName>XM-500 Medusa Phase Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Medusa.dds</Icon>     
       <Description>
-     Muzzle Velocity: 1800m/s
+     Muzzle Velocity: 2400m/s
      Effective Range: 10km
      Specialty Role: Medium Range, Shield Phasing, Energy, Anti Component
-     Heavy Armor DPS per PCU: 1.4
+     Heavy Armor DPS per PCU: 6.1
      Shield Armor DPS per PCU: 17.7 (against shunt-reinforced shields which block phasing)
      Component Armor DPS per PCU: 18.1
      Switch to Bunker Buster ammo for these different stats:
@@ -1253,9 +1190,9 @@ Size: 5x9x61
      Effective Range: 10km
      Specialty Role: Long Range, Kinetic, Anti Shield, Anti Component
      Ammo: 100mm Warrior
-     Heavy Armor DPS per PCU: 4.1
-     Shield Armor DPS per PCU: 20.7
-     Component Armor DPS per PCU: 16.5
+     Heavy Armor DPS per PCU: 5.8
+     Shield Armor DPS per PCU: 29.1
+     Component Armor DPS per PCU: 23.3
       </Description>   
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1841,13 +1778,13 @@ Size: 5x9x61
      Effective Range: 10km
      Specialty Role: Long range, Kinetic, Anti Shield, Anti Component
      Ammo: 85mm Autocannon
-     Heavy Armor DPS per PCU: 3.2
-     Shield Armor DPS per PCU: 19.3
-     Component Armor DPS per PCU: 12.3
+     Heavy Armor DPS per PCU: 3.7
+     Shield Armor DPS per PCU: 21.9
+     Component Armor DPS per PCU: 14.0
      Switch to Bunker Buster ammo for these different stats:
      Heavy Armor and Component DPS per PCU: 0
      Shield Armor DPS per PCU: 105.4
-     Muzzle Velocity: 1000m/s (1.5km Minimum Arming Time)
+     Muzzle Velocity: 1000m/s (750m Minimum Arming Time)
    </Description>
       <Icon>Textures\GUI\Icons\AryxEchoCannon.dds</Icon>
       <CubeSize>Large</CubeSize>
@@ -2036,11 +1973,9 @@ Size: 5x9x61
      Muzzle Velocity: Hitscan
      Effective Range: 10km (Falloff starts at 1000m)
      Specialty Role: Long range, Energy, Anti Shield, Anti Component
-     Heavy Armor DPS per PCU: 3.4
-     Shield Armor DPS per PCU: 44.9
-     Component Armor DPS per PCU: 11.9
-     While not overheating, the true DPS values 
-     are ~12% higher than listed above.
+     Heavy Armor DPS per PCU: 4.7
+     Shield Armor DPS per PCU: 60.7
+     Component Armor DPS per PCU: 16.1
       </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2101,8 +2036,8 @@ Size: 5x9x61
      Effective Range: 10km
      Specialty Role: Long range, Kinetic, Armor Piercing
      Heavy Armor DPS per PCU: Infinite
-     Shield Armor DPS per PCU: 11.2
-     Component Armor DPS per PCU: 5.4
+     Shield Armor DPS per PCU: 18.5
+     Component Armor DPS per PCU: 7.8
      Ammo: 1200mm Ferrous
       </Description>
       <CubeSize>Large</CubeSize>
@@ -2226,9 +2161,9 @@ Size: 5x9x61
      Muzzle Velocity: Hitscan
      Effective Range: 10km
      Specialty Role: Long range, Kinetic, Anti-Component
-     Heavy Armor DPS per PCU: 0.9
-     Shield Armor DPS per PCU: 10.9
-     Component Armor DPS per PCU: 426.7
+     Heavy Armor DPS per PCU: 1.1
+     Shield Armor DPS per PCU: 14.1
+     Component Armor DPS per PCU: 548.6
      Ammo: 850mm Ferrous
       </Description>
       <Icon>Textures\GUI\Icons\Aryx_AWE_HeavyCoilgun.dds</Icon>
@@ -2299,7 +2234,7 @@ Size: 5x9x61
      Effective Range: 10km
      Specialty Role: Long range, Kinetic, Armor Piercing
      Heavy Armor DPS per PCU: 9.3
-     Shield Armor DPS per PCU: 8.6
+     Shield Armor DPS per PCU: 11.4
      Component Armor DPS per PCU: 4.7
      Ammo: 250mm Ferrous
    </Description>
@@ -2362,7 +2297,7 @@ Size: 5x9x61
      Effective Range: 10km
      Specialty Role: Long range, Kinetic, Armor Piercing
      Heavy Armor DPS per PCU: 3.7
-     Shield Armor DPS per PCU: 5.1
+     Shield Armor DPS per PCU: 9.7
      Component Armor DPS per PCU: 3.0
      Ammo: 115mm Ferrous
      </Description>
@@ -2416,9 +2351,9 @@ Size: 5x9x61
      Muzzle Velocity: 4999m/s
      Effective Range: 10km
      Specialty Role: Long range, Kinetic, Armor Piercing
-     Heavy Armor DPS per PCU: 1.8
-     Shield Armor DPS per PCU: 2.5
-     Component Armor DPS per PCU: 1.5
+     Heavy Armor DPS per PCU: 5.4
+     Shield Armor DPS per PCU: 14.2
+     Component Armor DPS per PCU: 4.4
      Ammo: 115mm Ferrous
       </Description>
       <Icon>Textures\GUI\Icons\Aryx_AWE_LightRailgun.dds</Icon>
@@ -2491,7 +2426,7 @@ Size: 5x9x61
      Switch to Bunker Buster ammo for these different stats:
      Heavy Armor and Component DPS per PCU: 0
      Shield Armor DPS per PCU: 133.0
-     Muzzle Velocity: 500m/s (500m Minimum Arming Time)
+     Muzzle Velocity: 500m/s (250m Minimum Arming Time)
       </Description>
          <CubeSize>Large</CubeSize>
          <BlockTopology>TriangleMesh</BlockTopology>
@@ -2546,12 +2481,12 @@ Size: 5x9x61
       </Id>
       <DisplayName>L82 Mace Combat Shotgun</DisplayName>
       <Description>
-     Muzzle Velocity: 1500m/s
-     Effective Range: 1km (Falloff starts at 300m)
+     Muzzle Velocity: 1800m/s
+     Effective Range: 1km (Falloff starts at 500m)
      Specialty Role: Short range, Kinetic, Anti-Shield
-     Heavy Armor DPS per PCU: 17.0
-     Shield Armor DPS per PCU: 138.7
-     Component Armor DPS per PCU: 11.2
+     Heavy Armor DPS per PCU: 24.9
+     Shield Armor DPS per PCU: 203.4
+     Component Armor DPS per PCU: 16.5
      Ammo: 150mm Buckshot
       </Description>   
       <Icon>Textures\GUI\Icons\AWEMaceShotgun.dds</Icon>
@@ -2778,7 +2713,7 @@ Size: 5x9x61
      Switch to Bunker Buster ammo for these different stats:
      Heavy Armor and Component DPS per PCU: 0
      Shield Armor DPS per PCU: 84.8
-     Muzzle Velocity: 1000m/s (2.0km Minimum Arming Time)
+     Muzzle Velocity: 1000m/s (1.0km Minimum Arming Time)
    </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2913,7 +2848,7 @@ Size: 5x9x61
      Switch to Bunker Buster ammo for these different stats:
      Heavy Armor and Component DPS per PCU: 0
      Shield Armor DPS per PCU: 111.9
-     Muzzle Velocity: 800m/s (1.6km Minimum Arming Time)
+     Muzzle Velocity: 800m/s (800m Minimum Arming Time)
    </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2982,7 +2917,7 @@ Size: 5x9x61
      Switch to Bunker Buster ammo for these different stats:
      Heavy Armor and Component DPS per PCU: 0
      Shield Armor DPS per PCU: 146.3
-     Muzzle Velocity: 600m/s (1.2km Minimum Arming Time)
+     Muzzle Velocity: 600m/s (600m Minimum Arming Time)
    </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -3039,9 +2974,9 @@ Size: 5x9x61
       <Icon>Textures\GUI\Icons\Aryx_AWE_SpartanCannon.dds</Icon>     
       <Description>
      Muzzle Velocity: 2400m/s
-     Effective Range: 6km
+     Effective Range: 10km
      Specialty Role: Medium range, Energy, Anti Shield
-     Heavy Armor DPS per PCU: 2.5
+     Heavy Armor DPS per PCU: 5.0
      Shield Armor DPS per PCU: 30.0
      Component Armor DPS per PCU: 3.8
      While not overheating, the true DPS values 
@@ -3049,7 +2984,7 @@ Size: 5x9x61
      Switch to Bunker Buster ammo for these different stats:
      Heavy Armor and Component DPS per PCU: 0
      Shield Armor DPS per PCU: 99.0
-     Muzzle Velocity: 1000m/s (1.5km Minimum Arming Time)
+     Muzzle Velocity: 1000m/s (750m Minimum Arming Time)
 
    </Description>
       <CubeSize>Large</CubeSize>
@@ -3171,13 +3106,13 @@ Size: 5x9x61
      Muzzle Velocity: 2400m/s
      Effective Range: 2km
      Specialty Role: Short range, Kinetic, Anti Component, Anti Shield
-     Heavy Armor DPS per PCU: 3.8
+     Heavy Armor DPS per PCU: 6.9
      Shield Armor DPS per PCU: 19.2
      Component Armor DPS per PCU: 38.4
      Switch to Bunker Buster ammo for these different stats:
      Heavy Armor and Component DPS per PCU: 0
      Shield Armor DPS per PCU: 129.7
-     Muzzle Velocity: 400m/s (600m Minimum Arming Time)
+     Muzzle Velocity: 400m/s (300m Minimum Arming Time)
      Ammo: 40mm ATLAS
       </Description>
       <CubeSize>Large</CubeSize>
@@ -3402,7 +3337,7 @@ Size: 5x9x61
          <Component Subtype="SteelPlate" Count="30" />
          <Component Subtype="GravityGenerator" Count="10" />
          <Component Subtype="ShieldComponent" Count="40" />
-	       <Component Subtype="MilitaryPlateAWE" Count="10" />
+	 <Component Subtype="MilitaryPlateAWE" Count="10" />
          <Component Subtype="MetalGrid" Count="10" />
          <Component Subtype="Construction" Count="10" />
          <Component Subtype="GravityGenerator" Count="4" />

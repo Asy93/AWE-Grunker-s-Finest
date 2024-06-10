@@ -774,10 +774,10 @@ namespace Scripts
             },
         };
 
-        private AmmoDef AryxEchoHEBusterAmmo => new AmmoDef
+        private AmmoDef BusterAryxEchoHEAmmo => new AmmoDef
         {
             AmmoMagazine = "AWE85mmAmmoMagazine",
-            AmmoRound = "85mm Buster HE ECHO",
+            AmmoRound = "Buster 85mm HE ECHO",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 1,
@@ -905,7 +905,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = true, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 90, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 45, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,

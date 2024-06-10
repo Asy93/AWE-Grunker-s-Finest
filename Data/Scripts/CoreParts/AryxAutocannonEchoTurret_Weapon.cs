@@ -106,7 +106,7 @@ namespace Scripts
                     CheckForAnyWeapon = false, // if true, the check will fail if ANY gun is present, false only looks for this subtype
                 },
                 Loading = new LoadingDef {
-                    RateOfFire = 120,
+                    RateOfFire = 140,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
@@ -166,7 +166,7 @@ namespace Scripts
             },
             Ammos = new [] {
                 AryxEchoHEAmmo,
-                AryxEchoHEBusterAmmo,
+                BusterAryxEchoHEAmmo,
             },
             Animations = AryxEchoAnimations,
             // Don't edit below this line

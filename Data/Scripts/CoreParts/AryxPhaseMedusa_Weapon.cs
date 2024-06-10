@@ -182,7 +182,7 @@ namespace Scripts {
             },
             Ammos = new[] {
                 AryxMedusaAmmo,
-                AryxMedusaBusterAmmo, // Must list all primary, shrapnel, and pattern ammos.
+                BusterAryxMedusaAmmo, // Must list all primary, shrapnel, and pattern ammos.
             },
             //Animations = AryxWarriorAnimations,
             //Upgrades = UpgradeModules,

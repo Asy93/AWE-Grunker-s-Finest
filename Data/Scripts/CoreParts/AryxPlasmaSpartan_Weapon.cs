@@ -47,7 +47,7 @@ namespace Scripts {
                 LockedSmartOnly = false, // Only fire at smart projectiles that are locked on to parent grid.
                 MinimumDiameter = 0, // 0 = unlimited, Minimum radius of threat to engage.
                 MaximumDiameter = 0, // 0 = unlimited, Maximum radius of threat to engage.
-                MaxTargetDistance = 6000, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
+                MaxTargetDistance = 10000, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
                 MinTargetDistance = 0, // 0 = unlimited, Min target distance that targets will be automatically shot at.
                 TopTargets = 4, // 0 = unlimited, max number of top targets to randomize between.
                 TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
@@ -179,7 +179,7 @@ namespace Scripts {
             },
             Ammos = new[] {
                 AryxSpartanPlasmaAmmo,
-                AryxSpartanPlasmaBusterAmmo,
+                BusterAryxSpartanPlasmaAmmo,
             },
             //Animations = Weapon75_Animation,
             //Upgrades = UpgradeModules,
