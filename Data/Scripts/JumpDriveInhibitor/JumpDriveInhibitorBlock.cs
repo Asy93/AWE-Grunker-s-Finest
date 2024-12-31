@@ -153,6 +153,11 @@ namespace GrunkQuest
                         {
                                 jumpBlock.Enabled = false;
                                 jumpBlock.CurrentStoredPower = jumpBlock.CurrentStoredPower - (float)(INHIB_ACTIVE_TIME/422)*jumpBlock.MaxStoredPower;
+
+                                if (jumpBlock.CurrentStoredPower<0) 
+                                {
+                                    jumpBlock.CurrentStoredPower = 0;
+                                }
                         }
 
                        if (_time == 1d/3d)
