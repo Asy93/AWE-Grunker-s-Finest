@@ -25,7 +25,7 @@ namespace Scripts
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-                        DurabilityMod = 0.1f,
+                        DurabilityMod = 1f,
                     },
 
                 },
@@ -89,7 +89,7 @@ namespace Scripts
                     MaxElevation = 0,
                     FixedOffset = false,
                     InventorySize = 8f,
-                    Offset = Vector(x: 0, y: 0, z: 0),
+                    Offset = Vector(x: 0, y: 0, z: -50),
                     Type = BlockWeapon, // BlockWeapon, HandWeapon, Phantom 
                     CriticalReaction = new CriticalDef
                     {
@@ -112,63 +112,64 @@ namespace Scripts
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 120,
+                    RateOfFire = 3600,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
+                    MagsToLoad = 1,
                     ReloadTime = 7200, //7200 // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    DelayUntilFire = 340, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    DelayUntilFire = 2670, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 0, //heat generated per shot
                     MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .95f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 9000, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 1,
+                    ShotsInBurst = 3600,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    FireFull = false,
+                    FireFull = true,
                     GiveUpAfter = false,
                 },
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "ArcWepShipARYXKingswordWindup",
                     FiringSound = "ArcWepShipARYXKingswordFire", // WepShipGatlingShot
-                    FiringSoundPerShot = true,
+                    FiringSoundPerShot = false,
                     ReloadSound = "",
                     NoAmmoSound = "",
                     HardPointRotationSound = "",
                     BarrelRotationSound = "",
-                    FireSoundEndDelay = 150, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
+                    FireSoundEndDelay = 340, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
                 },
                 Graphics = new HardPointParticleDef
                 {
 
                     Effect1 = new ParticleDef
                     {
-                        Name = "AWE_Kingsword_Flash", // Smoke_LargeGunShot
-                        Color = Color(red: 1, green: 1, blue: 0.625f, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: -50),
+                        Name = "AryxAWE_Phase_MuzzleBlast", // Smoke_LargeGunShot
+                        Color = Color(red: 0.3f, green: 50, blue: 0.125f, alpha: 1),
+                        Offset = Vector(x: 0, y: 0, z: -20),
 
                         Extras = new ParticleOptionDef
                         {
-                            Loop = false,
-                            Restart = false,
-                            MaxDistance = 3000,
-                            MaxDuration = 0,
-                            Scale = 1f,
+                            Loop = true,
+                            Restart = true,
+                            MaxDistance = 20000,
+                            MaxDuration = 16000,
+                            Scale = 60f,
                         },
                     },
                     Effect2 = new ParticleDef
                     {
                         Name = "",//Muzzle_Flash_Large
-                        Color = Color(red: 25, green: 5, blue: 0.625f, alpha: 1),
+                        Color = Color(red: 1, green: 25, blue: 0.625f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
                         Extras = new ParticleOptionDef
                         {
                             Loop = false,
                             Restart = true,
-                            MaxDistance = 300,
+                            MaxDistance = 20000,
                             MaxDuration = 1,
                             Scale = 1f,
                         },

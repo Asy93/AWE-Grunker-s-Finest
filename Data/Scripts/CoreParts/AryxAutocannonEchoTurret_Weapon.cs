@@ -81,7 +81,7 @@ namespace Scripts
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -15,
-                    MaxElevation = 90,
+                    MaxElevation = 70,
                     FixedOffset = false,
                     InventorySize = 0.3f,
                     Offset = Vector(x: 0, y: 0, z: 0),
@@ -111,7 +111,7 @@ namespace Scripts
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 150, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 15, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 0, //heat generated per shot
                     MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)

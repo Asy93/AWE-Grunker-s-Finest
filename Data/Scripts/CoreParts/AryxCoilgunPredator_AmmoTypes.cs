@@ -32,7 +32,7 @@ namespace Scripts
             AmmoMagazine = "AryxHeavyCoilgunAmmo",
             AmmoRound = "850mm Ferrous",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 6f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 1.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(7000 * AWEGlobalDamageScalar),
             Mass = 9, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.

@@ -50,7 +50,7 @@ namespace enenra.ArmorBalance
 					continue;
 				}
 				
-				bool lightArmor = blockDef.BlockPairName.Contains("Armor") && !blockDef.BlockPairName.Contains("Heavy") && !blockDef.BlockPairName.Contains("Conveyor");
+				bool lightArmor = blockDef.BlockPairName.Contains("Armor") && !blockDef.BlockPairName.Contains("Heavy") && !blockDef.BlockPairName.Contains("Buster") && !blockDef.BlockPairName.Contains("Conveyor");
 				lightArmor = lightArmor || blockDef.BlockPairName.Contains("AQD_LA");
 				if (lightArmor) {
                     if (blockDef.CubeSize == MyCubeSize.Large)
@@ -67,7 +67,7 @@ namespace enenra.ArmorBalance
 					continue;
 				}
 				
-				bool heavyArmor = blockDef.BlockPairName.Contains("Armor") && blockDef.BlockPairName.Contains("Heavy");
+				bool heavyArmor = (blockDef.BlockPairName.Contains("Armor") && blockDef.BlockPairName.Contains("Heavy")) || blockDef.BlockPairName.Contains("CompBlock");
 				heavyArmor = heavyArmor || blockDef.BlockPairName.Contains("AQD_HA");
 				if (heavyArmor) {
                     if (blockDef.CubeSize == MyCubeSize.Large)

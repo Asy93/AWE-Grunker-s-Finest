@@ -52,13 +52,13 @@ namespace Scripts
                 MinTargetDistance = 0, // 0 = unlimited, Min target distance that targets will be automatically shot at.
                 TopTargets = 4, // 0 = unlimited, max number of top targets to randomize between.
                 TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
-                StopTrackingSpeed = 1000, // do not track target threats traveling faster than this speed
+                StopTrackingSpeed = 10000, // do not track target threats traveling faster than this speed
             },
             HardPoint = new HardPointDef
             {
                 PartName = "Thrasher Heavy Flak Cannon", // name of weapon in terminal
                 DeviateShotAngle = 0.01f,
-                AimingTolerance = 1f, // 0 - 180 firing angle
+                AimingTolerance = 5f, // 0 - 180 firing angle
                 AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
@@ -85,8 +85,8 @@ namespace Scripts
                     ElevateRate = 0.0075f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
-                    MinElevation = -5,
-                    MaxElevation = 80,
+                    MinElevation = -15,
+                    MaxElevation = 70,
                     FixedOffset = false,
                     InventorySize = 0.180f,
                     Offset = Vector(x: 0, y: 0, z: 0),
