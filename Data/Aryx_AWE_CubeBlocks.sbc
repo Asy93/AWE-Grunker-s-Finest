@@ -2,6 +2,117 @@
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <CubeBlocks>
 
+   <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXKingswordSupercannon</SubtypeId>
+		</Id>
+		<DisplayName>S12A-3KS Kingsword Antimatter Lance</DisplayName>
+		<Description>Death.
+      Max range: 20KM
+      Muzzle velocity: 10KM/s
+      Limited to 1 per faction</Description>	
+
+		<Icon>Textures\GUI\Icons\Aryx_AWE_Kingsword.dds</Icon>
+		<CubeSize>Large</CubeSize>
+      <Public>true</Public> 
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="5" y="9" z="61"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Kingsword\ARYX_KingswordBase.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="50000" />
+         <Component Subtype="Construction" Count="50000" />
+         <Component Subtype="MetalGrid" Count="50000" />
+         <Component Subtype="Tech50x" Count="25" />	
+			<Component Subtype="PowerCell" Count="50000" />	
+			<Component Subtype="Superconductor" Count="15000" />				
+			<Component Subtype="LargeTube" Count="15000" />
+			<Component Subtype="Girder" Count="10000" />
+			<Component Subtype="ElectromagnetAWE" Count="50000" />
+			<Component Subtype="Motor" Count="15000" />		
+			<Component Subtype="SuperchargerAWE" Count ="50000" />	
+			<Component Subtype="Computer" Count="40000" />
+			<Component Subtype="MetalGrid" Count="50000" />
+         <Component Subtype="MilitaryPlateAWE" Count="50000" />
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="9.00"/>
+				<MountPoint Side="Left" StartX="44.00" StartY="0.27" EndX="61.00" EndY="8.73"/>
+				<MountPoint Side="Left" StartX="9.00" StartY="2.00" EndX="44.00" EndY="7.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.27" EndX="17.00" EndY="8.73"/>
+				<MountPoint Side="Right" StartX="17.00" StartY="2.00" EndX="52.00" EndY="7.00"/>
+				<MountPoint Side="Top" StartX="0.25" StartY="0.29" EndX="4.75" EndY="57.71"/>
+				<MountPoint Side="Bottom" StartX="0.25" StartY="3.29" EndX="4.75" EndY="60.71"/>
+			</MountPoints>
+
+			<BlockPairName>AWEKingswordCoilcannon</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>5400</BuildTimeSeconds>
+		<InventoryMaxVolume>1</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>2500</PCU>   		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+   </Definition>
+
+   <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXOculusLaserBase</SubtypeId>
+		</Id>
+		<DisplayName>Oculus Orb-PD Laser</DisplayName>
+		<Description>bruh</Description>
+      <Public>false</Public> 
+		<Icon>Textures\GUI\Icons\AWEOculusPD.dds</Icon>			
+		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="1" z="1"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Oculus\ARYXOculusLaserBase.mwm</Model>	
+		<Components>
+			<Component Subtype="SteelPlate" Count="100" />
+			<Component Subtype="Construction" Count="50" />
+			<Component Subtype="PowerCell" Count="50" />
+			<Component Subtype="Motor" Count="50" />
+			<Component Subtype="Superconductor" Count="100" />
+			<Component Subtype="BulletproofGlass" Count="10" />
+			<Component Subtype="Computer" Count="50" />
+			<Component Subtype="SteelPlate" Count="10" />		
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0"/>
+		<MountPoints>
+			<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+		</MountPoints>
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="Models\AWE_Oculus\ARYXOculusLaserBase_BS1.mwm"/>
+			<Model BuildPercentUpperBound="0.67" File="Models\AWE_Oculus\ARYXOculusLaserBase_BS2.mwm"/>
+			<Model BuildPercentUpperBound="1.00" File="Models\AWE_Oculus\ARYXOculusLaserBase_BS3.mwm"/>
+		</BuildProgressModels>
+		<BlockPairName>ARYXOculusLaser</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>25</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>     		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+   </Definition>
+
    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -704,7 +815,7 @@
      Ammo: 135mm Thrasher Flak Shells
      Heavy Armor DPS per PCU: 16.7
      Shield Armor DPS per PCU: 27.8
-     Component Armor DPS per PCU: 2.6
+     Component Armor DPS per PCU: 7.7
      2x Damage Multiplier Against Small Grids
      </Description>
       <CubeSize>Large</CubeSize>
@@ -1191,7 +1302,7 @@
      Specialty Role: Long Range, Kinetic, Anti Shield, Anti Component
      Ammo: 100mm Warrior
      Heavy Armor DPS per PCU: 5.8
-     Shield Armor DPS per PCU: 29.1
+     Shield Armor DPS per PCU: 43.7
      Component Armor DPS per PCU: 23.3
       </Description>   
       <CubeSize>Large</CubeSize>
@@ -1246,7 +1357,7 @@
       <Icon>Textures\GUI\Icons\AWEModulusLaser.dds</Icon>     
       <Description>
      Muzzle Velocity: Hitscan
-     Effective Range: 2km, Falloff starts at 1km
+     Effective Range: 3km  (Falloff starts at 2km)
      Specialty Role: Short Range, Energy, Anti Shield, Anti Small Grid
      Heavy Armor DPS per PCU: 3.4
      Shield Armor DPS per PCU: 49.1
@@ -1555,7 +1666,7 @@
      Effective Range: 900m
      Specialty Role: Short range, Kinetic, Anti Shield, Point Defense
      Ammo: 38mm Riptide Shell
-     Heavy Armor DPS per PCU: 2.2
+     Heavy Armor DPS per PCU: 4.5
      Shield Armor DPS per PCU: 24.0
      Component Armor DPS per PCU: 8.0
      While not overheating, the true DPS values 
@@ -1615,8 +1726,8 @@
      Specialty Role: Medium range, Kinetic, Anti Small Grid
      Ammo: 54mm Autocannon
      Heavy Armor DPS per PCU: 3.4
-     Shield Armor DPS per PCU: 10.9
-     Component Armor DPS per PCU: 5.5
+     Shield Armor DPS per PCU: 21.8
+     Component Armor DPS per PCU: 11.0
      2x Damage Multiplier against Small Grids
    </Description>
       <Icon>Textures\GUI\Icons\AryxChordCannon.dds</Icon>
@@ -1779,7 +1890,7 @@
      Specialty Role: Long range, Kinetic, Anti Shield, Anti Component
      Ammo: 85mm Autocannon
      Heavy Armor DPS per PCU: 3.7
-     Shield Armor DPS per PCU: 21.9
+     Shield Armor DPS per PCU: 32.9
      Component Armor DPS per PCU: 14.0
      Switch to Bunker Buster ammo for these different stats:
      Heavy Armor and Component DPS per PCU: 0
@@ -1852,9 +1963,9 @@
      Effective Range: 10km
      Specialty Role: Long range, Energy, Anti Shield
      Ammo: Sabre Missiles
-     Heavy Armor DPS per PCU: 2.0
+     Heavy Armor DPS per PCU: 6.0
      Shield Armor DPS per PCU: 212.1
-     Component Armor DPS per PCU: 2.1
+     Component Armor DPS per PCU: 6.3
        </Description>
        <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -1971,7 +2082,7 @@
       <Icon>Textures\GUI\Icons\Aryx_AWE_FocusBeamLance.dds</Icon>
       <Description>
      Muzzle Velocity: Hitscan
-     Effective Range: 10km (Falloff starts at 1000m)
+     Effective Range: 10km (Falloff starts at 5km)
      Specialty Role: Long range, Energy, Anti Shield, Anti Component
      Heavy Armor DPS per PCU: 4.7
      Shield Armor DPS per PCU: 60.7
@@ -2161,9 +2272,9 @@
      Muzzle Velocity: Hitscan
      Effective Range: 10km
      Specialty Role: Long range, Kinetic, Anti-Component
-     Heavy Armor DPS per PCU: 1.1
-     Shield Armor DPS per PCU: 14.1
-     Component Armor DPS per PCU: 548.6
+     Heavy Armor DPS per PCU: 1.6
+     Shield Armor DPS per PCU: 20.5
+     Component Armor DPS per PCU: 800.0
      Ammo: 850mm Ferrous
       </Description>
       <Icon>Textures\GUI\Icons\Aryx_AWE_HeavyCoilgun.dds</Icon>
@@ -2300,6 +2411,7 @@
      Shield Armor DPS per PCU: 9.7
      Component Armor DPS per PCU: 3.0
      Ammo: 115mm Ferrous
+     2x Damage Multiplier against Small Grids
      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2351,9 +2463,9 @@
      Muzzle Velocity: 4999m/s
      Effective Range: 10km
      Specialty Role: Long range, Kinetic, Armor Piercing
-     Heavy Armor DPS per PCU: 5.4
-     Shield Armor DPS per PCU: 14.2
-     Component Armor DPS per PCU: 4.4
+     Heavy Armor DPS per PCU: 4.6
+     Shield Armor DPS per PCU: 12.2
+     Component Armor DPS per PCU: 3.8
      Ammo: 115mm Ferrous
       </Description>
       <Icon>Textures\GUI\Icons\Aryx_AWE_LightRailgun.dds</Icon>
@@ -2482,7 +2594,7 @@
       <DisplayName>L82 Mace Combat Shotgun</DisplayName>
       <Description>
      Muzzle Velocity: 1800m/s
-     Effective Range: 1km (Falloff starts at 500m)
+     Effective Range: 1km
      Specialty Role: Short range, Kinetic, Anti-Shield
      Heavy Armor DPS per PCU: 24.9
      Shield Armor DPS per PCU: 203.4
@@ -2978,7 +3090,7 @@
      Specialty Role: Medium range, Energy, Anti Shield
      Heavy Armor DPS per PCU: 5.0
      Shield Armor DPS per PCU: 30.0
-     Component Armor DPS per PCU: 3.8
+     Component Armor DPS per PCU: 7.5
      While not overheating, the true DPS values 
      are ~25% higher than listed above.
      Switch to Bunker Buster ammo for these different stats:
@@ -3104,7 +3216,7 @@
       <Icon>Textures\GUI\Icons\Aryx_AWE_VulcanCannon.dds</Icon>     
       <Description>
      Muzzle Velocity: 2400m/s
-     Effective Range: 2km
+     Effective Range: 3km
      Specialty Role: Short range, Kinetic, Anti Component, Anti Shield
      Heavy Armor DPS per PCU: 6.9
      Shield Armor DPS per PCU: 19.2

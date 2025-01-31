@@ -32,19 +32,19 @@ namespace Scripts
             AmmoMagazine = "AWEKingswordMagazine",
             AmmoRound = "Kingsword Nuclear Charge",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 20f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 100000,
-            Mass = 3000f, // in kilograms
+            EnergyCost = 0.00000015f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            BaseDamage = 1000000000,
+            Mass = 30000000f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 120000000f,
+            BackKickForce = 120000f,
             DecayPerShot = 0,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
 
             Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
             {
-                Shape = SphereShape,
-                Diameter = 4,
+                Shape = LineShape,
+                Diameter = 1f,
             },
             ObjectsHit = new ObjectsHitDef
             {
@@ -73,19 +73,19 @@ namespace Scripts
                 Characters = 250000000,
                 Grids = new GridSizeDef
                 {
-                    Large = 100000f,
-                    Small = 100000f,
+                    Large = 1f,
+                    Small = 1f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 100000f,
-                    Light = 100000f,
-                    Heavy = 100000f,
-                    NonArmor = 100000f,
+                    Armor = 1f,
+                    Light = 1f,
+                    Heavy = 1f,
+                    NonArmor = 1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1000f,
+                    Modifier = 1f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -120,11 +120,11 @@ namespace Scripts
                 ByBlockHit = new ByBlockHitDef
                 {
                     Enable = true,
-                    Radius = 13.5f, // Meters
+                    Radius = 35f, // Meters
                     Damage = 100000,
-                    Depth = 3f, // Meters
+                    Depth = 5f, // Meters
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Curve, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -150,7 +150,7 @@ namespace Scripts
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 5,
-                    CustomParticle = "AryxAWEKingswordBlast", // Particle SubtypeID, from your Particle SBC
+                    CustomParticle = "AryxAWETorpedoBlast", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "ArcWepShipARYXExplosionLarge", // SubtypeID from your Audio SBC, not a filename
                     Shape = Round, // Round or Diamond
                 }, 
@@ -223,8 +223,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 3000,
-                MaxTrajectory = 50000f,
+                DesiredSpeed = 10000f,
+                MaxTrajectory = 20000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -260,33 +260,33 @@ namespace Scripts
                 {
                     Ammo = new ParticleDef
                     {
-                        Name = "AWE_Kingsword_Trail", //ShipWelderArc
+                        Name = "AryxAWE_Phase_MuzzleBlast", //ShipWelderArc
                         //shrinkbydistance = false, obselete
-                        Color = Color(red: 128, green: 0, blue: 0, alpha: 32),
+                        Color = Color(red: 1, green: 128, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
                             Loop = true,
                             Restart = false,
-                            MaxDistance = 10000,
+                            MaxDistance = 50000,
                             MaxDuration = 0,
-                            Scale = 0.5f,
+                            Scale = 40f,
                         },
                     },
                     Hit = new ParticleDef
                     {
-                        Name = "AryxAWEKingswordBlast",
+                        Name = "AryxAWETorpedoBlast",
                         ApplyToShield = true,
                         //shrinkbydistance = false, obselete
-                        Color = Color(red: 25, green: 10f, blue: 1f, alpha: 1),
+                        Color = Color(red: 5, green: 50f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
                             Loop = false,
                             Restart = false,
-                            MaxDistance = 5000,
+                            MaxDistance = 50000,
                             MaxDuration = 0,
-                            Scale = 3,
+                            Scale = 20,
                             HitPlayChance = 1f,
                         },
                     },
@@ -295,7 +295,7 @@ namespace Scripts
                         Name = "",
                         ApplyToShield = true,
                         //shrinkbydistance = false, obselete
-                        Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
+                        Color = Color(red: 3, green: 21.9f, blue: 1f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
@@ -316,8 +316,8 @@ namespace Scripts
                     {
                         Enable = true,
                         Length = 800,
-                        Width = 5f,
-                        Color = Color(red: 50, green: 50, blue: 48, alpha: 1),
+                        Width = 50f,
+                        Color = Color(red: 20, green: 50, blue: 20, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
@@ -337,11 +337,11 @@ namespace Scripts
                                 "BlackFireSeg7",
                                 "BlackFireSeg8",
                             },
-                            SegmentLength = 30f, // Uses the values below.
+                            SegmentLength = 40f, // Uses the values below.
                             SegmentGap = 0f, // Uses Tracer textures and values
                             Speed = 800f, // meters per second
-                            Color = Color(red: 2.5f, green: 2, blue: 1f, alpha: 1),
-                            WidthMultiplier = 1f,
+                            Color = Color(red: 20f, green: 50, blue: 20f, alpha: 1),
+                            WidthMultiplier = 50f,
                             Reverse = false,
                             UseLineVariance = true,
                             WidthVariance = Random(start: 0f, end: 0f),
@@ -352,8 +352,8 @@ namespace Scripts
                     {
                         Enable = true,
                         Material = "WeaponLaser",
-                        DecayTime = 240,
-                        Color = Color(red: 50f, green: 20f, blue: 10f, alpha: 1f),
+                        DecayTime = 60,
+                        Color = Color(red: 3f, green: 50f, blue: 3f, alpha: 1f),
                         CustomWidth = 2f,
                         UseWidthVariance = false,
                         UseColorFade = true,

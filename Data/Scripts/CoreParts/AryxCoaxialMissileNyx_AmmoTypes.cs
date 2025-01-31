@@ -303,9 +303,9 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 2f, // Multiplier for damage against shields.
+                    Modifier = 5f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = 25f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = 100f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -339,7 +339,7 @@ namespace Scripts
                     Enable = true,
                     Radius = 5, // Meters
                     Damage = (float)(5000 * AWEGlobalDamageScalar),
-                    Depth = 1f,
+                    Depth = 3f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius

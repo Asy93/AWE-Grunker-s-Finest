@@ -74,7 +74,7 @@ namespace Scripts {
             HardPoint = new HardPointDef
             {
                 PartName = "Punisher Burst Cannon", // name of weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons)
-                DeviateShotAngle = 0.1f,
+                DeviateShotAngle = 0.2f,
                 AimingTolerance = 1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -105,7 +105,7 @@ namespace Scripts {
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -15,
-                    MaxElevation = 90,
+                    MaxElevation = 70,
                     FixedOffset = false,
                     InventorySize = 1f,
                     Offset = Vector(x: 0, y: 0, z: 0),
