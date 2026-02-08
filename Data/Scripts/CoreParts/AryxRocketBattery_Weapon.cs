@@ -53,7 +53,7 @@ namespace Scripts
                 MinimumDiameter = 0, // Minimum radius of threat to engage.
                 MaximumDiameter = 0, // Maximum radius of threat to engage; 0 = unlimited.
                 MaxTargetDistance = 10000, // Maximum distance at which targets will be automatically shot at; 0 = unlimited.
-                MinTargetDistance = 1000, // Minimum distance at which targets will be automatically shot at.
+                MinTargetDistance = 0, // Minimum distance at which targets will be automatically shot at.
                 TopTargets = 1, // Maximum number of targets to randomize between; 0 = unlimited.
                 TopBlocks = 8, // Maximum number of blocks to randomize between; 0 = unlimited.
                 StopTrackingSpeed = 0, // Do not track threats traveling faster than this speed; 0 = unlimited.
@@ -126,7 +126,7 @@ namespace Scripts
                     BarrelsPerShot = 1, // How many muzzles will fire a projectile per fire event.
                     TrajectilesPerBarrel = 1, // Number of projectiles per muzzle per fire event.
                     SkipBarrels = 0, // Number of muzzles to skip after each fire event.
-                    ReloadTime = 600, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 500, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     MagsToLoad = 6, // Number of physical magazines to consume on reload.
                     DelayUntilFire = 0, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 0, // Heat generated per shot.
@@ -190,9 +190,7 @@ namespace Scripts
             },
             Ammos = new[] {
                 AryxFlechetteAmmoWC,
-                AryxDisruptorAmmoWC,
                 AryxFlechetteAmmoFullSpeed,
-                AryxDisruptorAmmoFullSpeed,
             },
             Animations = AryxHydraAnims,
             // Don't edit below this line

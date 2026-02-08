@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Medusa Phase Bolt", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.11851852f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = (float)(2500 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
+            BaseDamage = (float)(1 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 0, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0, // Recoil.
@@ -87,19 +87,19 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = 1f,
-                    Small = 1f,
+                    Large = -1f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 5f,
-                    Light = 1f,
-                    Heavy = 1f,
-                    NonArmor = 15f,
+                    Armor = 0.3677f,
+                    Light = -1f,
+                    Heavy = -1f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef //PHASE WEAPON - ENERGY SHIELD BYPASS
                 {
-                    Modifier = 100f,
+                    Modifier = -1f,
                     Type = Default,
                     BypassModifier = 0.5f,
                 },
@@ -149,10 +149,10 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = (float)(2500 * AWEGlobalDamageScalar),
+                    Damage = (float)(136000 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -535,7 +535,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 45, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 22, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1f,
@@ -704,9 +704,9 @@ namespace Scripts
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 20f,
-                        Width = 1f,
-                        Color = Color(red: 11, green: 40, blue: 32, alpha: 1),
+                        Length = 30f,
+                        Width = 30f,
+                        Color = Color(red: 25, green: 40, blue: 35, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..

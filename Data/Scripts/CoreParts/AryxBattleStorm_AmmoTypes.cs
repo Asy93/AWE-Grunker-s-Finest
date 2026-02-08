@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "120mm Heavy Shell [Storm]", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = (float)(500 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
+            BaseDamage = (float)(1 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 60, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 15000, // Recoil.
@@ -48,13 +48,13 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 1, // Limits the number of entities (grids, players, projectiles) the projectile can penetrate; 0 = unlimited.
-                CountBlocks = true, // Counts individual blocks, not just entities hit.
+                MaxObjectsHit = 0, // Limits the number of entities (grids, players, projectiles) the projectile can penetrate; 0 = unlimited.
+                CountBlocks = false, // Counts individual blocks, not just entities hit.
             },
             Fragment = new FragmentDef
             {
-                AmmoRound = "AryxKineticFrags",
-                Fragments = 10,
+                AmmoRound = "",
+                Fragments = 0,
                 Degrees = 360,
                 Reverse = true,
             },
@@ -88,20 +88,20 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f, // Multiplier for damage against large grids.
-                    Small = 1.5f, // Multiplier for damage against small grids.
+                    Small = -1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 8f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
+                    Armor = 0.7222f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
                     Light = -1f, // Multiplier for damage against light armor.
                     Heavy = -1f, // Multiplier for damage against heavy armor.
-                    NonArmor = 8f, // Multiplier for damage against every else.
+                    NonArmor = -1f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = -1f, // Multiplier for damage against shields.
+                    Modifier = 0.46976f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
-                    BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
+                    BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
@@ -148,11 +148,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 3f, // Meters
-                    Damage = (float)(1500 * AWEGlobalDamageScalar),
-                    Depth = 1.5f,
+                    Radius = 8f, // Meters
+                    Damage = (float)(90000 * AWEGlobalDamageScalar),
+                    Depth = 1f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -237,7 +237,7 @@ namespace Scripts
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
                 DesiredSpeed = 1600, // voxel phasing if you go above 5100
-                MaxTrajectory = 3500f,
+                MaxTrajectory = 6000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 1f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed

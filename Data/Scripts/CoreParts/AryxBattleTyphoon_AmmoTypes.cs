@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "600mm Heavy Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(2000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(1 * AWEGlobalDamageScalar),
             Mass = 1000f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 300000,
@@ -88,14 +88,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 1.35f,
+                    Armor = 0.4497f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 3.0f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 4f,
+                    Modifier = 0.42403f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -145,11 +145,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 4f, // Meters
-                    Damage = (float)(10000 * AWEGlobalDamageScalar),
-                    Depth = 3f,
+                    Radius = 8f, // Meters
+                    Damage = (float)(324667 * AWEGlobalDamageScalar),
+                    Depth = 1f,
                     MaxAbsorb = 0f,
-                    Falloff = Curve, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius

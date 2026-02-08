@@ -178,6 +178,7 @@ namespace Scripts
             },
             Ammos = new[] {
                 AryxKingswordAmmoWC,
+                AryxKingswordAmmoWC2,
             },
             Animations = AryxKingswordAnims,
             // Don't edit below this line

@@ -174,6 +174,7 @@ namespace Scripts {
             },
             Ammos = new[] {
                 AryxShrikeBomb,
+                AryxShrikeBomb2,
             },
             Animations = AryxShrikeAnims,
         };

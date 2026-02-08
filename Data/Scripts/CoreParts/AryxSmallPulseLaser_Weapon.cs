@@ -112,14 +112,14 @@ namespace Scripts
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 300,
+                    RateOfFire = 550,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
                     ReloadTime = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 20, //heat generated per shot
+                    HeatPerShot = 0, //heat generated per shot
                     MaxHeat = 2500, //max heat before weapon enters cooldown
                     Cooldown = 0.95f, //percent of max heat to be under to start firing again after overheat accepts 0.2-0.95
                     HeatSinkRate = 150, //amount of heat lost per second

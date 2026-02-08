@@ -772,7 +772,7 @@
             <Volume>4000</Volume>
             <Model>Models\AWE_Ammo\AryxKingswordRound.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
-            <Capacity>1</Capacity>
+            <Capacity>120</Capacity>
             <AmmoDefinitionId Subtype="AryxAtlasAmmo" />
 
             <MinimumOfferAmount>1</MinimumOfferAmount>

@@ -25,7 +25,7 @@ namespace Scripts
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        DurabilityMod = 0.067f,
+                        DurabilityMod = 0.03f,
                     },
 
                 },
@@ -58,7 +58,7 @@ namespace Scripts
             {
                 PartName = "Riptide Flak", // name of weapon in terminal
                 DeviateShotAngle = 0f,
-                AimingTolerance = 5f, // 0 - 180 firing angle
+                AimingTolerance = 90f, // 0 - 180 firing angle
                 AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
@@ -86,7 +86,7 @@ namespace Scripts
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -15,
-                    MaxElevation = 70,
+                    MaxElevation = 89,
                     FixedOffset = false,
                     InventorySize = 0.180f,
                     Offset = Vector(x: 0, y: 0, z: 0),

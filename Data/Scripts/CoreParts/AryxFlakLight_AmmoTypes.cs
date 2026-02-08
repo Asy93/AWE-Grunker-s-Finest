@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxFlakAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(100 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(1 * AWEGlobalDamageScalar),
             Mass = 5, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 300,
@@ -47,13 +47,13 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // 0 = disabled
+                MaxObjectsHit = 4, // 0 = disabled
                 CountBlocks = false, // counts gridBlocks and not just entities hit
             },
             Fragment = new FragmentDef
             {
-                AmmoRound = "AryxFlakShrapWC",
-                Fragments = 16,
+                AmmoRound = "",
+                Fragments = 0,
                 Degrees = 360,
                 Reverse = true,
                 
@@ -75,7 +75,7 @@ namespace Scripts
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 6, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                HealthHitModifier = 20, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 130,
                 Characters = 74,
                 FallOff = new FallOffDef
@@ -86,18 +86,18 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = 5f,
+                    Small = 2f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 1f,
+                    Armor = 0.18707f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = -1f,
+                    NonArmor = 0.33163f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 2f,
+                    Modifier = -1f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -148,9 +148,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 5f, // Meters
-                    Damage = (float)(1000 * AWEGlobalDamageScalar),
-                    Depth = 0f,
+                    Radius = 6f, // Meters
+                    Damage = (float)(5880 * AWEGlobalDamageScalar),
+                    Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -237,7 +237,7 @@ namespace Scripts
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
                 DesiredSpeed = 800,
-                MaxTrajectory = 900f,
+                MaxTrajectory = 2000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed

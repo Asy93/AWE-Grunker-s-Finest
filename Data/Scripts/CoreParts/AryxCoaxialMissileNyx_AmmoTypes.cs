@@ -118,7 +118,7 @@ namespace Scripts
                 Guidance = Smart, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed
                 TargetLossDegree = 0,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                MaxLifeTime = 150, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 30, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 100f,
                 DesiredSpeed = 100, // voxel phasing if you go above 5100
                 MaxTrajectory = 10000,
@@ -261,7 +261,7 @@ namespace Scripts
             AmmoRound = "Nyx Phase Missile Launched", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 10000f, // Direct damage; one steel plate is worth 100.
+            BaseDamage = (float)(10000*AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 200, // In kilograms; how much force the impact will apply to the target.
             Health = 50, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0f, // Recoil.
@@ -296,23 +296,23 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 5f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
+                    Armor = 0.4f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
                     Light = -1f, // Multiplier for damage against light armor.
                     Heavy = -1f, // Multiplier for damage against heavy armor.
-                    NonArmor = 2f, // Multiplier for damage against every else.
+                    NonArmor = 1f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 5f, // Multiplier for damage against shields.
+                    Modifier = 0.75f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
                     BypassModifier = 100f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
-                    Base = Kinetic,
-                    AreaEffect = Kinetic,
-                    Detonation = Kinetic,
-                    Shield = Kinetic, // Damage against shields is currently all of one type per projectile.
+                    Base = Energy,
+                    AreaEffect = Energy,
+                    Detonation = Energy,
+                    Shield = Energy, // Damage against shields is currently all of one type per projectile.
                 },
                 Custom = new CustomScalesDef
                 {
@@ -337,11 +337,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 5, // Meters
-                    Damage = (float)(5000 * AWEGlobalDamageScalar),
-                    Depth = 3f,
+                    Radius = 10, // Meters
+                    Damage = (float)(1000000 * AWEGlobalDamageScalar),
+                    Depth = 5f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -382,8 +382,8 @@ namespace Scripts
                 Smarts = new SmartsDef
                 {
                     Inaccuracy = 0, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
-                    Aggressiveness = 0.5f, // controls how responsive tracking is.
-                    MaxLateralThrust = 0.2f, // controls how sharp the trajectile may turn
+                    Aggressiveness = 1f, // controls how responsive tracking is.
+                    MaxLateralThrust = 0.3f, // controls how sharp the trajectile may turn
                     TrackingDelay = 0, // Measured in Shape diameter units traveled.
                     MaxChaseTime = 6000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.

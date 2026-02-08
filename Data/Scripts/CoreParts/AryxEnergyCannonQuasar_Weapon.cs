@@ -58,7 +58,7 @@ namespace Scripts {
             HardPoint = new HardPointDef
             {
                 PartName = "Quasar Shock Cannon", // name of weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons)
-                DeviateShotAngle = 0.25f,
+                DeviateShotAngle = 0.2f,
                 AimingTolerance = 0.1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -84,8 +84,8 @@ namespace Scripts {
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.0025f,
-                    ElevateRate = 0.0025f,
+                    RotateRate = 0.005f,
+                    ElevateRate = 0.005f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -15,

@@ -89,14 +89,14 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f, // Multiplier for damage against large grids.
-                    Small = -1f, // Multiplier for damage against small grids.
+                    Small = 2f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.5f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
+                    Armor = 0.75f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
                     Light = 3f, // Multiplier for damage against light armor.
                     Heavy = -1f, // Multiplier for damage against heavy armor.
-                    NonArmor = 0.5f, // Multiplier for damage against every else.
+                    NonArmor = 0.75f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {

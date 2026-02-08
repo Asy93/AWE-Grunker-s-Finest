@@ -36,7 +36,7 @@ namespace Scripts
             AmmoRound = "1000mm Avalanche Mortar Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(3500 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(107500 * AWEGlobalDamageScalar),
             Mass = 200000, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 22500000,
@@ -56,8 +56,8 @@ namespace Scripts
             },
             Fragment = new FragmentDef // Formerly known as Shrapnel. Spawns specified ammo fragments on projectile death (via hit or detonation).
             {
-                AmmoRound = "AryxKineticFrags", // AmmoRound field of the ammo to spawn.
-                Fragments = 75, // Number of projectiles to spawn.
+                AmmoRound = "", // AmmoRound field of the ammo to spawn.
+                Fragments = 0, // Number of projectiles to spawn.
                 Degrees = 60, // Cone in which to randomize direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
                 DropVelocity = true, // fragments will not inherit velocity from parent.
@@ -86,14 +86,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 2f,
+                    Armor = -1f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = -1f,
+                    NonArmor = 0.5442f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 12f,
+                    Modifier = 0.5488f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -143,18 +143,18 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 15f, // Meters
-                    Damage = (float)(16000 * AWEGlobalDamageScalar),
-                    Depth = 3.5f,
+                    Radius = 20f, // Meters
+                    Damage = (float)(2042500 * AWEGlobalDamageScalar),
+                    Depth = 8f,
                     MaxAbsorb = 0f,
-                    Falloff = InvCurve, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 360, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 120, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,
@@ -231,7 +231,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 36000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 400,
+                DesiredSpeed = 600,
                 MaxTrajectory = 10000,
                 GravityMultiplier = 2.25f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed

@@ -96,7 +96,7 @@ namespace Scripts
                     Armor = 2f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 1.5f,
+                    NonArmor = 3.0f,
                 },
                 Shields = new ShieldDef
                 {
@@ -526,7 +526,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 1f, // Meters
-                    Damage = 2400f,
+                    Damage = (float)(2400 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -536,7 +536,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 45, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 22, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,
@@ -703,9 +703,9 @@ namespace Scripts
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 15f,
-                        Width = 1f,
-                        Color = Color(red: 3, green: 8, blue: 24, alpha: 1),
+                        Length = 50f,
+                        Width = 3f,
+                        Color = Color(red: 16, green: 16, blue: 24, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..

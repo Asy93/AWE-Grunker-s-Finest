@@ -149,7 +149,7 @@ namespace Scripts
                 },
                 EndOfLife = new EndOfLifeDef
                 {
-                    Enable = true,
+                    Enable = false,
                     Radius = 0, // Meters
                     Damage = 0,
                     Depth = 1f,
@@ -430,7 +430,7 @@ namespace Scripts
             },
             Fragment = new FragmentDef // Formerly known as Shrapnel. Spawns specified ammo fragments on projectile death (via hit or detonation).
             {
-                AmmoRound = "Missile Frags", // AmmoRound field of the ammo to spawn.
+                AmmoRound = "", // AmmoRound field of the ammo to spawn.
                 Fragments = 50, // Number of projectiles to spawn.
                 Degrees = 180, // Cone in which to randomise direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
@@ -465,15 +465,15 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = 1f, // Multiplier for damage against large grids.
-                    Small = 2f, // Multiplier for damage against small grids.
+                    Large = -1f, // Multiplier for damage against large grids.
+                    Small = -1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
+                    Armor = 0.2f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
                     Light = -1f, // Multiplier for damage against light armor.
                     Heavy = -1f, // Multiplier for damage against heavy armor.
-                    NonArmor = 2f, // Multiplier for damage against every else.
+                    NonArmor = 0.46667f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {
@@ -483,10 +483,10 @@ namespace Scripts
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
-                    Base = Kinetic,
-                    AreaEffect = Kinetic,
-                    Detonation = Kinetic,
-                    Shield = Kinetic, // Damage against shields is currently all of one type per projectile.
+                    Base = Energy,
+                    AreaEffect = Energy,
+                    Detonation = Energy,
+                    Shield = Energy, // Damage against shields is currently all of one type per projectile.
                 },
                 Custom = new CustomScalesDef
                 {
@@ -526,11 +526,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 2.5, // Meters
-                    Damage = (float)(3500 * AWEGlobalDamageScalar),
+                    Radius = 5, // Meters
+                    Damage = (float)(62500 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -612,10 +612,10 @@ namespace Scripts
                 Guidance = Smart, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed
                 TargetLossDegree = 0,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                AccelPerSec = 250f,
-                DesiredSpeed = 600, // voxel phasing if you go above 5100
-                MaxTrajectory = 5000,
+                MaxLifeTime = 7200, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                AccelPerSec = 350f,
+                DesiredSpeed = 700, // voxel phasing if you go above 5100
+                MaxTrajectory = 10000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -623,18 +623,18 @@ namespace Scripts
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
                 Smarts = new SmartsDef
                 {
-                    Inaccuracy = 0, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
-                    Aggressiveness = 3, // controls how responsive tracking is.
-                    MaxLateralThrust = 0.5f, // controls how sharp the trajectile may turn
+                    Inaccuracy = 3, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
+                    Aggressiveness = 4, // controls how responsive tracking is.
+                    MaxLateralThrust = 1f, // controls how sharp the trajectile may turn
                     TrackingDelay = 0, // Measured in Shape diameter units traveled.
                     MaxChaseTime = 2400, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
                     MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss
-                    KeepAliveAfterTargetLoss = false, // Whether to stop early death of projectile on target loss
-                    OffsetRatio = 0.05f, // The ratio to offset the random dir (0 to 1) 
-                    OffsetTime = 60, // how often to offset degree, measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..)
+                    KeepAliveAfterTargetLoss = true, // Whether to stop early death of projectile on target loss
+                    OffsetRatio = 0.07f, // The ratio to offset the random dir (0 to 1) 
+                    OffsetTime = 0, // how often to offset degree, measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..)
                 },
                 Mines = new MinesDef
                 {

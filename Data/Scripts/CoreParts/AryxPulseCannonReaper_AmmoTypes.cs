@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxReaperAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(75000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(30000 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 30f,
@@ -52,12 +52,11 @@ namespace Scripts
             Fragment = new FragmentDef
             {
                 AmmoRound = "Reaper Antimatter Bolt", // AmmoRound field of the ammo to spawn.
-                Fragments = 4, // Number of projectiles to spawn.
-                Degrees = 90, // Cone in which to randomize direction of spawned projectiles.
+                Fragments = 1, // Number of projectiles to spawn.
+                Degrees = 0, // Cone in which to randomize direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
-                DropVelocity = true, // fragments will not inherit velocity from parent.
                 Offset = 0f, // Offsets the fragment spawn by this amount, in meters (positive forward, negative for backwards).
-                Radial = 30f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
+                Radial = 0f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
                 IgnoreArming = true, //Whether shrapnel should spawn regardless of whether the projectile is armed or not.
             },
             Pattern = new PatternDef
@@ -83,8 +82,8 @@ namespace Scripts
                               // For the following modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01f = 1% damage, 2 = 200% damage.
             FallOff = new FallOffDef
             {
-                Distance = 500f, // Distance at which damage begins falling off.
-                MinMultipler = 0.1f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
+                Distance = 1000f, // Distance at which damage begins falling off.
+                MinMultipler = 0.5f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
             },
             Grids = new GridSizeDef
             {
@@ -93,14 +92,14 @@ namespace Scripts
             },
             Armor = new ArmorDef
             {
-                Armor = 0.9f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
+                Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
                 Light = -1f, // Multiplier for damage against light armor.
                 Heavy = -1f, // Multiplier for damage against heavy armor.
                 NonArmor = -1f, // Multiplier for damage against every else.
             },
             Shields = new ShieldDef
             {
-                Modifier = 10f, // Multiplier for damage against shields.
+                Modifier = -1f, // Multiplier for damage against shields.
                 Type = Default, // Damage vs healing against shields; Default, Heal
                 BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
             },
@@ -149,7 +148,7 @@ namespace Scripts
                 },
                 EndOfLife = new EndOfLifeDef
                 {
-                    Enable = true,
+                    Enable = false,
                     Radius = 4, // Meters
                     Damage = (float) (7500 * AWEGlobalDamageScalar),
                     Depth = 4f,
@@ -239,7 +238,7 @@ namespace Scripts
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
                 DesiredSpeed = 4999,
-                MaxTrajectory = 1300,
+                MaxTrajectory = 1500,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -420,7 +419,7 @@ namespace Scripts
             AmmoRound = "Reaper Antimatter Bolt",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(100000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(1 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -439,14 +438,13 @@ namespace Scripts
             },
             Fragment = new FragmentDef
             {
-                AmmoRound = "Reaper Antimatter Bolt", // AmmoRound field of the ammo to spawn.
+                AmmoRound = "", // AmmoRound field of the ammo to spawn.
                 Fragments = 0, // Number of projectiles to spawn.
                 Degrees = 360, // Cone in which to randomize direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
                 DropVelocity = true, // fragments will not inherit velocity from parent.
                 Offset = 0f, // Offsets the fragment spawn by this amount, in meters (positive forward, negative for backwards).
                 Radial = 0f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
-                MaxChildren = 8,
                 IgnoreArming = false, //Whether shrapnel should spawn regardless of whether the projectile is armed or not.
             },
 
@@ -472,8 +470,8 @@ namespace Scripts
                 Characters = 20,
                 FallOff = new FallOffDef
                 {
-                    Distance = 2, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.05f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 1000, // Distance at which max damage begins falling off.
+                    MinMultipler = 1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -482,14 +480,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
+                    Armor = 0.21129f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 4,
+                    NonArmor = -1,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1f,
+                    Modifier = 0.45565f,
                     Type = Default,
                     BypassModifier = -1f,
                 },
@@ -538,25 +536,25 @@ namespace Scripts
                 },
                 EndOfLife = new EndOfLifeDef
                 {
-                    Enable = false,
-                    Radius = 1f, // Meters
-                    Damage = 1,
-                    Depth = 1f,
+                    Enable = true,
+                    Radius = 8f, // Meters
+                    Damage = (float)(2480000 * AWEGlobalDamageScalar),
+                    Depth = 8f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
-                    ArmOnlyOnHit = true, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
+                    ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
                     MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = true,
                     NoSound = true,
                     ParticleScale = 1,
                     CustomParticle = "", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "", // SubtypeID from your Audio SBC, not a filename
-                    Shape = Diamond, // Round or Diamond
+                    Shape = Round, // Round or Diamond
                 },
             },
             Ewar = new EwarDef
@@ -625,14 +623,14 @@ namespace Scripts
                 Guidance = None,
                 TargetLossDegree = 80f,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                MaxLifeTime = 20, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 900,
-                MaxTrajectory = 30,
+                DesiredSpeed = 1000,
+                MaxTrajectory = 1000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
-                SpeedVariance = Random(start: 0, end: 30), // subtracts value from DesiredSpeed
-                RangeVariance = Random(start: 0, end: 70), // subtracts value from MaxTrajectory
+                SpeedVariance = Random(start: 0, end: 1), // subtracts value from DesiredSpeed
+                RangeVariance = Random(start: 0, end: 1), // subtracts value from MaxTrajectory
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
                 Smarts = new SmartsDef
                 {
@@ -924,7 +922,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 30, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 15, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,
@@ -1089,44 +1087,33 @@ namespace Scripts
                 Lines = new LineDef
                 {
                     ColorVariance = Random(start: 0.75f, end: 2f), // multiply the color by random values within range.
-                    WidthVariance = Random(start: 0f, end: 1.025f), // adds random value to default width (negatives shrinks width)
+                    WidthVariance = Random(start: 0f, end: 0f), // adds random value to default width (negatives shrinks width)
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 50f,
-                        Width = 10f,
-                        Color = Color(red: 25, green: 15, blue: 15, alpha: 1),
+                        Length = 25f,
+                        Width = 25f,
+                        Color = Color(red: 50, green: 30, blue: 40, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
-                            "AryxReaperBolt1",
-                            "AryxReaperBolt2",
-                            "AryxReaperBolt3",
-                            "AryxReaperBolt4",
-                            "AryxReaperBolt5",
+                            "AryxBallisticTracer",
                         },
-                        TextureMode = Chaos, // Normal, Cycle, Chaos, Wave
+                        TextureMode = Normal, // Normal, Cycle, Chaos, Wave
                         Segmentation = new SegmentDef
                         {
                             Enable = false, // If true Tracer TextureMode is ignored
                             Textures = new[] {
-                                "BlackFireSeg1",
-                                "BlackFireSeg2",
-                                "BlackFireSeg3",
-                                "BlackFireSeg4",
-                                "BlackFireSeg5",
-                                "BlackFireSeg6",
-                                "BlackFireSeg7",
-                                "BlackFireSeg8",
+                                "",
                             },
-                            SegmentLength = 30f, // Uses the values below.
+                            SegmentLength = 0f, // Uses the values below.
                             SegmentGap = 0f, // Uses Tracer textures and values
-                            Speed = 800f, // meters per second
-                            Color = Color(red: 2.5f, green: 2, blue: 1f, alpha: 1),
+                            Speed = 1f, // meters per second
+                            Color = Color(red: 1, green: 2, blue: 2.5f, alpha: 1),
                             WidthMultiplier = 1f,
                             Reverse = false,
                             UseLineVariance = true,
-                            WidthVariance = Random(start: 0f, end: 0.25f),
+                            WidthVariance = Random(start: 0f, end: 0f),
                             ColorVariance = Random(start: 0f, end: 0f)
                         }
                     },
@@ -1137,10 +1124,10 @@ namespace Scripts
                             "WeaponLaser",
                         },
                         TextureMode = Normal,
-                        DecayTime = 64,
-                        Color = Color(red: 20, green: 9, blue: 9, alpha: 1),
+                        DecayTime = 30,
+                        Color = Color(red: 50, green: 30, blue: 40, alpha: 1),
                         Back = false,
-                        CustomWidth = 0.2f,
+                        CustomWidth = 1f,
                         UseWidthVariance = false,
                         UseColorFade = true,
                     },

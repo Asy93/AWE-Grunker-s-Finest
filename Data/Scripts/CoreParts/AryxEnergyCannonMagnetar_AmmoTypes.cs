@@ -32,8 +32,8 @@ namespace Scripts
             AmmoRound = "Magnetar Energy Bolt", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.149995f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(10 * AWEGlobalDamageScalar),
-            Mass = 0f, // in kilograms
+            BaseDamage = (float)(1 * AWEGlobalDamageScalar),
+            Mass = 1f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
             DecayPerShot = 0f,
@@ -48,13 +48,13 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 1, // 0 = disabled
+                MaxObjectsHit = 0, // 0 = disabled
                 CountBlocks = true, // counts gridBlocks and not just entities hit
             },
             Fragment = new FragmentDef
             {
                 AmmoRound = "",
-                Fragments = 100,
+                Fragments = 0,
                 Degrees = 15,
                 Reverse = false,
                 
@@ -70,16 +70,15 @@ namespace Scripts
                 RandomMin = 1,
                 RandomMax = 1,
                 SkipParent = false,
-                PatternSteps = 1, // Number of Ammos activated per round, will progress in order and loop.  Ignored if Random = true.
             },
             DamageScales = new DamageScaleDef
             {
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 0.5, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
-                VoxelHitModifier = 1,
-                Characters = -1f,
+                HealthHitModifier = 6, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                VoxelHitModifier = 130,
+                Characters = 6500,
                 // modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01 = 1% damage, 2 = 200% damage.
                 FallOff = new FallOffDef
                 {
@@ -93,14 +92,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 2f,
+                    Armor = 0.1359f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 6f,
+                    NonArmor = 0.4312f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 16f,
+                    Modifier = -1f,
                     Type = Default, // Default, Heal
                     BypassModifier = -2f,
                 },
@@ -134,9 +133,9 @@ namespace Scripts
             {
                 ByBlockHit = new ByBlockHitDef
                 {
-                    Enable = true,
+                    Enable = false,
                     Radius = 5f, // Meters
-                    Damage = (float)(6900 * AWEGlobalDamageScalar),
+                    Damage = (float)(1 * AWEGlobalDamageScalar),
                     Depth = 3f, // Meters
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -150,11 +149,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 7f, // Meters
-                    Damage = (float)(10000 * AWEGlobalDamageScalar),
+                    Radius = 10f, // Meters
+                    Damage = (float)(920000 * AWEGlobalDamageScalar),
                     Depth = 4f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -167,7 +166,7 @@ namespace Scripts
                     ParticleScale = 1,
                     CustomParticle = "AWE_Shockcannon_Explosion", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "ArcWepShipARYX_ShockCannonHit", // SubtypeID from your Audio SBC, not a filename
-                    Shape = Round, // Round or Diamond
+                    Shape = Diamond, // Round or Diamond
                 }, 
             },
             Ewar = new EwarDef
@@ -536,7 +535,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 60, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 30, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,
@@ -704,8 +703,8 @@ namespace Scripts
                     {
                         Enable = true,
                         Length = 25f,
-                        Width = 4f,
-                        Color = Color(red: 10, green: 25, blue: 50, alpha: 1),
+                        Width = 25f,
+                        Color = Color(red: 30, green: 40, blue: 50, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
@@ -736,10 +735,10 @@ namespace Scripts
                             "WeaponLaser",
                         },
                         TextureMode = Normal,
-                        DecayTime = 60,
-                        Color = Color(red: 0, green: 0, blue: 1, alpha: 1),
+                        DecayTime = 30,
+                        Color = Color(red: 20, green: 40, blue: 50, alpha: 1),
                         Back = false,
-                        CustomWidth = 0.15f,
+                        CustomWidth = 1f,
                         UseWidthVariance = false,
                         UseColorFade = true,
                     },

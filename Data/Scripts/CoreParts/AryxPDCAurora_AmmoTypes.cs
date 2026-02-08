@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxAuroraAmmo",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(600 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(300 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -83,7 +83,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 500f, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.2f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    MinMultipler = 0.5f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {

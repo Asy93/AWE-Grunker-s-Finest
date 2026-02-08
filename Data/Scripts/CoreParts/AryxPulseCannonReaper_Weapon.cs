@@ -24,7 +24,7 @@ namespace Scripts
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        DurabilityMod = 0.1f,
+                        DurabilityMod = 0.25f,
                     },
 
                 },
@@ -42,22 +42,22 @@ namespace Scripts
                 SubSystems = new[] {
                     Thrust, Utility, Offense, Power, Production, Any,
                 },
-                ClosestFirst = true, // tries to pick closest targets first (blocks on grids, projectiles, etc...).
+                ClosestFirst = false, // tries to pick closest targets first (blocks on grids, projectiles, etc...).
                 IgnoreDumbProjectiles = false, // Don't fire at non-smart projectiles.
                 LockedSmartOnly = false, // Only fire at smart projectiles that are locked on to parent grid.
                 MinimumDiameter = 0, // 0 = unlimited, Minimum radius of threat to engage.
                 MaximumDiameter = 0, // 0 = unlimited, Maximum radius of threat to engage.
-                MaxTargetDistance = 1000, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
+                MaxTargetDistance = 1500, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
                 MinTargetDistance = 0, // 0 = unlimited, Min target distance that targets will be automatically shot at.
-                TopTargets = 4, // 0 = unlimited, max number of top targets to randomize between.
-                TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
-                StopTrackingSpeed = 1000, // do not track target threats traveling faster than this speed
+                TopTargets = 10, // 0 = unlimited, max number of top targets to randomize between.
+                TopBlocks = 10, // 0 = unlimited, max number of blocks to randomize between
+                StopTrackingSpeed = 10000, // do not track target threats traveling faster than this speed
             },
             HardPoint = new HardPointDef
             {
                 PartName = "Reaper Pulse Cannon", // name of weapon in terminal
                 DeviateShotAngle = 0f,
-                AimingTolerance = 0.1f, // 0 - 180 firing angle
+                AimingTolerance = 1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
@@ -84,8 +84,8 @@ namespace Scripts
                     ElevateRate = 0.033f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
-                    MinElevation = -10,
-                    MaxElevation = 90,
+                    MinElevation = -15,
+                    MaxElevation = 70,
                     FixedOffset = false,
                     InventorySize = 0.04f,
                     Offset = Vector(x: 0, y: 0, z: 0),
@@ -101,7 +101,7 @@ namespace Scripts
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 11,
+                    RateOfFire = 9,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.

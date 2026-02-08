@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Zarya Pulse Laser",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.05f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(500 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(6000 * AWEGlobalDamageScalar),
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -79,8 +79,8 @@ namespace Scripts
                 Characters = 8f,
                 FallOff = new FallOffDef
                 {
-                    Distance = 1300, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.3f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 1500, // Distance at which max damage begins falling off.
+                    MinMultipler = 0.5f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -89,14 +89,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.5f,
+                    Armor = 0.04167f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = -1f,
+                    NonArmor = 0.08333f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 12f,
+                    Modifier = -1f,
                     Type = Default,
                     BypassModifier = -2f,
                 },

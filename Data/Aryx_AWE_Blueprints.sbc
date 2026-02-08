@@ -107,16 +107,17 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>AWEKingSwordAmmoBP</SubtypeId>
       </Id>
-      <DisplayName>Kingsword Nuclear Charge</DisplayName>
+      <DisplayName>Kingsword Condensed Antimatter Charge</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEKingswordAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="12000" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="8000" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="4000" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="2000" TypeId="Ingot" SubtypeId="Uranium" />
-        <Item Amount="2000" TypeId="Ingot" SubtypeId="Silver" />			
-        <Item Amount="800" TypeId="Ingot" SubtypeId="Platinum" />			
-        <Item Amount="600" TypeId="Ingot" SubtypeId="Gold" />			
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="40000" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="40000" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="5000" TypeId="Ingot" SubtypeId="Uranium" />
+        <Item Amount="5000" TypeId="Ingot" SubtypeId="Silver" />			
+        <Item Amount="2000" TypeId="Ingot" SubtypeId="Platinum" />			
+        <Item Amount="3000" TypeId="Ingot" SubtypeId="Gold" />
+        <Item Amount="1" TypeId="Component" SubtypeId="Tech20x" />			
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWEKingswordMagazine" />

@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "25mm CODEX Ammunition",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(30 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(1300 * AWEGlobalDamageScalar),
             Mass = 0.5f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 600f,
@@ -89,10 +89,10 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.5f,
+                    Armor = 0.38462f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 1.35f,
+                    NonArmor = 0.69231f,
                 },
                 Shields = new ShieldDef
                 {
@@ -234,8 +234,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 650,
-                MaxTrajectory = 1200f,
+                DesiredSpeed = 1800,
+                MaxTrajectory = 3000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed

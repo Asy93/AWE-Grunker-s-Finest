@@ -56,7 +56,7 @@ namespace Scripts {
             HardPoint = new HardPointDef
             {
                 PartName = "Spartan Plasma Cannon", // name of weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons)
-                DeviateShotAngle = 0.07f,
+                DeviateShotAngle = 0.15f,
                 AimingTolerance = 1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -86,8 +86,8 @@ namespace Scripts {
                     ElevateRate = 0.02f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
-                    MinElevation = -10,
-                    MaxElevation = 85,
+                    MinElevation = -15,
+                    MaxElevation = 70,
                     FixedOffset = false,
                     InventorySize = 1f,
                     Offset = Vector(x: 0, y: 0, z: 0),

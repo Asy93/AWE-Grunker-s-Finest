@@ -31,7 +31,7 @@ namespace Scripts
             AmmoMagazine = "GaussAmmoMagDef",
             AmmoRound = "AryxGaussAmmoWC",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0.1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 0.012f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(100000 * AWEGlobalDamageScalar),
             Mass = 200, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
@@ -99,7 +99,7 @@ namespace Scripts
                     Armor = 99999999,
                     Light = -1,
                     Heavy = -1,
-                    NonArmor = 12,
+                    NonArmor = 7.2f,
                 },
                 Shields = new ShieldDef
                 {
@@ -110,18 +110,18 @@ namespace Scripts
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
                 {
-                    SkipOthers = Inclusive, // Controls how projectile interacts with other blocks in relation to those defined here, NoSkip, Exclusive, Inclusive.
+                    SkipOthers = NoSkip, // Controls how projectile interacts with other blocks in relation to those defined here, NoSkip, Exclusive, Inclusive.
                     Types = new[] // List of blocks to apply custom damage multipliers to.
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "Test1",
-                            Modifier = -1f,
+                            SubTypeId = "LargeBlockCockpitSeat",
+                            Modifier = 0.112476f,
                         },
                         new CustomBlocksDef
                         {
-                            SubTypeId = "Test2",
-                            Modifier = -1f,
+                            SubTypeId = "LargeBlockCockpitIndustrial",
+                            Modifier = 0.116676f,
                         },
                     },
                 },
@@ -132,7 +132,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 2f, // Meters
-                    Damage = 1000f,
+                    Damage = (float)(1000 * AWEGlobalDamageScalar),
                     Depth = 3f, // Meters
                     MaxAbsorb = 0f,
                     Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius

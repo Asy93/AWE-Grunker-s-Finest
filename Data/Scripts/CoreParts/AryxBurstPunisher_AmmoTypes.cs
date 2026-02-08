@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Punisher HE 70mm", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(20 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(1 * AWEGlobalDamageScalar),
             Mass = 50f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 5250f,
@@ -85,14 +85,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 1.5f,
+                    Armor = 0.15f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = -1f,
+                    NonArmor = 0.1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 18f,
+                    Modifier = -1f,
                     Type = Default, // Default, Heal
                     BypassModifier = -2f,
                 },
@@ -142,11 +142,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 1f, // Meters
-                    Damage = (float)(1500 * AWEGlobalDamageScalar),
-                    Depth = 1f,
+                    Radius = 3f, // Meters
+                    Damage = (float)(15250 * AWEGlobalDamageScalar),
+                    Depth = 2f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -520,7 +520,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available after it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 60, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 30, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,
@@ -688,8 +688,8 @@ namespace Scripts
                     {
                         Enable = true,
                         Length = 25f,
-                        Width = 0.5f,
-                        Color = Color(red: 25, green: 5, blue: 1, alpha: 1),
+                        Width = 5f,
+                        Color = Color(red: 25, green: 20, blue: 15, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..

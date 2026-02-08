@@ -179,6 +179,7 @@ namespace Scripts
             Ammos = new[] {
                 AryxHeavyFlakAmmoWC,
                 AryxHeavyFlakShrapWC,
+                BusterAryxHeavyFlakAmmoWC,
             },
             //Animations = AryxRiptideAnims,
             // Don't edit below this line

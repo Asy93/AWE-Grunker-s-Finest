@@ -25,7 +25,7 @@ namespace Scripts
                         MuzzlePartId = "MissileTurretBarrels",
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
-                        DurabilityMod = 0.25f,
+                        DurabilityMod = 0.00025f,
                     },
 
                 },
@@ -38,8 +38,6 @@ namespace Scripts
             {
                 Threats = new[] {
                     Grids,
-                    Projectiles,
-                    Meteors,
                 },
                 SubSystems = new[] {
                     Thrust, Utility, Offense, Power, Production, Any,
@@ -49,10 +47,10 @@ namespace Scripts
                 LockedSmartOnly = false, // Only fire at smart projectiles that are locked on to parent grid.
                 MinimumDiameter = 0, // 0 = unlimited, Minimum radius of threat to engage.
                 MaximumDiameter = 0, // 0 = unlimited, Maximum radius of threat to engage.
-                MaxTargetDistance = 1500, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
+                MaxTargetDistance = 15000, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
                 MinTargetDistance = 0, // 0 = unlimited, Min target distance that targets will be automatically shot at.
-                TopTargets = 4, // 0 = unlimited, max number of top targets to randomize between.
-                TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
+                TopTargets = 0, // 0 = unlimited, max number of top targets to randomize between.
+                TopBlocks = 0, // 0 = unlimited, max number of blocks to randomize between
                 StopTrackingSpeed = 8000000f, // do not track target threats traveling faster than this speed
             },
             HardPoint = new HardPointDef
@@ -60,7 +58,7 @@ namespace Scripts
                 PartName = "Oculus Ball-PDL", // name of weapon in terminal
                 DeviateShotAngle = 0.00f,
                 AimingTolerance = 1f, // 0 - 180 firing angle
-                AimLeadingPrediction = Off, // Off, Basic, Accurate, Advanced
+                AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
                 CanShootSubmerged = false,
@@ -113,7 +111,7 @@ namespace Scripts
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 3600,
+                    RateOfFire = 360,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
@@ -125,16 +123,16 @@ namespace Scripts
                     Cooldown = .5f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 600, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 60, //for beam this is time in ticks
-                    DelayAfterBurst = 60, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ShotsInBurst = 9, //for beam this is time in ticks
+                    DelayAfterBurst = 600, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFull = true,
                     GiveUpAfter = true,
                 },
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "ArcWepShipARYXOCULUS_Fire", // WepShipGatlingShot
-                    FiringSoundPerShot = false,
+                    FiringSound = "ArcWepShipARYXObliteratorFire", // WepShipGatlingShot
+                    FiringSoundPerShot = true,
                     ReloadSound = "",
                     NoAmmoSound = "",
                     HardPointRotationSound = "WepTurretGatlingRotate",

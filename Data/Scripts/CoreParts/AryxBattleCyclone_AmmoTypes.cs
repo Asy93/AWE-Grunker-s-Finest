@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "240mm Heavy Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(100 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(1 * AWEGlobalDamageScalar),
             Mass = 120f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 90000,
@@ -52,8 +52,8 @@ namespace Scripts
             },
             Fragment = new FragmentDef
             {
-                AmmoRound = "AryxKineticFrags",
-                Fragments = 12,
+                AmmoRound = "",
+                Fragments = 0,
                 Degrees = 360,
                 Reverse = true,
             },
@@ -89,14 +89,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.5f,
+                    Armor = 0.52374f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 1.6f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = -1f,
+                    Modifier = 0.28771f,
                     Type = Default,
                     BypassModifier = -2f,
                 },
@@ -147,10 +147,10 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 8f, // Meters
-                    Damage = (float)(6000 * AWEGlobalDamageScalar),
+                    Damage = (float)(71600 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
-                    Falloff = InvCurve, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius

@@ -22,7 +22,7 @@ namespace Scripts {
                         MuzzlePartId = "None", // The subpart where your muzzle empties are located.
                         AzimuthPartId = "None",
                         ElevationPartId = "None",
-                        DurabilityMod = 0.267f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 0.2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "TestIcon.dds" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                 },
@@ -54,7 +54,7 @@ namespace Scripts {
             HardPoint = new HardPointDef
             {
                 PartName = "Sunderer Laser", // Name of the weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons).
-                DeviateShotAngle = 1.5f, // Projectile inaccuracy in degrees.
+                DeviateShotAngle = 0.75f, // Projectile inaccuracy in degrees.
                 AimingTolerance = 1f, // How many degrees off target a turret can fire at. 0 - 180 firing angle.
                 AimLeadingPrediction = Off, // Level of turret aim prediction; Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 20, // Measured in game ticks (6 = 100ms, 60 = 1 second, etc..). Length of time the weapon continues firing after trigger is released.
@@ -119,7 +119,7 @@ namespace Scripts {
                     BarrelsPerShot = 5, // How many muzzles will fire a projectile per fire event.
                     TrajectilesPerBarrel = 4, // Number of projectiles per muzzle per fire event.
                     SkipBarrels = 0, // Number of muzzles to skip after each fire event.
-                    ReloadTime = 1800, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 1440, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     MagsToLoad = 1, // Number of physical magazines to consume on reload.
                     DelayUntilFire = 1180, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 0, // Heat generated per shot.

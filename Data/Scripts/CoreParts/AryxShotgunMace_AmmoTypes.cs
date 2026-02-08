@@ -84,7 +84,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 500f, // Distance at which damage begins falling off.
-                    MinMultipler = 0.5f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
+                    MinMultipler = 1.0f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -93,10 +93,10 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 2f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
-                    Light = 3f, // Multiplier for damage against light armor.
+                    Armor = 4f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
+                    Light = -1f, // Multiplier for damage against light armor.
                     Heavy = -1f, // Multiplier for damage against heavy armor.
-                    NonArmor = -1f, // Multiplier for damage against every else.
+                    NonArmor = 2.5f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {

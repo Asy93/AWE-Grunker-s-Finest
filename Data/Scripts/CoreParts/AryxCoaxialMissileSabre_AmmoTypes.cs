@@ -33,7 +33,7 @@ namespace Scripts
             AmmoRound = "Sabre Missile Single-use", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 10f, // Direct damage; one steel plate is worth 100.
+            BaseDamage = 1f, // Direct damage; one steel plate is worth 100.
             Mass = 500, // In kilograms; how much force the impact will apply to the target.
             Health = 5, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0f, // Recoil.
@@ -63,26 +63,26 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -2f, // Multiplier for damage against large grids.
-                    Small = 2f, // Multiplier for damage against small grids.
+                    Large = -1f, // Multiplier for damage against large grids.
+                    Small = -1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
-                    Light = 3f, // Multiplier for damage against light armor.
-                    Heavy = 1f, // Multiplier for damage against heavy armor.
-                    NonArmor = 2f, // Multiplier for damage against every else.
+                    Armor = 0.1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
+                    Light = -1f, // Multiplier for damage against light armor.
+                    Heavy = -1f, // Multiplier for damage against heavy armor.
+                    NonArmor = 0.23333f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1f, // Multiplier for damage against shields.
+                    Modifier = -1f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
                     BypassModifier = -2f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
                 {
-                    Base = Kinetic,
-                    AreaEffect = Kinetic,
+                    Base = Energy,
+                    AreaEffect = Energy,
                     Detonation = Energy,
                     Shield = Energy, // Damage against shields is currently all of one type per projectile.
                 },
@@ -109,11 +109,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 5, // Meters
-                    Damage = (float)(12500 * AWEGlobalDamageScalar),
-                    Depth = 3f,
+                    Radius = 8, // Meters
+                    Damage = (float)(1500000 * AWEGlobalDamageScalar),
+                    Depth = 5f,
                     MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -146,7 +146,7 @@ namespace Scripts
                 Smarts = new SmartsDef
                 {
                     Inaccuracy = 1, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
-                    Aggressiveness = 0.8f, // controls how responsive tracking is.
+                    Aggressiveness = 2f, // controls how responsive tracking is.
                     MaxLateralThrust = 0.5f, // controls how sharp the trajectile may turn
                     TrackingDelay = 15, // Measured in Shape diameter units traveled.
                     MaxChaseTime = 1800, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).

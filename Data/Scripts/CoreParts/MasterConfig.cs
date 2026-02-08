@@ -95,7 +95,7 @@ namespace Scripts
             AryxGravPulseLaserSG
             );
 
-            ArmorDefinitions(GrunkerArmourFix, GrunkerArmourFixPt2, GrunkerArmourFixPt3);
+            ArmorDefinitions(GrunkerArmourFix, GrunkerArmourFixPt2, GrunkerArmourFixPt3, GrunkerArmourFixPt4);
 
         }
     }

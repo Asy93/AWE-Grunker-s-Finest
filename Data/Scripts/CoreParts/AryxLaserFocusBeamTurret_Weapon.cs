@@ -175,7 +175,6 @@ namespace Scripts
                 },
             },
             Ammos = new[] {
-                AryxSmallFocusBeamAmmo,
                 AryxSmallFocusPulseAmmo,
             },
             //Animations = AdvancedAnimation,

@@ -1551,11 +1551,11 @@
         <SubtypeId>ArcWepShipARYXKingswordFire</SubtypeId>
       </Id>
       <Category>SHOT</Category>
-      <MaxDistance>4000</MaxDistance>
+      <MaxDistance>20000</MaxDistance>
       <PreventSynchronization>0</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
-      <Volume>6</Volume>
+      <Volume>7</Volume>
       <Waves>
         <Wave Type="D3">
           <Start>Audio\Aryx\railguns\aryx_kingsword_fire_01.wav</Start>
@@ -1568,11 +1568,11 @@
         <SubtypeId>ArcWepShipARYXKingswordWindup</SubtypeId>
       </Id>
       <Category>SHOT</Category>
-      <MaxDistance>4000</MaxDistance>
+      <MaxDistance>20000</MaxDistance>
       <PreventSynchronization>0</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
-      <Volume>5</Volume>
+      <Volume>7</Volume>
       <Waves>
         <Wave Type="D3">
           <Start>Audio\Aryx\railguns\aryx_kingsword_chargeup_01.wav</Start>
